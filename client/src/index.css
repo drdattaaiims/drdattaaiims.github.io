@@ -325,4 +325,27 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* Scrolling animation for partners */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  /* Pause animation on hover - stable for interactions */
+  .animate-scroll:hover,
+  .animate-scroll:focus-within {
+    animation-play-state: paused;
+  }
 }

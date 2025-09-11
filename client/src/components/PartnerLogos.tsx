@@ -29,8 +29,8 @@ export default function PartnerLogos() {
               {scrollingPartners.map((partner, index) => (
                 <span
                   key={index}
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-muted-foreground/30 hover:text-primary/60 transition-colors duration-300 mx-8 select-none"
-                  style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}
+                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-muted-foreground/30 hover:text-primary/60 transition-colors duration-300 mx-8 select-none"
+                  style={{ fontSize: 'clamp(1.125rem, 2.5vw, 1.875rem)' }}
                   data-testid={`partner-${index}`}
                 >
                   {partner}

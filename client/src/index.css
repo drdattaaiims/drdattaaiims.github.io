@@ -337,7 +337,7 @@
   }
 
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 15s linear infinite;
     will-change: transform;
     backface-visibility: hidden;
     perspective: 1000px;

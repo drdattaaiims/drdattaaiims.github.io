@@ -24,9 +24,9 @@ const contactMethods = [
     id: "phone",
     icon: Phone,
     label: "Phone",
-    primary: "+91 76399 86241",
+    primary: "(Request Phone number)",
     secondary: "India (IST)",
-    action: "Call"
+    action: "Request"
   }
 ];
 
@@ -158,7 +158,7 @@ export default function ContactSection() {
               • Available for{" "}
               <span className="text-foreground font-medium">remote collaborations</span>{" "}
               and{" "}
-              <span className="text-foreground font-medium">international speaking engagements</span>
+              <span className="text-foreground font-medium">speaking engagements</span>
             </p>
           </div>
         </div>

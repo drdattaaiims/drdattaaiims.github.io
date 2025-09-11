@@ -35,9 +35,9 @@ const flagshipProjects = [
     id: "medversa",
     title: "MedVersa Foundation Model",
     description: "A Generalist Foundation Model for Medical Image Interpretation. Collaborative work with Rajpurkar Lab, Harvard Medical School",
-    achievement: "Under Review: NEJM AI",
+    achievement: "Large-scale multimodal medical foundation model",
     year: "2024",
-    status: "Under Review",
+    status: "In Development",
     tags: ["Foundation Models", "Medical AI", "Harvard Collaboration"]
   }
 ];

@@ -13,7 +13,11 @@ const skills = [
   { name: "Healthcare Innovation", category: "research" },
   { name: "Deep Learning", category: "ai" },
   { name: "Computer Vision", category: "ai" },
-  { name: "Research Leadership", category: "research" }
+  { name: "Research Leadership", category: "research" },
+  { name: "Foundational Models", category: "ai" },
+  { name: "Evaluations", category: "research" },
+  { name: "Agentic Workflows", category: "ai" },
+  { name: "Declarative Frameworks (DSPy, GEPA)", category: "ai" }
 ];
 
 const categoryColors = {

@@ -12,11 +12,11 @@ const experiences = [
   },
   {
     id: "harvard",
-    title: "Visiting Researcher (Medical AI Bootcamp)",
-    organization: "Rajpurkar Lab, Harvard Medical School",
+    title: "Member, Medical AI Bootcamp",
+    organization: "Rajpurkar Lab",
     period: "2024 – present",
-    description: "Clinical validation of foundational AI algorithms in Radiology, create SOTA multimodal foundational models. (Rajpurkar Lab fares among the top Radiology AI labs internationally)",
-    tags: ["Research", "Clinical Validation", "Harvard"]
+    description: "Clinical validation of foundational AI algorithms in Radiology, create SOTA multimodal foundational models",
+    tags: ["Research", "Clinical Validation"]
   },
   {
     id: "aiims-resident",

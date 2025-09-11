@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Download, MessageSquare, Users } from "lucide-react";
-import profileImage from "@assets/generated_images/Professional_doctor_headshot_portrait_3cd5b17c.png";
+import profileImage from "@assets/suvrankar_profile.jpg";
 
 export default function HeroSection() {
   const handleDownloadCV = () => {
@@ -19,8 +19,13 @@ export default function HeroSection() {
     // TODO: Implement collaboration form modal
   };
 
+  const handleRSNA2025 = () => {
+    console.log('RSNA 2025 meet clicked');
+    // TODO: Implement RSNA 2025 meetup form
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-12">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-24">
       <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Column - Text Content */}
         <div className="space-y-8">
@@ -36,8 +41,7 @@ export default function HeroSection() {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Faculty Fellow at Ashoka University (KCDH-A); Lead, CRASH Lab; 
-              Visiting Researcher, Harvard Medical School (Rajpurkar Lab).
+              Faculty Fellow at Ashoka University (KCDH-A); Lead, Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab).
             </p>
             
             <p className="text-lg text-foreground font-medium">
@@ -51,7 +55,7 @@ export default function HeroSection() {
             <div className="text-primary">•</div>
             <div className="text-primary">MICCAI 2025 Early Accept</div>
             <div className="text-primary">•</div>
-            <div className="text-primary">8+ RSNA-aligned Submissions (2025)</div>
+            <div className="text-primary">10 RSNA 2025 Acceptances</div>
           </div>
 
           {/* CTAs */}
@@ -84,13 +88,21 @@ export default function HeroSection() {
               <Users className="w-4 h-4 mr-2" />
               Collaborate
             </Button>
+            
+            <Button 
+              onClick={handleRSNA2025}
+              className="hover-elevate bg-primary text-primary-foreground"
+              data-testid="button-rsna-2025"
+            >
+              Let's meet at RSNA 2025
+            </Button>
           </div>
         </div>
 
         {/* Right Column - Profile Image */}
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
-            <div className="w-80 h-96 lg:w-96 lg:h-[30rem] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-background border">
+            <div className="w-80 h-96 lg:w-96 lg:h-[30rem] rounded-2xl overflow-hidden bg-black border">
               <img
                 src={profileImage}
                 alt="Dr. Suvrankar Datta"

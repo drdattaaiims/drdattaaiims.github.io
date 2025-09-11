@@ -46,8 +46,8 @@ const leadership = [
     id: "faima-president",
     title: "President",
     organization: "Federation of All India Medical Associations (FAIMA)",
-    period: "Current",
-    description: "Leading national medical association representing healthcare professionals across India"
+    period: "Previous",
+    description: "Led national medical association representing healthcare professionals across India"
   },
   {
     id: "rda-vp",

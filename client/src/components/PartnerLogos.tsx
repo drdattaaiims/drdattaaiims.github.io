@@ -36,18 +36,6 @@ const partners = [
     name: "MICCAI",
     logo: "MICCAI",
     description: "2025 Early Accept"
-  },
-  {
-    id: "nasscom",
-    name: "NASSCOM",
-    logo: "NASSCOM",
-    description: "Future Forge"
-  },
-  {
-    id: "ficci",
-    name: "FICCI",
-    logo: "FICCI",
-    description: "Heal Partner"
   }
 ];
 
@@ -59,13 +47,13 @@ export default function PartnerLogos() {
       <div className="max-w-6xl mx-auto">
         <div className="space-y-8">
           <div className="text-center space-y-4">
-            <h2 className="text-2xl font-semibold">Affiliated Institutions & Partners</h2>
+            <h2 className="text-2xl font-semibold">Affiliations and Collaborators spanning across</h2>
             <p className="text-muted-foreground text-sm">
               Collaborating with leading academic institutions and professional organizations worldwide
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
             {partners.map((partner) => (
               <div
                 key={partner.id}

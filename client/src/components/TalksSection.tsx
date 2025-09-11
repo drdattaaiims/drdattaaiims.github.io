@@ -11,7 +11,7 @@ const talks = [
     date: "Jan 2025",
     location: "Asia Pacific",
     topic: "AI in Radiology: Future Perspectives",
-    status: "Upcoming"
+    status: "Completed"
   },
   {
     id: "nasscom-2024",

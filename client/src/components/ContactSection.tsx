@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, Linkedin, Download, MessageSquare, Users } from "lucide-react";
+import cvFile from "@assets/suvrankar_cv.pdf";
 
 const contactMethods = [
   {
@@ -56,13 +57,46 @@ const ctaButtons = [
 
 export default function ContactSection() {
   const handleContactMethod = (method: string) => {
-    console.log(`Contact method ${method} clicked`);
-    // TODO: Implement contact method handlers
+    switch (method) {
+      case 'email':
+        window.location.href = 'mailto:suvrankar@gmail.com';
+        break;
+      case 'linkedin':
+        window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
+        break;
+      case 'phone':
+        const subject = encodeURIComponent('Phone Number Request');
+        const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\\n\\nI would like to request your phone number for professional communication.\\n\\nBest regards,');
+        window.location.href = `mailto:suvrankar@gmail.com?subject=${subject}&body=${body}`;
+        break;
+    }
   };
 
   const handleCTA = (action: string) => {
-    console.log(`CTA ${action} clicked`);
-    // TODO: Implement CTA handlers (modals, forms, downloads)
+    switch (action) {
+      case 'cv':
+        const link = document.createElement('a');
+        link.href = cvFile;
+        link.download = 'Suvrankar_Datta_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        break;
+      case 'speak':
+        const speakSubject = encodeURIComponent('Speaking Engagement Inquiry');
+        const speakBody = encodeURIComponent('Dear Dr. Suvrankar Datta,\\n\\nI would like to invite you to speak at our event.\\n\\nBest regards,');
+        window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${speakSubject}&body=${speakBody}`;
+        break;
+      case 'collaborate':
+        if (window.confirm('Choose your preferred contact method:\\n\\nOK for Email\\nCancel for LinkedIn')) {
+          const collabSubject = encodeURIComponent('Research Collaboration Inquiry');
+          const collabBody = encodeURIComponent('Dear Dr. Suvrankar Datta,\\n\\nI am interested in discussing a potential collaboration opportunity.\\n\\nBest regards,');
+          window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${collabSubject}&body=${collabBody}`;
+        } else {
+          window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
+        }
+        break;
+    }
   };
 
   return (

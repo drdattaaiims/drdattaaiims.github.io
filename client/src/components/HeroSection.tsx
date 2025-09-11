@@ -1,27 +1,37 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Download, MessageSquare, Users } from "lucide-react";
+import { Download, MessageSquare, Users, Linkedin } from "lucide-react";
 import profileImage from "@assets/suvrankar_profile.jpg";
+import cvFile from "@assets/suvrankar_cv.pdf";
 
 export default function HeroSection() {
   const handleDownloadCV = () => {
-    console.log('Download CV triggered');
-    // TODO: Implement actual CV download functionality
+    const link = document.createElement('a');
+    link.href = cvFile;
+    link.download = 'Suvrankar_Datta_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleInviteToSpeak = () => {
-    console.log('Invite to speak triggered');
-    // TODO: Implement contact form modal
+    const subject = encodeURIComponent('Speaking Engagement Inquiry');
+    const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\n\nI would like to invite you to speak at our event.\n\nBest regards,');
+    window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${subject}&body=${body}`;
   };
 
   const handleCollaborate = () => {
-    console.log('Collaborate triggered');
-    // TODO: Implement collaboration form modal
+    if (window.confirm('Choose your preferred contact method:\n\nOK for Email\nCancel for LinkedIn')) {
+      const subject = encodeURIComponent('Research Collaboration Inquiry');
+      const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\n\nI am interested in discussing a potential collaboration opportunity.\n\nBest regards,');
+      window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${subject}&body=${body}`;
+    } else {
+      window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
+    }
   };
 
   const handleRSNA2025 = () => {
-    console.log('RSNA 2025 meet clicked');
-    // TODO: Implement RSNA 2025 meetup form
+    window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
   };
 
   return (

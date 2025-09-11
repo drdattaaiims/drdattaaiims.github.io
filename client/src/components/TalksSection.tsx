@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Mic, Calendar, MapPin, ExternalLink } from "lucide-react";
+import { Mic, Calendar, MapPin, Download } from "lucide-react";
+import cvFile from "@assets/suvrankar_cv.pdf";
 
 const talks = [
   {
@@ -128,7 +129,7 @@ export default function TalksSection() {
                   </div>
 
                   <div className="pt-2">
-                    <ExternalLink className="w-4 h-4 text-muted-foreground hover:text-primary transition-colors" />
+                    <Download className="w-4 h-4 text-muted-foreground hover:text-primary transition-colors" />
                   </div>
                 </CardContent>
               </Card>
@@ -138,11 +139,18 @@ export default function TalksSection() {
           <div className="text-center">
             <Button 
               variant="outline" 
-              onClick={() => console.log('View all talks clicked')}
-              data-testid="button-view-all-talks"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = cvFile;
+                link.download = 'Suvrankar_Datta_CV.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              data-testid="button-check-other-talks"
             >
-              View All Speaking Engagements
-              <ExternalLink className="w-4 h-4 ml-2" />
+              Check other
+              <Download className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </div>

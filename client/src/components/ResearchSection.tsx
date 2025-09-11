@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Award, Calendar } from "lucide-react";
+import { Download, Award, Calendar } from "lucide-react";
+import cvFile from "@assets/suvrankar_cv.pdf";
 
 const flagshipProjects = [
   {
@@ -78,7 +79,7 @@ export default function ResearchSection() {
                         {project.year}
                       </div>
                     </div>
-                    <ExternalLink className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
+                    <Download className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
                   </div>
 
                   <div className="flex items-center gap-2">
@@ -122,11 +123,18 @@ export default function ResearchSection() {
           <div className="text-center">
             <Button 
               variant="outline" 
-              onClick={() => console.log('View all research clicked')}
-              data-testid="button-view-all-research"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = cvFile;
+                link.download = 'Suvrankar_Datta_CV.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              data-testid="button-check-other-research"
             >
-              View All Publications & Research
-              <ExternalLink className="w-4 h-4 ml-2" />
+              Check other
+              <Download className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </div>

@@ -1,0 +1,143 @@
+Dr. Suvrankar Datta — Portfolio Site Specification
+1. Purpose
+
+Create a futuristic, minimalistic portfolio website to showcase Dr. Suvrankar Datta’s professional journey as a Radiologist and AI researcher. The site should position him as a leading voice in responsible AI, radiology, and healthcare innovation, highlighting academic achievements, global collaborations, and thought leadership.
+
+2. Core Sections
+Hero / Overview
+
+Name + tagline: “Radiologist × AI Researcher. Faculty Fellow at Ashoka University (KCDH-A); Lead, CRASH Lab; Visiting Researcher, Harvard Medical School (Rajpurkar Lab).”
+
+Subline: “Building responsible, agentic AI workflows for radiology and healthcare.”
+
+Key CTAs: Download CV (PDF), Invite to Speak, Collaborate
+
+Metrics line: RSNA Trainee Research Prize 2023 • MICCAI 2025 Early Accept • 8+ RSNA-aligned Submissions (2025)
+
+Skills & Expertise
+
+Pill-style chips with hover micro-interactions:
+Radiology • Responsible AI • Multimodal Models • Clinical Validation • LLM Speech Pipelines • Interventional Radiology AI • Fairness & Bias Audits
+
+Experience Timeline
+
+Faculty Fellow, Ashoka University (KCDH-A) – Lead of CRASH Lab (2025–present)
+
+Visiting Researcher, Rajpurkar Lab, Harvard Medical School (2024–present)
+
+Senior Resident, Radiodiagnosis & IR, AIIMS Delhi (2023–2024)
+
+M.D. Radiology, AIIMS Delhi; MBBS Gold Medallist, JIPMER
+
+Consultancy/advisory roles: Qure AI, Manentia AI, Radiogram; Visiting Radiologist at Medanta/Fortis
+
+Research & Flagship Projects
+
+AIRib Framework – RSNA 2023 Trainee Prize, rib fracture detection/characterization on CT
+
+MICCAI 2025 Early Accept – Fine-grained rib fracture diagnosis with hyperbolic embeddings
+
+LLM Speech-to-Report Pipelines – RSNA 2023 Cutting-Edge Orals
+
+Lung Nodule AI Research – GANs, CNNs (Springer publications)
+
+Interventional Radiology AI Primer – Educational exhibits and Springer chapter
+
+Other notable work: TB MGIT recovery study, vascular function research
+
+Publications & Presentations
+
+Papers in Indian J Radiol Imaging, Indian J Tuberc, Springer proceedings, etc.
+
+Commentaries on AI in radiology training and deployment (IJRI, 2024)
+
+“MedVersa” (NEJM AI under review) with Rajpurkar Lab, Harvard/Stanford/Topol
+
+Presentations at RSNA, MICCAI, ISS, ISVIR, AOCR 2025
+
+Talks & Panels
+
+Keynotes/panels at NASSCOM Future Forge, FICCI Heal, AOCR 2025, GAPIO 2023, NATCON 2021, LTMMC & Sion Hospital, Bhartiya Vidyapeeth Pune, Clinicase Essex, IIT Jodhpur Industry Day
+
+Leadership & Awards
+
+President, FAIMA; VP, RDA AIIMS; other organizational leadership roles
+
+Awards: RSNA Trainee Research Prize 2023, Young Achiever in Radiology 2024, IMA MSN Chairman’s National Award, Atal Bihari Vajpayee Memorial Award, GAIMS Global Achievers Award
+
+Press & Partners
+
+Logo strip (Ashoka, AIIMS, JIPMER, RSNA, Harvard HMS, NASSCOM, FICCI, GAPIO, MICCAI)
+
+Grayscale → color on hover
+
+Contact
+
+Email: suvrankar@gmail.com
+ / suvrankar.datta@ashoka.edu.in
+
+LinkedIn: linkedin.com/in/suvrankardatta
+
+Phone: +91 76399 86241
+
+Downloadable CV (PDF)
+
+3. Visual Style
+
+References: Apple product pages + Stripe minimalism
+
+Colors
+
+Primary: #0A0A0B (deep black)
+
+Secondary: #FFFFFF (pure white)
+
+Accent: #00D4FF (electric blue)
+
+Text: #E5E5E7 (light grey)
+
+Background: #F5F5F7 (off-white)
+
+Highlight: #FF6B35 (vibrant orange)
+
+Fonts: SF Pro Display / Inter for body; JetBrains Mono for code/metrics
+
+Layout: Grid-based, mobile-first, generous whitespace
+
+Effects: Subtle glassmorphism, floating elements, smooth scrolling, soft parallax
+
+Animations: Framer Motion – fade/slide on view, chip hover glow, project card tilt
+
+4. Technical Build
+
+Framework: Next.js (App Router) + TypeScript
+
+Styling: Tailwind CSS + shadcn/ui
+
+Animations: Framer Motion
+
+Content: MDX/Contentlayer for projects/publications
+
+Performance: Lighthouse ≥95, image optimization, font subsetting
+
+SEO/A11y: WCAG 2.2 AA, schema.org metadata (Person, Article, Event), OG/Twitter cards
+
+Hosting: Vercel with custom domain
+
+5. Deliverables
+
+Fully responsive build (desktop, tablet, mobile)
+
+Modular card component for projects/publications
+
+CMS/MDX collections for updating publications, projects, talks
+
+Sitemap.xml + robots.txt
+
+Print-friendly /cv page + downloadable /cv.pdf
+
+Extra partner logo section (grayscale → color hover)
+
+One-Paragraph Developer Brief
+
+Please build a futuristic, minimalist portfolio website for Dr. Suvrankar Datta — Radiologist and AI researcher; Faculty Fellow at Ashoka University (KCDH-A); Lead of CRASH Lab; Visiting Researcher at Harvard Medical School (Rajpurkar Lab). Visuals should reflect Apple-like clarity with Stripe-level polish: deep blacks, soft glass panels, and subtle neon accents. Core sections include: Overview, Skills, Experience Timeline, Research & Projects (RSNA 2023 Trainee Prize AIRib, MICCAI 2025 early accept, LLM pipelines, lung nodule AI), Publications, Talks, Leadership & Awards, Press/Partners, and Contact. Prominently display RSNA Trainee Research Prize 2023 • MICCAI 2025 Early Accept • 8+ RSNA-aligned Submissions (2025). Use Next.js + Tailwind + Framer Motion, with WCAG-AA compliance, schema.org metadata, and Lighthouse ≥95. Ensure content is easily updatable and deploy on Vercel with custom domain.

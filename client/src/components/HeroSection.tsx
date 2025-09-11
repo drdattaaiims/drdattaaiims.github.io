@@ -45,7 +45,7 @@ export default function HeroSection() {
             </p>
             
             <p className="text-lg text-foreground font-medium">
-              Building responsible, agentic AI workflows for radiology and healthcare.
+              Building responsible AI for radiology and healthcare in India and the world.
             </p>
           </div>
 

@@ -37,7 +37,7 @@ const flagshipProjects = [
     description: "A Generalist Foundation Model for Medical Image Interpretation. Collaborative work with Rajpurkar Lab, Harvard Medical School",
     achievement: "Large-scale multimodal medical foundation model",
     year: "2024",
-    status: "In Development",
+    status: "In Review, Preprint on Arxiv",
     tags: ["Foundation Models", "Medical AI", "Harvard Collaboration"]
   }
 ];

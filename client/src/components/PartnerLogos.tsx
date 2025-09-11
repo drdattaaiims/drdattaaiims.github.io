@@ -26,16 +26,22 @@ const partners = [
     description: "Gold Medallist"
   },
   {
-    id: "rsna",
-    name: "RSNA",
-    logo: "RSNA",
-    description: "Trainee Prize 2023"
+    id: "kmc",
+    name: "KMC Manipal",
+    logo: "KMC",
+    description: "Medical College"
   },
   {
-    id: "miccai",
-    name: "MICCAI",
-    logo: "MICCAI",
-    description: "2025 Early Accept"
+    id: "iit-jodhpur",
+    name: "IIT Jodhpur",
+    logo: "IITJ",
+    description: "Technology Institute"
+  },
+  {
+    id: "nus",
+    name: "NUS Singapore",
+    logo: "NUS",
+    description: "Research Collaboration"
   }
 ];
 

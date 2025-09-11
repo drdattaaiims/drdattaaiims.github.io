@@ -40,18 +40,32 @@ const ctaButtons = [
     description: "Complete academic & professional portfolio"
   },
   {
-    id: "speak",
+    id: "speak-email",
     icon: MessageSquare,
-    label: "Invite to Speak",
+    label: "Invite to Speak (Email)",
     variant: "outline" as const,
-    description: "Keynotes, panels, and conferences"
+    description: "Keynotes, panels, and conferences via email"
   },
   {
-    id: "collaborate",
-    icon: Users,
-    label: "Collaborate",
+    id: "speak-linkedin",
+    icon: Linkedin,
+    label: "Invite to Speak (LinkedIn)",
     variant: "outline" as const,
-    description: "Research partnerships & consulting"
+    description: "Keynotes, panels, and conferences via LinkedIn"
+  },
+  {
+    id: "collaborate-email",
+    icon: Users,
+    label: "Collaborate (Email)",
+    variant: "outline" as const,
+    description: "Research partnerships & consulting via email"
+  },
+  {
+    id: "collaborate-linkedin",
+    icon: Linkedin,
+    label: "Collaborate (LinkedIn)",
+    variant: "outline" as const,
+    description: "Research partnerships & consulting via LinkedIn"
   }
 ];
 
@@ -75,26 +89,23 @@ export default function ContactSection() {
   const handleCTA = (action: string) => {
     switch (action) {
       case 'cv':
-        const link = document.createElement('a');
-        link.href = cvFile;
-        link.download = 'Suvrankar_Datta_CV.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        window.open('https://drive.google.com/file/d/1LsxZqaq04ltaD9tzo0kI331pR-zQ9cBX/view?usp=drive_link', '_blank', 'noopener,noreferrer');
         break;
-      case 'speak':
+      case 'speak-email':
         const speakSubject = encodeURIComponent('Speaking Engagement Inquiry');
         const speakBody = encodeURIComponent('Dear Dr. Suvrankar Datta,\\n\\nI would like to invite you to speak at our event.\\n\\nBest regards,');
         window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${speakSubject}&body=${speakBody}`;
         break;
-      case 'collaborate':
-        if (window.confirm('Choose your preferred contact method:\\n\\nOK for Email\\nCancel for LinkedIn')) {
-          const collabSubject = encodeURIComponent('Research Collaboration Inquiry');
-          const collabBody = encodeURIComponent('Dear Dr. Suvrankar Datta,\\n\\nI am interested in discussing a potential collaboration opportunity.\\n\\nBest regards,');
-          window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${collabSubject}&body=${collabBody}`;
-        } else {
-          window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
-        }
+      case 'speak-linkedin':
+        window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
+        break;
+      case 'collaborate-email':
+        const collabSubject = encodeURIComponent('Research Collaboration Inquiry');
+        const collabBody = encodeURIComponent('Dear Dr. Suvrankar Datta,\\n\\nI am interested in discussing a potential collaboration opportunity.\\n\\nBest regards,');
+        window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${collabSubject}&body=${collabBody}`;
+        break;
+      case 'collaborate-linkedin':
+        window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
         break;
     }
   };

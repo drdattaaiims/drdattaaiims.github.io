@@ -124,12 +124,7 @@ export default function ResearchSection() {
             <Button 
               variant="outline" 
               onClick={() => {
-                const link = document.createElement('a');
-                link.href = cvFile;
-                link.download = 'Suvrankar_Datta_CV.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                window.open('https://drive.google.com/file/d/1LsxZqaq04ltaD9tzo0kI331pR-zQ9cBX/view?usp=drive_link', '_blank', 'noopener,noreferrer');
               }}
               data-testid="button-check-other-research"
             >

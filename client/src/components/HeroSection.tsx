@@ -6,28 +6,27 @@ import cvFile from "@assets/suvrankar_cv.pdf";
 
 export default function HeroSection() {
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = cvFile;
-    link.download = 'Suvrankar_Datta_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open('https://drive.google.com/file/d/1LsxZqaq04ltaD9tzo0kI331pR-zQ9cBX/view?usp=drive_link', '_blank', 'noopener,noreferrer');
   };
 
-  const handleInviteToSpeak = () => {
+  const handleInviteToSpeakEmail = () => {
     const subject = encodeURIComponent('Speaking Engagement Inquiry');
     const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\n\nI would like to invite you to speak at our event.\n\nBest regards,');
     window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${subject}&body=${body}`;
   };
 
-  const handleCollaborate = () => {
-    if (window.confirm('Choose your preferred contact method:\n\nOK for Email\nCancel for LinkedIn')) {
-      const subject = encodeURIComponent('Research Collaboration Inquiry');
-      const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\n\nI am interested in discussing a potential collaboration opportunity.\n\nBest regards,');
-      window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${subject}&body=${body}`;
-    } else {
-      window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
-    }
+  const handleInviteToSpeakLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
+  };
+
+  const handleCollaborateEmail = () => {
+    const subject = encodeURIComponent('Research Collaboration Inquiry');
+    const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\n\nI am interested in discussing a potential collaboration opportunity.\n\nBest regards,');
+    window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${subject}&body=${body}`;
+  };
+
+  const handleCollaborateLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
   };
 
   const handleRSNA2025 = () => {
@@ -81,22 +80,42 @@ export default function HeroSection() {
             
             <Button 
               variant="outline"
-              onClick={handleInviteToSpeak}
+              onClick={handleInviteToSpeakEmail}
               className="hover-elevate"
-              data-testid="button-invite-speak"
+              data-testid="button-invite-speak-email"
             >
               <MessageSquare className="w-4 h-4 mr-2" />
-              Invite to Speak
+              Invite to Speak (Email)
             </Button>
             
             <Button 
               variant="outline"
-              onClick={handleCollaborate}
+              onClick={handleInviteToSpeakLinkedIn}
               className="hover-elevate"
-              data-testid="button-collaborate"
+              data-testid="button-invite-speak-linkedin"
+            >
+              <Linkedin className="w-4 h-4 mr-2" />
+              Invite to Speak (LinkedIn)
+            </Button>
+            
+            <Button 
+              variant="outline"
+              onClick={handleCollaborateEmail}
+              className="hover-elevate"
+              data-testid="button-collaborate-email"
             >
               <Users className="w-4 h-4 mr-2" />
-              Collaborate
+              Collaborate (Email)
+            </Button>
+            
+            <Button 
+              variant="outline"
+              onClick={handleCollaborateLinkedIn}
+              className="hover-elevate"
+              data-testid="button-collaborate-linkedin"
+            >
+              <Linkedin className="w-4 h-4 mr-2" />
+              Collaborate (LinkedIn)
             </Button>
             
             <Button 

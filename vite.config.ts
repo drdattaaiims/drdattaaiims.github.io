@@ -1,26 +1,25 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+// ESM-safe __dirname
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
-  root: ".",          // use the repo root (where your index.html lives)
-  base: "/",          // for user site drdattaaiims.github.io
-  plugins: [
-    react()
-    // exclude replit-only plugins in production
-  ],
+  root: ".",          // build from repo root (where index.html lives)
+  base: "/",          // correct for drdattaaiims.github.io
+  plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      "@": path.resolve(__dirname, "."),                // maps "@/..." -> project root
       "@shared": path.resolve(__dirname, "shared"),
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
   build: {
-    outDir: "dist",   // default dist folder, Pages workflow expects this
+    outDir: "dist",
     emptyOutDir: true,
-    rollupOptions: {
-      input: "index.html",   // force root index.html as entry
-    },
+    rollupOptions: { input: "index.html" },            // force the root index.html
   },
 });

@@ -40,7 +40,7 @@ Explore my research contributions:
 ---
 
 ## 📫 Contact & Social
-- Email: [suvrankar.datta@gmail.com](mailto:suvrankar.datta@gmail.com)  
+- Email: [suvrankar@gmail.com](mailto:suvrankar.datta@gmail.com)  
 - [LinkedIn](https://www.linkedin.com/in/suvrankar-datta/)  
 - [Google Scholar](https://scholar.google.com/)  
 - [Twitter/X](https://twitter.com/DrDatta_AIIMS)  

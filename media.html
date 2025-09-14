@@ -4,16 +4,23 @@
   <meta charset="utf-8" />
   <title>Media & Press – Dr. Suvrankar Datta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Optional font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body{font-family:Inter,system-ui,Arial,sans-serif;max-width:1100px;margin:40px auto;padding:0 16px;line-height:1.6}
-    h1{margin-bottom:0.25rem} h2{margin-top:2rem}
-    a{color:#0a58ca;text-decoration:none} a:hover{color:#063d8a}
-    ul{padding-left:1.25rem} li{margin:.5rem 0}
 
-    /* Nav (shared) */
+  <!-- Navbar + basic styles -->
+  <style>
+    body{font-family:Inter,system-ui,Arial,sans-serif;max-width:1100px;margin:0 auto;line-height:1.65;color:#111}
+    main{padding:24px 16px 56px}
+    h1{font-size:1.9rem;margin:18px 0 8px}
+    h2{margin-top:28px;font-size:1.25rem}
+    p,li{font-size:1rem}
+    a{color:#0a58ca;text-decoration:none}
+    a:hover{color:#063d8a;text-decoration:underline}
+    ul{padding-left:1.25rem}
+    li{margin:0.4rem 0}
+
+    /* ======= Global Site Nav (namespaced) ======= */
     .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #eee}
     .site-bar{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
     .brand{font-weight:700;text-decoration:none;color:#111;letter-spacing:.2px}
@@ -23,29 +30,40 @@
     .menu > li{position:relative}
     .menu a,.dropbtn{font-weight:600;text-decoration:none;color:#0a58ca;cursor:pointer;background:none;border:0;padding:8px 4px}
     .menu a:hover,.dropbtn:hover{color:#063d8a}
+    /* dropdown */
     .submenu{display:none;position:absolute;top:110%;left:0;min-width:260px;background:#fff;border:1px solid #eee;border-radius:12px;
-             box-shadow:0 10px 22px rgba(0,0,0,.08);list-style:none;margin:0;padding:8px}
+            box-shadow:0 10px 22px rgba(0,0,0,.08);list-style:none;margin:0;padding:8px}
     .submenu li{margin:0}
     .submenu a{display:block;width:100%;padding:8px 10px;color:#333;font-weight:500;border-radius:8px}
     .submenu a:hover{background:#f5f7ff;color:#0a58ca}
-    .dropdown:hover > .submenu, .dropdown:focus-within > .submenu{display:block}
+    /* show on hover / keyboard focus */
+    .dropdown:hover > .submenu,
+    .dropdown:focus-within > .submenu{display:block}
+    /* mobile */
     @media (max-width: 900px){
       .nav-toggle{display:inline-block}
       .menu{display:none;flex-direction:column;gap:0;border-top:1px solid #eee;padding-top:8px}
       .site-header.is-open .menu{display:flex}
       .dropdown > .submenu{position:static;border:0;border-radius:0;box-shadow:none;padding:4px 0}
+      main{padding:20px 14px 48px}
     }
   </style>
 </head>
 <body>
-  <!-- NAVBAR -->
+
+  <!-- Navbar -->
   <header class="site-header" id="site-header">
     <div class="site-bar">
       <a class="brand" href="/index.html">Dr. Suvrankar Datta</a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteMenu">Menu</button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteMenu">
+        Menu
+      </button>
+
       <nav class="site-nav" id="siteMenu" aria-label="Primary">
         <ul class="menu">
           <li><a href="/index.html">Home</a></li>
+
           <li class="dropdown">
             <button class="dropbtn" aria-expanded="false">Research ▾</button>
             <ul class="submenu" role="menu">
@@ -55,6 +73,7 @@
               <li><a href="/grants.html">Grants</a></li>
             </ul>
           </li>
+
           <li class="dropdown">
             <button class="dropbtn" aria-expanded="false">Recognitions ▾</button>
             <ul class="submenu" role="menu">
@@ -68,30 +87,62 @@
   </header>
 
   <main>
-    <h1>Media & Press</h1>
+    <h1>Media &amp; Press</h1>
+    <p>Selected televised interviews, panels, print features, and online coverage.</p>
 
-    <h2>Television (Panels & Interviews)</h2>
+    <h2>Television (Prime-time Interviews &amp; Panels)</h2>
     <ul>
-      <li>NDTV — Doctors’ protests / AI in healthcare (multiple prime-time segments). — <a href="https://www.ndtv.com/" target="_blank" rel="noopener">NDTV</a> • <a href="https://www.youtube.com/@NDTV" target="_blank" rel="noopener">NDTV YouTube</a></li>
-      <li>Mirror Now (The Urban Debate — NEET PG) — Panels on NEET PG & doctors’ safety. — <a href="https://www.mirrornownews.com/" target="_blank" rel="noopener">Mirror Now</a> • <a href="https://twitter.com/MirrorNow" target="_blank" rel="noopener">Mirror Now X</a></li>
-      <li>India Ahead — AI & protest coverage. — <a href="https://indiaaheadnews.com/" target="_blank" rel="noopener">India Ahead</a></li>
-      <li>The Quint — Doctors’ Day video. — <a href="https://www.thequint.com/" target="_blank" rel="noopener">The Quint</a></li>
-      <li>Hindustan Times (video). — <a href="https://www.hindustantimes.com/" target="_blank" rel="noopener">Hindustan Times</a></li>
+      <li>
+        NDTV — Doctors’ protests / AIIMS Delhi segments —
+        <a href="https://www.youtube.com/watch?v=mQIUTw4gC_w" target="_blank" rel="noopener">Clip 1</a> ·
+        <a href="https://www.youtube.com/watch?v=pX9SGu0gycE" target="_blank" rel="noopener">Clip 2</a> ·
+        <a href="https://www.youtube.com/watch?v=ELvbNT2zoBg" target="_blank" rel="noopener">Clip 3</a>
+      </li>
+      <li>
+        Mirror Now (The Urban Debate — NEET PG) — panels on doctors’ safety & admissions —
+        <a href="https://www.youtube.com/watch?v=3Ht_NWrsjKA" target="_blank" rel="noopener">YouTube</a> ·
+        <a href="https://www.youtube.com/watch?v=G_AviR2L9xo" target="_blank" rel="noopener">YouTube</a> ·
+        <a href="https://twitter.com/MirrorNow/status/1475824417565405184" target="_blank" rel="noopener">Post 1</a> ·
+        <a href="https://twitter.com/MirrorNow/status/1410652901383368705" target="_blank" rel="noopener">Post 2</a> ·
+        <a href="https://twitter.com/MirrorNow/status/1465620364180873225" target="_blank" rel="noopener">Post 3</a>
+      </li>
+      <li>
+        The Quint — Doctors’ Day 2021 video —
+        <a href="https://www.thequint.com/" target="_blank" rel="noopener">The Quint</a>
+      </li>
+      <li>
+        India Ahead — AI &amp; healthcare panels —
+        <a href="https://indiaaheadnews.com/" target="_blank" rel="noopener">India Ahead</a>
+      </li>
+      <li>
+        Hindustan Times — video feature —
+        <a href="https://www.hindustantimes.com/" target="_blank" rel="noopener">Hindustan Times</a>
+      </li>
     </ul>
 
-    <h2>Print / Online (Selected)</h2>
+    <h2>National Print Media (India)</h2>
     <ul>
-      <li><em>The Telegraph</em> — Front-page coverage.</li>
-      <li><em>The Hindu</em> — Front-page coverage.</li>
-      <li>International mentions — <em>The New York Times</em>, BBC World News (audio/segments).</li>
+      <li>Front-page coverage in <em>The Telegraph</em>. <a href="https://www.telegraphindia.com/" target="_blank" rel="noopener">Publisher</a></li>
+      <li>Front-page coverage in <em>The Hindu</em>. <a href="https://www.thehindu.com/" target="_blank" rel="noopener">Publisher</a></li>
+      <li>Additional quotes/features across leading national outlets.</li>
     </ul>
 
-    <h2>Podcasts / Interviews</h2>
+    <h2>International &amp; Online</h2>
     <ul>
-      <li>Panels and interviews across national outlets and YouTube features. — <a href="https://www.youtube.com/results?search_query=Suvrankar+Datta+radiology+AI" target="_blank" rel="noopener">YouTube search</a></li>
+      <li>Mentions/segments with <em>The New York Times</em> &amp; BBC World News. <a href="https://www.nytimes.com/" target="_blank" rel="noopener">NYT</a> · <a href="https://www.bbc.co.uk/worldserviceradio" target="_blank" rel="noopener">BBC World Service</a></li>
+      <li>Interviews, podcasts, and panels across multiple channels (selected TV links above).</li>
+    </ul>
+
+    <h2>Contact &amp; Social</h2>
+    <ul>
+      <li><a href="mailto:suvrankar.datta@gmail.com">suvrankar.datta@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/suvrankar-datta/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter/X</a></li>
+      <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
     </ul>
   </main>
 
+  <!-- Small JS for mobile menu -->
   <script>
     const header = document.getElementById('site-header');
     const navToggle = document.getElementById('navToggle');
@@ -101,4 +152,22 @@
     });
     document.querySelectorAll('.dropbtn').forEach(btn => {
       btn.addEventListener('click', (e) => {
-       
+        if (window.matchMedia('(max-width: 900px)').matches) {
+          const parent = btn.closest('.dropdown');
+          const sub = parent.querySelector('.submenu');
+          const isOpen = sub.style.display === 'block';
+          document.querySelectorAll('.submenu').forEach(s => s.style.display='none');
+          sub.style.display = isOpen ? 'none' : 'block';
+          btn.setAttribute('aria-expanded', (!isOpen).toString());
+          e.stopPropagation();
+        }
+      });
+    });
+    document.addEventListener('click', () => {
+      if (window.matchMedia('(max-width: 900px)').matches) {
+        document.querySelectorAll('.submenu').forEach(s => s.style.display='none');
+      }
+    });
+  </script>
+</body>
+</html>

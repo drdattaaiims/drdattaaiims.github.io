@@ -8,7 +8,7 @@ This site showcases my work at the intersection of radiology, artificial intelli
 ---
 
 ## 🔎 About Me
-I am a **Radiologist and AI researcher**, Faculty Fellow at **Ashoka University’s Koita Centre for Digital Health (KCDH-A)**, and Visiting Researcher at **Harvard Medical School (Rajpurkar Lab)**.  
+I am a **Radiologist and AI researcher**, Faculty Fellow at **Ashoka University’s Koita Centre for Digital Health (KCDH-A)**, and Group Lead at **Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab)**.  
 My work focuses on **responsible AI in healthcare, agentic workflows for radiology, multimodal models, and data infrastructure for LMICs.**
 
 ---

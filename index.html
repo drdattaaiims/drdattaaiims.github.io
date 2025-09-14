@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Dr. Suvrankar Datta - Radiologist × AI Researcher</title>
+
+  <meta name="description" content="Dr. Suvrankar Datta, Faculty Fellow at Ashoka University, Lead of CRASH Lab, Visiting Researcher at Harvard Medical School. Expert in responsible AI, radiology, and healthcare innovation.">
+  <meta property="og:title" content="Dr. Suvrankar Datta - Radiologist × AI Researcher">
+  <meta property="og:description" content="Building responsible, agentic AI workflows for radiology and healthcare.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. Suvrankar Datta - Radiologist × AI Researcher">
+  <meta name="twitter:description" content="Building responsible, agentic AI workflows for radiology and healthcare.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+  <!-- Navbar + site styles -->
   <style>
-  .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #eee}
-  .site-bar{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
-  .brand{font-weight:700;text-decoration:none;color:#111;letter-spacing:.2px}
-  .nav-toggle{display:none;border:1px solid #ddd;border-radius:10px;background:#fff;padding:8px 12px;font-weight:600}
-  .site-nav{position:relative}
-  .menu{list-style:none;display:flex;gap:20px;margin:0;padding:0}
-  .menu > li{position:relative}
-  .menu a,.dropbtn{font-weight:600;text-decoration:none;color:#0a58ca;cursor:pointer;background:none;border:0;padding:8px 4px}
-  .menu a:hover,.dropbtn:hover{color:#063d8a}
-  .submenu{display:none;position:absolute;top:110%;left:0;min-width:260px;background:#fff;border:1px solid #eee;border-radius:12px;
-           box-shadow:0 10px 22px rgba(0,0,0,.08);list-style:none;margin:0;padding:8px}
-  .submenu li{margin:0}
-  .submenu a{display:block;width:100%;padding:8px 10px;color:#333;font-weight:500;border-radius:8px}
-  .submenu a:hover{background:#f5f7ff;color:#0a58ca}
-  .dropdown:hover > .submenu, .dropdown:focus-within > .submenu{display:block}
-  @media (max-width: 900px){
-    .nav-toggle{display:inline-block}
-    .menu{display:none;flex-direction:column;gap:0;border-top:1px solid #eee;padding-top:8px}
-    .site-header.is-open .menu{display:flex}
-    .dropdown > .submenu{position:static;border:0;border-radius:0;box-shadow:none;padding:4px 0}
+    .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #eee}
+    .site-bar{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+    .brand{font-weight:700;text-decoration:none;color:#111;letter-spacing:.2px}
+    .nav-toggle{display:none;border:1px solid #ddd;border-radius:10px;background:#fff;padding:8px 12px;font-weight:600}
+    .site-nav{position:relative}
+    .menu{list-style:none;display:flex;gap:20px;margin:0;padding:0}
+    .menu > li{position:relative}
+    .menu a,.dropbtn{font-weight:600;text-decoration:none;color:#0a58ca;cursor:pointer;background:none;border:0;padding:8px 4px}
+    .menu a:hover,.dropbtn:hover{color:#063d8a}
+    .submenu{display:none;position:absolute;top:110%;left:0;min-width:260px;background:#fff;border:1px solid #eee;border-radius:12px;
+             box-shadow:0 10px 22px rgba(0,0,0,.08);list-style:none;margin:0;padding:8px}
+    .submenu li{margin:0}
+    .submenu a{display:block;width:100%;padding:8px 10px;color:#333;font-weight:500;border-radius:8px}
+    .submenu a:hover{background:#f5f7ff;color:#0a58ca}
+    .dropdown:hover > .submenu, .dropdown:focus-within > .submenu{display:block}
+    @media (max-width: 900px){
+      .nav-toggle{display:inline-block}
+      .menu{display:none;flex-direction:column;gap:0;border-top:1px solid #eee;padding-top:8px}
+      .site-header.is-open .menu{display:flex}
+      .dropdown > .submenu{position:static;border:0;border-radius:0;box-shadow:none;padding:4px 0}
     }
   </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header" id="site-header">
+    <div class="site-bar">
+      <a class="brand" href="/index.html">Dr. Suvrankar Datta</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteMenu">Menu</button>
+      <nav class="site-nav" id="siteMenu" aria-label="Primary">
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li class="dropdown">
+            <button class="dropbtn" aria-expanded="false">Research ▾</button>
+            <ul class="submenu" role="menu">
+              <li><a href="/publications.html">Publications</a></li>
+              <li><a href="/presentations.html">Scientific Presentations</a></li>
+              <li><a href="/invited.html">Invited Talks & Panels</a></li>
+              <li><a href="/grants.html">Grants</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <button class="dropbtn" aria-expanded="false">Recognitions ▾</button>
+            <ul class="submenu" role="menu">
+              <li><a href="/awards.html">Awards & Distinctions</a></li>
+              <li><a href="/media.html">Media & Press</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Dr. Suvrankar Datta - Radiologist × AI Researcher</title>
-    <meta name="description" content="Dr. Suvrankar Datta, Faculty Fellow at Ashoka University, Lead of CRASH Lab, Visiting Researcher at Harvard Medical School. Expert in responsible AI, radiology, and healthcare innovation.">
-    <meta property="og:title" content="Dr. Suvrankar Datta - Radiologist × AI Researcher">
-    <meta property="og:description" content="Building responsible, agentic AI workflows for radiology and healthcare.">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dr. Suvrankar Datta - Radiologist × AI Researcher">
-    <meta name="twitter:description" content="Building responsible, agentic AI workflows for radiology and healthcare.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  </head>
+  <!-- React root -->
+  <div id="root"></div>
+  <script type="module" src="./main.tsx"></script>
+
+  <!-- Navbar JS -->
   <script>
     const header = document.getElementById('site-header');
     const navToggle = document.getElementById('navToggle');
@@ -65,36 +104,5 @@
       }
     });
   </script>
-  <body>
-    <header class="site-header" id="site-header">
-      <div class="site-bar">
-        <a class="brand" href="/index.html">Dr. Suvrankar Datta</a>
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteMenu">Menu</button>
-        <nav class="site-nav" id="siteMenu" aria-label="Primary">
-          <ul class="menu">
-            <li><a href="/index.html">Home</a></li>
-            <li class="dropdown">
-              <button class="dropbtn" aria-expanded="false">Research ▾</button>
-              <ul class="submenu" role="menu">
-                <li><a href="/publications.html">Publications</a></li>
-                <li><a href="/presentations.html">Scientific Presentations</a></li>
-                <li><a href="/invited.html">Invited Talks & Panels</a></li>
-                <li><a href="/grants.html">Grants</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <button class="dropbtn" aria-expanded="false">Recognitions ▾</button>
-              <ul class="submenu" role="menu">
-                <li><a href="/awards.html">Awards & Distinctions</a></li>
-                <li><a href="/media.html">Media & Press</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div id="root"></div>
-    <script type="module" src="./main.tsx"></script>
-  </body>
+</body>
 </html>

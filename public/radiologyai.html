@@ -8,38 +8,126 @@
   
   <link rel="stylesheet" href="/assets/index-B9idXD11.css">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    :root{
-      --bg:#ffffff; --text:#111827; --muted:#4b5563; --accent:#0ea5e9; --border:#e5e7eb;
-      --code:#0f172a; --kbd:#11182710; --table:#f9fafb;
+    :root {
+      --bg: linear-gradient(135deg, #f8fafc, #eef2ff, #e0f2fe);
+      --text: #111827;
+      --muted: #475569;
+      --accent: #0ea5e9;
+      --border: #e5e7eb;
+      --table: #f9fafb;
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:18px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
-    main{max-width:820px;margin:auto;padding:50px 24px;}
-    header h1{font-size:2.2rem;line-height:1.2;margin:0 0 12px;font-weight:700;}
-    header p.byline{color:var(--muted);margin:0 0 32px;font-size:1.05rem;line-height:1.6;}
-    article h2{margin-top:48px;font-size:1.6rem;line-height:1.3;font-weight:600;}
-    article h3{margin-top:32px;font-size:1.25rem;font-weight:600;}
-    article p{margin:16px 0;}
-    a{color:var(--accent);text-decoration:none;}
-    a:hover{text-decoration:underline;}
-    blockquote{margin:24px 0;padding:16px 20px;border-left:4px solid var(--accent);background:#f0f9ff;font-style:italic;}
-    .callout{background:#f8fafc;border:1px solid var(--border);padding:20px 24px;border-radius:12px;margin:24px 0;}
-    .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;margin:20px 0;}
-    table{width:100%;border-collapse:collapse;background:var(--table);}
-    th,td{padding:12px 16px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top;}
-    th{font-weight:600;background:#f9fafb;}
-    code,kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}
-    kbd{background:var(--kbd);padding:2px 6px;border-radius:6px;}
-    hr{border:none;border-top:1px solid var(--border);margin:40px 0;}
-    .refs{margin-top:48px;padding-top:24px;border-top:2px solid var(--border);}
-    .refs h2{margin-top:0;}
-    .refs ol{padding-left:24px;line-height:1.8;}
-    .refs li{margin-bottom:16px;}
-    .small{font-size:.95rem;color:var(--muted);}
-    sup{font-size:.75em;font-weight:600;}
-    footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);}
-    em{font-style:italic;}
-    strong{font-weight:600;}
+  
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 18px/1.7 "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+  
+    main {
+      max-width: 820px;
+      margin: 60px auto;
+      padding: 50px 40px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 24px;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.05);
+    }
+  
+    header h1 {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      margin: 0 0 12px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+  
+    header p.byline {
+      color: var(--muted);
+      margin: 0 0 32px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      font-style: italic;
+    }
+  
+    article h2 {
+      margin-top: 48px;
+      font-size: 1.6rem;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+  
+    article h3 {
+      margin-top: 32px;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  
+    article p {
+      margin: 16px 0;
+      text-align: justify;
+    }
+  
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    blockquote {
+      margin: 24px 0;
+      padding: 16px 20px;
+      border-left: 4px solid var(--accent);
+      background: #f0f9ff;
+      font-style: italic;
+    }
+  
+    .callout {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      padding: 20px 24px;
+      border-radius: 12px;
+      margin: 24px 0;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--table);
+    }
+  
+    th, td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+  
+    th {
+      font-weight: 600;
+      background: #f9fafb;
+    }
+  
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+  
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
@@ -51,21 +139,27 @@
 
   <article>
     <h2 id="intro">Why do you need to read this?</h2>
-    <p>If you're reading this, you're probably lying awake wondering if radiology is a safe bet anymore. I get it. I was in the same place some time back, except I was convinced AI would eat my career before I finished residency. I read the breathless headlines about deep learning crushing board-certified radiologists on test datasets. I also watched Geoffrey Hinton tell a room full of people to stop training radiologists because neural networks would do it better and cheaper. It was precisely around the same time that my AI journey started (I believe the year was 2017) and I started spending more time in IIT Madras than the JIPMER campus, where I was doing my undergrad. </p>
+    <p>If you're reading this, you're probably lying awake wondering if radiology is a safe bet anymore. I get it. I was in the same place some time back, except I was convinced AI would eat my career before I finished residency.</p>
+    <p>I read the breathless headlines about deep learning crushing board-certified radiologists on test datasets. I also watched Geoffrey Hinton tell a room full of people to stop training radiologists because neural networks would do it better and cheaper. It was precisely around the same time that my AI journey started (I believe the year was 2017) and I started spending more time in IIT Madras than the JIPMER campus, where I was doing my undergrad.</p>
     
-    <p>Eight years later, I'm still here. And so is every radiologist I trained with. And honestly, they're busier than ever. Geoffrey is a smart person (he won the Nobel Prize) but he was not a radiologist. There are a lot of things which AI will replace before it comes for radiologists, he could have taken a safer bet.</p>
+    <p>Eight years later, I'm still here. And so is every radiologist I trained with. And honestly, they're busier than ever.</p>
+    <p>Geoffrey is a smart person (he won the Nobel Prize) but he was not a radiologist. There are a lot of things which AI will replace before it comes for radiologists, he could have taken a safer bet.</p>
     
-    <p> So, here's the thing! Today, the doomers screaming "radiology is dead!" and the optimists saying "AI will never replace doctors!" are both wrong. The reality is very complicated, more interesting and way more dependent on <em>law and policy</em> than anyone on Twitter has an experience in or wants to admit. After spending nearly a decade building AI systems (and winning multiple national and interantional awards for the same), validating AI in real hospitals and watching many of them fail to deploy or perform as they had promised, I've learned that building the technology is only half the story. It is probably much easier today (before AI developers get offended - I am comparing with the tech we had in 2017 when I started). The other half is regulation, liability, workforce shortages and human factors that no algorithm can solve and no human being can predict with a 100% guarantee.</p>
+    <p>So, here's the thing! Today, the doomers screaming "radiology is dead!" and the optimists saying "AI will never replace doctors!" are both wrong. The reality is very complicated, more interesting and way more dependent on <em>law and policy</em> than anyone on Twitter has an experience in or wants to admit.</p>
+    <p>After spending nearly a decade building AI systems (and winning multiple national and interantional awards for the same), validating AI in real hospitals and watching many of them fail to deploy or perform as they had promised, I've learned that building the technology is only half the story. It is probably much easier today (before AI developers get offended - I am comparing with the tech we had in 2017 when I started). The other half is regulation, liability, workforce shortages and human factors that no algorithm can solve and no human being can predict with a 100% guarantee.</p>
     
     <p>This guide is my attempt to cut through the noise and give you an evidence-based picture. This is truly what I believe is what you need to know as you decide your residency in 2025 and beyond. I cannot answer questions like "Will Radiologists be replaced?" or "Should I take radiology?" as I do not think anyone knows or should answer to this today.</p>
 
     <div class="callout">
       <strong>TL;DR (in case you do not want to read through the entire article)</strong>
-      <p>Here's the reality in short: AI today is getting better at narrow pattern-recognition tasks, and yes, it will keep improving fast. But replacing doctors isn't blocked by <em>accuracy</em> anymore. It's blocked by <em>law and liability</em>. Regulation is tightening everywhere. The EU AI Act classifies most clinical AI as high-risk, requiring explicit human oversight.<sup>1,2</sup> The FDA's approval list is long but every device assumes a human in the loop.<sup>3</sup> In India, the Digital Personal Data Protection Act and medical device rules mean every AI-assisted report needs clear consent trails and audit logs.<sup>9,11</sup> And here's the kicker: because radiologists are scarce—the UK just spent £216 million outsourcing reads in a single year<sup>6</sup>—policy bends toward safe <em>augmentation</em>, not autonomy. A flood of mediocre models is coming, which means stricter post-market monitoring and recalls as real-world errors surface. You'll become dependent on these tools, but with discipline and oversight. Your career strategy? Lean into interventional radiology, preventive imaging programs, clinic leadership, and AI governance literacy. Those are your moats.</p>
+      <p>Here's the reality in short: AI today is getting better at narrow pattern-recognition tasks, and yes, it will keep improving fast. But replacing doctors isn't blocked by <em>accuracy</em> anymore. It's blocked by <em>law and liability</em>.</p>
+      <p>Regulation is tightening everywhere. The EU AI Act classifies most clinical AI as high-risk, requiring explicit human oversight.<sup>1,2</sup> The FDA's approval list is long but every device assumes a human in the loop.<sup>3</sup> In India, the Digital Personal Data Protection Act and medical device rules mean every AI-assisted report needs clear consent trails and audit logs.<sup>9,11</sup></p>
+      <p>And here's the kicker: because radiologists are scarce—the UK just spent £216 million outsourcing reads in a single year<sup>6</sup>—policy bends toward safe <em>augmentation</em>, not autonomy. A flood of mediocre models is coming, which means stricter post-market monitoring and recalls as real-world errors surface. You'll become dependent on these tools, but with discipline and oversight. Your career strategy? Lean into interventional radiology, preventive imaging programs, clinic leadership, and AI governance literacy. Those are your moats.</p>
     </div>
 
     <h2 id="what-ai-does">What AI Actually Does (vs. What Twitter Claims)</h2>
-    <p>Let's start with what works <em>today</em>, not in some speculative future. AI tools in radiology right now help with triage (flagging urgent cases), quality control (catching technical errors), measurements (tumor volumes, bone density), and report drafting. A big cross-European survey of radiologists—done by EuroAIM and EuSoMII in 2024—found these are the functions doctors actually trust and use in daily practice.<sup>4</sup> Notice the pattern? All of these assume <em>you're</em> still reading the scan and signing the report.</p>
+    <p>Let's start with what works <em>today</em>, not in some speculative future. AI tools in radiology right now help with triage (flagging urgent cases), quality control (catching technical errors), measurements (tumor volumes, bone density), and report drafting.</p>
+    <p>A big cross-European survey of radiologists—done by EuroAIM and EuSoMII in 2024—found these are the functions doctors actually trust and use in daily practice.<sup>4</sup> Notice the pattern? All of these assume <em>you're</em> still reading the scan and signing the report.</p>
     
     <p>So why isn't this "replacement"? Three reasons, and they're all about systems, not just technology.</p>
     
@@ -94,7 +188,8 @@
     <p>Translation for you as a resident: expect more work, not less. Someone in your department will need to be the AI steward—tracking performance metrics, running quarterly validation checks, documenting when the AI influenced a decision, and knowing when to pull the plug if things go wrong. That someone might be you.</p>
 
     <h2 id="dependence">You'll Become Dependent on AI (and That's Okay, If You're Smart About It)</h2>
-    <p>Let's be honest—calculator-style reliance is inevitable. Once you get used to AI triaging your worklist and pre-measuring nodules, working without it feels like going back to film. The literature already flags this as <em>automation complacency</em> and hints at de-skilling when assistive tools are suddenly withdrawn.<sup>12,13,14</sup> Residents trained with AI available struggle more when they don't have access to it, similar to how GPS dependence has changed how we navigate.</p>
+    <p>Let's be honest—calculator-style reliance is inevitable. Once you get used to AI triaging your worklist and pre-measuring nodules, working without it feels like going back to film.</p>
+    <p>The literature already flags this as <em>automation complacency</em> and hints at de-skilling when assistive tools are suddenly withdrawn.<sup>12,13,14</sup> Residents trained with AI available struggle more when they don't have access to it, similar to how GPS dependence has changed how we navigate.</p>
     
     <p>The answer isn't abstinence—it's <em>structured supervision</em> and education. You need to train with AI, but also train <em>without</em> it periodically, so you maintain your baseline skills. Think of it like a pilot practicing manual landings even though autopilot exists. You want to be the person who knows when the AI is wrong, not the person who blindly trusts it.</p>
     
@@ -114,9 +209,11 @@
     <h2 id="economics">Let's Talk Money (Because You're Thinking About It)</h2>
     <p>Nobody wants to say it out loud, but earning potential matters when you're choosing a specialty. So let's address it directly.</p>
     
-    <p><strong>If you end up in an independent or teleradiology practice,</strong> AI can improve your margins—but only if you reinvest the efficiency gains into quality and retention. Faster turnaround times, fewer repeat scans, better structured reports—all of this builds referrer loyalty. But if you just pocket the savings and don't reinvest in your radiologists, you'll bleed talent. The UK's cautionary tale is instructive: they starved their radiology workforce for years, and now they're hemorrhaging money on outsourcing.<sup>6</sup> Don't let that happen to your practice.</p>
+    <p><strong>If you end up in an independent or teleradiology practice,</strong> AI can improve your margins—but only if you reinvest the efficiency gains into quality and retention. Faster turnaround times, fewer repeat scans, better structured reports—all of this builds referrer loyalty.</p>
+    <p>But if you just pocket the savings and don't reinvest in your radiologists, you'll bleed talent. The UK's cautionary tale is instructive: they starved their radiology workforce for years, and now they're hemorrhaging money on outsourcing.<sup>6</sup> Don't let that happen to your practice.</p>
     
-    <p><strong>If you're an employed radiologist,</strong> the invisible work matters. AI doesn't just speed you up—it adds new tasks. Local validation, exception handling, patient callbacks when AI flags something ambiguous, teaching residents how to use the tools safely—all of this takes time, and most contracts don't account for it. The American Journal of Roentgenology's Expert Panel on workforce issues explicitly calls for new staffing and reimbursement models that recognize these safety tasks.<sup>7</sup> When you're negotiating your contract, make sure AI stewardship is part of your job description, not free labor.</p>
+    <p><strong>If you're an employed radiologist,</strong> the invisible work matters. AI doesn't just speed you up—it adds new tasks. Local validation, exception handling, patient callbacks when AI flags something ambiguous, teaching residents how to use the tools safely—all of this takes time, and most contracts don't account for it.</p>
+    <p>The American Journal of Roentgenology's Expert Panel on workforce issues explicitly calls for new staffing and reimbursement models that recognize these safety tasks.<sup>7</sup> When you're negotiating your contract, make sure AI stewardship is part of your job description, not free labor.</p>
     
     <p>The other economic reality: if radiologists refuse to adopt safe, auditable AI tools, <em>referring clinicians will</em>. Emergency physicians, oncologists, and surgeons are already experimenting with point-of-care ultrasound AI and direct-to-consumer imaging apps. If we don't set the standards for how AI is used in imaging, someone else will—and they'll optimize for speed and cost, not quality and safety. We lose influence over standards of care. Adopt and govern early, or lose the fight later.</p>
 

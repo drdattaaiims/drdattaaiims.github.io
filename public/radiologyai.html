@@ -16,7 +16,7 @@
       --bg: linear-gradient(135deg, #f8fafc, #eef2ff, #e0f2fe);
       --text: #111827;
       --muted: #475569;
-      --accent: #0b5ed7; /* darker premium blue */
+      --accent: #0a47b0; /* darker premium blue */
       --border: #e5e7eb;
       --table: #f9fafb;
     }
@@ -69,18 +69,24 @@
   
     article p {
       margin: 16px 0;
+      line-height: 1.85
+      letter-spacing: 0.01em;
       text-align: justify;
     }
   
     a {
       color: var(--accent);
-      text-decoration: none;
-    }
-  
-    a:hover {
       text-decoration: underline;
     }
   
+    a:hover {
+      text-decoration: none;
+    }
+    .breakable { 
+      overflow-wrap: anywhere; 
+      word-break: break-word; 
+    }  
+    
     blockquote {
       margin: 24px 0;
       padding: 16px 20px;
@@ -147,7 +153,7 @@
     
     <p>So, here's the thing! Today, doomers screaming "radiology is dead!" and optimists saying "AI will never replace doctors!" are both wrong. I like to have fun on X and have often taken both sides, depending on which phase of the Gartner Hype Cycle for Radiology AI I am traversing. The reality though is very complicated, more interesting and way more dependent on <em>law and policy</em> than anyone on X has an experience in or wants to admit. I am no expert but being in student and RDA unions throughout my life and continuing to be in policy roundtables even today, I have seen how policy and laws get created and how difficult it is for domain experts (or even economists, who are helping run the country) to predict. </p>
     
-    <p>After spending nearly a decade building AI systems, validating AI in real hospitals and watching many of them fail to deploy or perform as they had promised, I've learned my biter lesson - that building the technology is only half the story. It is probably much easier today to devlop an AI model than deploy that at scale (before AI developers get offended, I am comparing with the tech we had in 2017 when I started). A lot of AI implementation depends on regulation, liability, workforce shortages and human factors that no human being can predict with a 100% guarantee.</p>
+    <p>After spending nearly a decade building AI systems, validating AI in real hospitals and watching many of them fail to deploy or perform as they had promised, I've learned my bitter lesson - that building the technology is only half the story. It is probably much easier today to develop an AI model than deploy that at scale (before AI developers get offended, I am comparing with the tech we had in 2017 when I started). A lot of AI implementation depends on regulation, liability, workforce shortages and human factors that no human being can predict with a 100% guarantee.</p>
     
     <p>This no bull$shit guide is my attempt to cut through the noise and give you a semi-evidence-based picture. If I wrote a paper, none of you would read! But this blog has what I believe is all you need to know as you decide your residency in 2025. I cannot answer questions like "Will Radiologists be replaced?" or "Should I take radiology?" as I do not think anyone knows or should answer to this today.</p>
 
@@ -172,13 +178,13 @@
     <p><strong>Third, there are human factors.</strong> Even when AI is accurate, humans mess up the interaction. The literature is full of studies showing <em>automation bias</em> where experienced readers getting nudged by wrong AI suggestions and missing things they'd normally catch.<sup>12,13,14</sup> Radiologists in one mammography study were more likely to overlook subtle cancers when an AI wrongly flagged a different area as suspicious.<sup>12</sup> Another study on cerebral aneurysm detection found that wrong AI suggestions actively degraded reader performance.<sup>13</sup> This isn't theoretical; it's happening in pilot studies right now. The answer isn't to throw AI out, but to design guardrails: deliberate training, cross-checks and incident reporting systems that actually work.</p>
 
     <h2 id="shortage">Why Governments Move Slower Than What AI Startups Want</h2>
-    <p>Here's something Silicon Valley and Bangalore healthcre AI startups don't want to hear: laws change when <em>shortages</em> bite, not when algorithms get better. And the evidence backs this up everywhere you look.</p>
+    <p>Here's something Silicon Valley and Bangalore healthcare AI startups don't want to hear: laws change when <em>shortages</em> bite, not when algorithms get better. And the evidence backs this up everywhere you look.</p>
     
     <p>The Royal College of Radiologists released their 2024 UK workforce census, and the picture is stark! The demand for imaging is outpacing radiologist supply by a wide margin.<sup>5</sup> The NHS is stretched so thin that in 2024 alone, they spent a record £216 million outsourcing radiology reads to private firms and teleradiology companies.<sup>6</sup> Backlogs are measured in months for non-urgent scans. Politicians know this. Hospital administrators know this. This gradually shapes <em>policy</em> more than any AI benchmark.</p>
     
     <p>Also when governments face scarcity, they don't jump straight to "replace doctors with algorithms." They bend toward safe augmentation tools that help existing radiologists work faster and catch more, but still require a licensed professional to sign off. Why? Because when something goes wrong, someone needs to be legally accountable and right now, algorithms can't be sued.<sup>20</sup></p>
     
-    <p>In India, AI development and deployment will be shaped by two big frameworks. First, the Digital Personal Data Protection Act (DPDP), which gives patients consent rights over how their health data is used, including by AI systems.<sup>9</sup> Second, the Central Drugs Standard Control Organization (CDSCO) classifies AI software as a medical device under the Medical Devices Rules 2017, which means it needs approval, post-market surveillance and traceable use.<sup>11</sup> The practical result? You won't see "AI-only" reports in Indian hospitals anytime soon, unless you attend my workshops or seminars where I have show the example from the only hospital in India who are doing this (And believe me the clinical residents are REALLY pissed at the False Negatives). There will always be a radiologist's name and signature on that report for the foreseebale future, with audit trails showing how the AI contributed.</p>
+    <p>In India, AI development and deployment will be shaped by two big frameworks. First, the Digital Personal Data Protection Act (DPDP), which gives patients consent rights over how their health data is used, including by AI systems.<sup>9</sup> Second, the Central Drugs Standard Control Organization (CDSCO) classifies AI software as a medical device under the Medical Devices Rules 2017, which means it needs approval, post-market surveillance and traceable use.<sup>11</sup> The practical result? You won't see "AI-only" reports in Indian hospitals anytime soon, unless you attend my workshops or seminars where I've shown the example from the only hospital in India who are doing this (And believe me the clinical residents are REALLY pissed at the False Negatives). There will always be a radiologist's name and signature on that report for the foreseeable future, with audit trails showing how the AI contributed.</p>
 
     <h2 id="flood">The Coming Wave of Mediocre Models (and How They'll Be Regulated)</h2>
     <p>Here's an uncomfortable truth: model-making has been democratized, but deployment and evaluations haven't picked up. Anyone with a GPU for a few weeks can train or fine tune a model and claim it "detects pneumonia." There are startups launching AI radiology tools every single week. Most of them are very very mediocre.</p>
@@ -191,7 +197,7 @@
 
     <h2 id="dependence">You'll Become Dependent on AI (and That's Okay, If You're Smart About It)</h2>
     <p>If I am honest, calculator-style reliance is inevitable. Once you get used to AI triaging your worklist and pre-measuring nodules, working without it feels like going back to film.</p>
-    <p>The literature already flags this as <em>automation bias/neglect</em> and hints at de-skilling when assistive tools are suddenly withdrawn. One of my illustarted co-authors and a very renowned physician scientist Eric Topol wrote about this just last week.<sup>12,13,14</sup> Residents trained with AI available struggle more when they don't have access to it, similar to how GPS dependence has changed how we navigate. We are in fact doing a study on this at the lab and I invite medical students and residents to write to me if you want to be a part of it.</p>
+    <p>The literature already flags this as <em>automation bias/neglect</em> and hints at de-skilling when assistive tools are suddenly withdrawn. One of my illustrated co-authors and a very renowned physician scientist Eric Topol wrote about this just last week.<sup>12,13,14</sup> Residents trained with AI available struggle more when they don't have access to it, similar to how GPS dependence has changed how we navigate. We are in fact doing a study on this at the lab and I invite medical students and residents to write to me if you want to be a part of it.</p>
     
     <p>The answer isn't complete abstinence though, it's <em>structured supervision</em> and education. You need to train with AI, but also train <em>without</em> it periodically, so you maintain your baseline skills. Think of it like a pilot practicing manual landings even though autopilot exists. You want to be the person who knows when the AI is wrong, not the person who blindly trusts it.</p>
     
@@ -206,7 +212,7 @@
     
     <p><strong>Interventional Radiology (IR) is your best hedge.</strong> I literally wrote a chapter in some Springer textbook on AI in Interventional Radiology. It was so early that I did not even feel like sharing it with anyone lol. AI in IR helps with targeting lesions, choosing devices and intra-procedural navigation. There are systems that use real-time imaging fusion and robotics to guide catheters more precisely.<sup>15,16</sup> But the workflow remains human led. You're adapting on the fly based on what you see, what the patient tolerates, and what the anatomy allows. Recent reviews forecast higher throughput and safety with AI-assisted guidance, but not fully autonomous IR.<sup>15,16</sup> Why? Because liability, patient variability and the need for real-time judgment aren't going away. If you want a future-proof radiology career, get IR training. It's procedural, it's patient-facing and it's hard to automate.</p>
     
-    <p><strong>Preventive radiology</strong> is another growth area. Screening programs for breast and lung cancer, osteoporosis follow-up, incidental findings management, fatty liver detection; they will require a radiologist to oversee the pathway and make the call on borderline cases.<sup>4</sup> There are schools of thought citing this as clinical leadership work, not just image interpretation, where you're designing the screening protocol, deciding on recall thresholds, managing patient anxiety, and integrating imaging into long-term care plans. AI can help, but it can't own the relationship with the patient. But the real reason it is a great area is because there is very less data today to automate this and create generalisable models. There are some ring companies getting into wellness and starting to do these scans but they are far away from generating evidence that it makes any sense.</p>
+    <p><strong>Preventive radiology</strong> is another growth area. Screening programs for breast and lung cancer, osteoporosis follow-up, incidental findings management, fatty liver detection; they will require a radiologist to oversee the pathway and make the call on borderline cases.<sup>4</sup> There are schools of thought citing this as clinical leadership work, not just image interpretation, where you're designing the screening protocol, deciding on recall thresholds, managing patient anxiety, and integrating imaging into long-term care plans. AI can help, but it can't own the relationship with the patient. But the real reason it is a great area is because there is very little data today to automate this and create generalisable models. There are some ring companies getting into wellness and starting to do these scans but they are far away from generating evidence that it makes any sense.</p>
 
     <h2 id="economics">Let's Talk About Money (Because I Know You're Thinking About It)</h2>
     <p>Nobody wants to say it out loud, but earning potential matters when you're choosing a specialty, especially if you are thinking about radiology. So let's address it directly.</p>
@@ -270,10 +276,21 @@
 
     <section id="cta">
       <h2>Join Us to shape India's Healthcare AI Story</h2>
-      <p>If you're a resident or medical student who wants hands-on experience with responsible AI in real clinical workflows, feel free to reach out to me at suvrankar.datta@ashoka.edu.in. We run multi-institutional projects across India and internationally through the CRASH Lab at Ashoka University, and we have spots for motivated trainees who want to shape how healthcare evolves.</p> 
-        
-      <p>We also have a general cohort for all doctors who want the early access to different AI tools in healthcare before they become public. You can join at https://chat.whatsapp.com/LkTGRafwE7X09DgVeem93P?mode=wwt </p>
+      <p>If you're a resident or medical student who wants hands-on experience with responsible AI in real clinical workflows, feel free to reach out to me at
+        <a href="mailto:suvrankar.datta@ashoka.edu.in">suvrankar.datta@ashoka.edu.in</a>.
+        We run multi-institutional projects across India and internationally through the CRASH Lab at Ashoka University, and we have spots for motivated trainees who want to shape how healthcare evolves.
+      </p>
+      
+      <p class="breakable">
+        We also have a general cohort for all doctors who want early access to different AI tools in healthcare before they become public.
+        You can join here:
+        <a href="https://chat.whatsapp.com/LkTGRafwE7X09DgVeem93P?mode=wwt" target="_blank" rel="noopener">
+          https://chat.whatsapp.com/LkTGRafwE7X09DgVeem93P?mode=wwt
+        </a>
+      </p>
+      
       <p>Email me or DM me on LinkedIn or X. I am usually more responsive over mail.</p>
+
     </section>
 
   </article>

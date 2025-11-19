@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gemini 3.0 Pro Surpasses Radiology Trainees on Complex Cases of Radiology's Last Exam (RadLE) v1</title>
+</head>
+<body>
+<main>
+
+  <h1>Gemini 3.0 Pro Surpasses Radiology Trainees on Complex Cases of Radiology's Last Exam (RadLE) v1</h1>
+
+  <p><strong>Authors:</strong> Suvrankar Datta, Lakshmi, Divya, Upasana, Hakikat, Kautik<br>
+  CRASH Lab, Koita Centre for Digital Health, Ashoka University</p>
+
+  <!-- ===== IMAGE PLACEHOLDER (UPDATE SRC) ===== -->
+  <figure id="radle-gemini-figure">
+    <img src="PATH_TO_NEW_IMAGE.png"
+         alt="Updated RadLE v1 benchmark showing Gemini 3.0 Pro surpassing radiology trainees"
+         style="max-width:100%; height:auto;">
+    <figcaption>
+      <strong>Figure 1.</strong> Diagnostic accuracy across humans and multimodal AI systems
+      on the Radiology’s Last Exam (RadLE v1) benchmark, updated to include Gemini 3.0 Pro.
+      Board-certified radiologists achieve the highest accuracy (0.83), followed by Gemini 3.0 Pro
+      in high-thinking mode (0.57) and radiology trainees (0.45). Earlier frontier models from
+      2024–25 under-perform, clustering around 0.28–0.30.
+    </figcaption>
+  </figure>
+  <!-- ===== END IMAGE PLACEHOLDER ===== -->
+
+  <h2>Background</h2>
+
+  <p>
+    Over the last year, we have been systematically benchmarking frontier AI models on
+    <strong>Radiology’s Last Exam (RadLE v1)</strong>—a 50-case diagnostic dataset designed to reflect
+    the kind of complex, multi-system cases radiology residents routinely struggle with.
+    In our first analysis, every major model—GPT-5, Gemini 2.5 Pro, o3-mini, Claude—performed
+    <strong>below radiology trainees</strong>, with accuracies clustered around 28–30%.
+  </p>
+
+  <p>
+    This page is a small but important update. With the release of
+    <strong>Gemini 3.0 Pro (Preview)</strong>, we repeated only one model on the
+    <strong>same test</strong>, using the <strong>same prompt</strong>, the
+    <strong>same 50 cases</strong>, and the <strong>same evaluation rubric</strong>.
+    The results show a clear upward shift.
+  </p>
+
+  <h2>Benchmark Setup</h2>
+
+  <ul>
+    <li><strong>Dataset:</strong> RadLE v1 (50 difficult radiology cases; CT, MRI, radiographs).</li>
+    <li><strong>Prompt:</strong> Same one-line diagnosis prompt used in all previous evaluations.</li>
+    <li><strong>Model tested:</strong>
+      <ul>
+        <li><strong>Gemini 3.0 Pro (Preview)</strong> on Google AI Studio, high-thinking mode.</li>
+        <li>Gemini 3.0 Pro via API high-thinking mode, repeated three times for reproducibility.</li>
+      </ul>
+    </li>
+    <li><strong>All other settings</strong> remained unchanged from the original RadLE v1 experiment.</li>
+  </ul>
+
+  <p>
+    This ensures the comparison is <strong>direct</strong> and <strong>fair</strong>.
+  </p>
+
+  <h2>Results</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Group / Model</th>
+        <th>Accuracy (%)</th>
+        <th>Score (/50)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Expert Radiologists</strong></td>
+        <td><strong>83%</strong></td>
+        <td>41.5</td>
+      </tr>
+      <tr>
+        <td><strong>Radiology Trainees</strong></td>
+        <td><strong>45%</strong></td>
+        <td>22.5</td>
+      </tr>
+      <tr>
+        <td><strong>Frontier Models (2024–25)</strong></td>
+        <td>~28–30%</td>
+        <td>~15</td>
+      </tr>
+      <tr>
+        <td><strong>Gemini 3.0 Pro (Preview) – Web (High Thinking)</strong></td>
+        <td><strong>51%</strong></td>
+        <td>25.5</td>
+      </tr>
+      <tr>
+        <td><strong>Gemini 3.0 Pro – API High Thinking (3-run avg.)</strong></td>
+        <td><strong>57%</strong></td>
+        <td>28.5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    For the first time in our evaluations, a generalist AI model
+    <strong>crossed radiology-trainee level</strong> performance on this benchmark.
+    While still far from expert radiologist-level performance, the jump from previous models is noteworthy.
+  </p>
+
+  <h2>A Case Example: Acute Appendicitis</h2>
+
+  <p>
+    One of the more illustrative cases in RadLE v1 is a straightforward
+    <strong>acute appendicitis</strong>. Earlier AI models often misclassified this case as ileitis
+    or nonspecific abdominal inflammation. Gemini 3.0, however, produced a surprisingly
+    structured, image-driven reasoning trace.
+  </p>
+
+  <p>
+    It correctly identified a dilated tubular appendix in the right lower quadrant, described wall
+    enhancement, periappendiceal fat stranding, and a fluid-filled lumen, and systematically
+    excluded mimics such as mucocele, Crohn’s disease, and epiploic appendagitis. The final
+    diagnosis was delivered unambiguously as <strong>“Acute appendicitis.”</strong>
+  </p>
+
+  <p>
+    This was a meaningful improvement over earlier models, especially since this case had been
+    a consistent miss in previous benchmark runs.
+  </p>
+
+  <h2>Reproducibility</h2>
+
+  <p>
+    We repeated the API-based high-thinking run three times:
+  </p>
+
+  <ul>
+    <li>Run 1: 29.5/50</li>
+    <li>Run 2: 26/50</li>
+    <li>Run 3: 30/50</li>
+  </ul>
+
+  <p>
+    The average of <strong>28.5/50</strong> aligns well with the single-run web score and demonstrates
+    stable behaviour across attempts.
+  </p>
+
+  <h2>Interpretation</h2>
+
+  <p>Three points stand out:</p>
+
+  <ol>
+    <li>
+      <strong>The improvement is real.</strong>
+      Gemini 3.0’s performance is visibly better than the previous generation of frontier models.
+    </li>
+    <li>
+      <strong>The gap to radiologist-level performance remains large.</strong>
+      At 57%, it is still far from the 83% accuracy achieved by board-certified radiologists.
+    </li>
+    <li>
+      <strong>We are beginning to see early signs of structured reasoning.</strong>
+      The appendicitis example—and a few other cases—show clearer localisation, extraction of
+      imaging features and structured differential thinking.
+    </li>
+  </ol>
+
+  <p>
+    This does not mean “radiology is solved”. It does mean that progress is happening
+    faster than many of us expected.
+  </p>
+
+  <h2>Conclusion</h2>
+
+  <p>
+    This is a descriptive update, not a claim of clinical readiness.
+    No part of this benchmark implies deployment, autonomy or diagnostic replacement.
+  </p>
+
+  <p>
+    But the trajectory is clear:
+    <strong>Gemini 3.0 Pro is the first generalist AI model to surpass radiology trainees
+    on the RadLE v1 benchmark.</strong>
+  </p>
+
+  <p>
+    The next phase of our research will involve expanding RadLE into RadLE v2, incorporating
+    larger datasets, multimodal agentic pipelines and more granular diagnostic scoring.
+    As always, our goal is transparent benchmarking—not hype.
+  </p>
+
+</main>
+</body>
+</html>

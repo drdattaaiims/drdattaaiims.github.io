@@ -145,14 +145,14 @@
 <body>
 <main>
 
-  <h1>Gemini 3.0 Pro Surpasses Radiology Trainees on Complex Cases of Radiology's Last Exam (RadLE) v1</h1>
+  <h1>Gemini 3.0 Pro Surpasses Radiology Trainees on Radiology's Last Exam (RadLE)</h1>
 
   <p><strong>Authors:</strong> Suvrankar Datta, Divya Buchireddygari, Lakshmi Vennela Chowdary Kaza, Upasana Karnwal, Hakikat Bir Singh Bhatti, Kautik Singh<br>
   <em>CRASH Lab, Koita Centre for Digital Health, Ashoka University</em></p>
 
-  <p><strong>TL;DR:</strong> On our <a href="https://arxiv.org/abs/2509.25559" target="_blank" rel="noopener noreferrer">RadLE v1</a> benchmark of 50 complex radiology cases,
-  <strong>Gemini 3.0 Pro is now the first generalist AI model to outperform radiology trainees (57% vs 45%)</strong>,
-  but it still performs below <strong>board certified radiologists (83%)</strong>.</p>
+  <p><strong>TL;DR:</strong> On our <a href="https://arxiv.org/abs/2509.25559" target="_blank" rel="noopener noreferrer">RadLE v1</a> benchmark of complex radiology cases,
+  <strong>Gemini 3.0 Pro is now the first generalist AI model to outperform radiology trainees (51% vs 45%)</strong>,
+  but it still <strong>performs below board certified radiologists (83%)</strong>.</p>
 
 
   <!-- ===== IMAGE PLACEHOLDER (UPDATE SRC) ===== -->
@@ -162,8 +162,8 @@
          style="max-width:100%; height:auto;">
     <figcaption>
       <strong>Figure 1.</strong> Diagnostic accuracy across humans and multimodal frontier AI models
-      on the Radiology’s Last Exam (<a href="https://arxiv.org/abs/2509.25559" target="_blank" rel="noopener noreferrer">RadLE v1</a>) benchmark, updated on 19th November 2025 to benchmark Gemini 3.0 Pro.
-      Board-certified radiologists still have the highest accuracy (0.83), followed by Gemini 3.0 Pro (0.51) and radiology trainees (0.45). Earlier frontier models have under-performed trainees.
+      on the Radiology’s Last Exam (<a href="https://arxiv.org/abs/2509.25559" target="_blank" rel="noopener noreferrer">RadLE v1</a>) benchmark, <em>updated on 19th November 2025</em> to benchmark Gemini 3.0 Pro.
+      Board-certified radiologists still have the highest accuracy (0.83), followed by Gemini 3.0 Pro (0.51) and radiology trainees (0.45). Earlier, all frontier models had under-performed trainees.
     </figcaption>
   </figure>
 
@@ -173,9 +173,9 @@
 
   <p>
     Over the last few months, at the <strong>Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab)</strong>, we have been systematically benchmarking frontier AI models on
-    <strong>Radiology’s Last Exam (RadLE v1)</strong>—a 50-case spectrum biased diagnostic dataset designed to reflect
+    <strong>Radiology’s Last Exam (<a href="https://arxiv.org/abs/2509.25559" target="_blank" rel="noopener noreferrer">RadLE v1</a>)</strong>, a spectrum biased diagnostic dataset designed to reflect
     the kind of complex, multi-system cases radiologists routinely struggle with.
-    In our first analysis, every major model—GPT-5, Gemini 2.5 Pro, o3, Claude Opus 4.1—performed
+    In our previous analysis done on September 2025, every major model: GPT-5, Gemini 2.5 Pro, o3, Claude Opus 4.1, had performed
     <strong>below radiology trainees</strong>.
   </p>
 
@@ -187,7 +187,7 @@
     The results demonstrate  a clear upward shift and significant advancement in the multimodal reasoning capabilities of Gemini 3.0 Pro.
   </p>
 
-  <h2>Benchmarking Setup: Same as RadLE v1</h2>
+  <h2>Benchmarking Setup: Same as<a href="https://arxiv.org/abs/2509.25559" target="_blank" rel="noopener noreferrer">RadLE v1</a></h2>
 
   <ul>
     <li><strong>Dataset:</strong> RadLE v1 (50 difficult radiology cases; CT, MRI, radiographs).</li>
@@ -222,11 +222,11 @@
       </tr>
       <tr>
         <td><strong>Radiology Trainees</strong></td>
-        <td><strong>45%</strong></td>
+        <td>45%</td>
         <td>22.5</td>
       </tr>
       <tr>
-        <td><strong>Prior SOTA Frontier Model (GPT-5 Thinking)</strong></td>
+        <td><strong>Prior SOTA GPT-5 Thinking - Web Interface</strong></td>
         <td>30%</td>
         <td>15</td>
       </tr>
@@ -244,8 +244,8 @@
   </table>
 
   <p>
-    The results are significant because for the first time in our evaluations, a generalist AI model has
-    <strong>crossed radiology-trainee level</strong> performance on our benchmark (57% vs 45%).
+    These results are significant, because <strong>for the first time</strong> in our evaluations, <strong>a generalist AI model has
+    crossed radiology-trainee level</strong> performance on our benchmark (51% vs 45%).
     While still far from expert radiologist-level performance, the jump from previous models is noteworthy and demonstrates significant progress of generalist models.
   </p>
 

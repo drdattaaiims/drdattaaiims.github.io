@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gemini 3.0 Pro Surpasses Radiology Trainees on Complex Cases of Radiology's Last Exam (RadLE) v1</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <main>
@@ -109,25 +110,42 @@
     While still far from expert radiologist-level performance, the jump from previous models is noteworthy.
   </p>
 
-  <h2>A Case Example: Acute Appendicitis</h2>
+  <h2>A Case Example: Why Gemini 3.0 Was Better — Acute Appendicitis</h2>
 
   <p>
-    One of the more illustrative cases in RadLE v1 is a straightforward
-    <strong>acute appendicitis</strong>. Earlier AI models often misclassified this case as ileitis
-    or nonspecific abdominal inflammation. Gemini 3.0, however, produced a surprisingly
-    structured, image-driven reasoning trace.
+  One of the clearest improvements appeared in a straightforward <strong>acute appendicitis</strong> case.
+  This was a case that earlier frontier models, including <strong>GPT-5 (reasoning-high)</strong>, had struggled with.
+  GPT-5 often showed:
   </p>
-
+  
+  <ul>
+    <li><strong>Poor anatomical localisation</strong> — it failed to reliably identify the appendix or surrounding structures.</li>
+    <li><strong>Premature diagnostic closure</strong> — it jumped quickly to unrelated diagnoses such as <em>intussusception</em> or <em>Crohn disease</em> based on incomplete feature extraction.</li>
+    <li><strong>Diagnostic non-specificity</strong> — even when it suspected inflammation, it hesitated between multiple systems and could not settle on a confident, correct label.</li>
+  </ul>
+  
   <p>
-    It correctly identified a dilated tubular appendix in the right lower quadrant, described wall
-    enhancement, periappendiceal fat stranding, and a fluid-filled lumen, and systematically
-    excluded mimics such as mucocele, Crohn’s disease, and epiploic appendagitis. The final
-    diagnosis was delivered unambiguously as <strong>“Acute appendicitis.”</strong>
+  Examples from earlier GPT-5 traces included an extended internal debate between “ileocolic vs small-bowel intussusception,”
+  followed by a shift to “Crohn disease,” and finally a reluctant decision that it was “small bowel intussusception.”
+  This reflected the typical failure pattern we documented in RadLE v1: <strong>incomplete reasoning leading to the wrong organ system entirely</strong>.
   </p>
-
+  
   <p>
-    This was a meaningful improvement over earlier models, especially since this case had been
-    a consistent miss in previous benchmark runs.
+  In contrast, <strong>Gemini 3.0 Pro</strong> demonstrated a noticeably more structured and radiologist-like approach:
+  </p>
+  
+  <ul>
+    <li><strong>Correct anatomical identification</strong> — it located the appendix in the right lower quadrant, anterior to the psoas, near the caecum.</li>
+    <li><strong>Clear description of imaging features</strong> — dilated tubular appendix, wall enhancement, periappendiceal fat stranding, fluid-filled lumen.</li>
+    <li><strong>Systematic exclusion of mimics</strong> — explicitly ruled out mucocele, Crohn disease, epiploic appendagitis, diverticulitis, and ureteric stone.</li>
+    <li><strong>Cohesive chain-of-thought</strong> — the reasoning progressed in stable, sequential steps rather than jumping between diagnoses.</li>
+    <li><strong>Specific and final answer</strong> — concluded decisively with <em>“Acute appendicitis”</em>.</li>
+  </ul>
+  
+  <p>
+  This difference — <strong>wandering, uncertain, organ-mislocalised reasoning</strong> in GPT-5 versus
+  <strong>focused, anatomically grounded, feature-oriented reasoning</strong> in Gemini 3.0 — illustrates why Gemini performed better on this case
+  and contributed to its higher overall accuracy on RadLE v1.
   </p>
 
   <h2>Reproducibility</h2>

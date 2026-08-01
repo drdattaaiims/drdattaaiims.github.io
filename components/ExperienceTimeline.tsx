@@ -1,3 +1,5 @@
+import SectionHeading from "@/components/SectionHeading";
+
 const experiences = [
   {
     id: "simons-ashoka",
@@ -64,19 +66,25 @@ const experiences = [
 
 export default function ExperienceTimeline() {
   return (
-    <section id="experience" className="py-12 px-6 border-b border-rule">
-      <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-serif font-semibold">Positions</h2>
+    <section id="experience" className="py-14 px-6 border-b border-rule">
+      <div className="max-w-4xl mx-auto space-y-7">
+        <SectionHeading>Positions</SectionHeading>
 
-        <ul className="space-y-5">
+        <ul className="space-y-6">
           {experiences.map((exp) => (
-            <li key={exp.id} data-testid={`experience-${exp.id}`}>
-              <p className="font-sans text-sm text-ink-quiet">{exp.period}</p>
-              <p className="font-medium">{exp.title}</p>
-              <p className="text-ink-quiet">{exp.organization}</p>
-              {exp.description && (
-                <p className="text-sm text-ink-quiet mt-1 max-w-prose">{exp.description}</p>
-              )}
+            <li
+              key={exp.id}
+              className="grid sm:grid-cols-[11rem_1fr] gap-1 sm:gap-6"
+              data-testid={`experience-${exp.id}`}
+            >
+              <p className="font-mono text-xs text-ink-faint sm:pt-1">{exp.period}</p>
+              <div>
+                <p className="font-display font-semibold text-navy">{exp.title}</p>
+                <p className="font-sans text-sm text-ink-quiet">{exp.organization}</p>
+                {exp.description && (
+                  <p className="text-sm text-ink-quiet mt-1.5 max-w-prose">{exp.description}</p>
+                )}
+              </div>
             </li>
           ))}
         </ul>

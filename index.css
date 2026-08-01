@@ -3,59 +3,70 @@
 @tailwind utilities;
 
 /*
- * "Reading Room" palette — grounded in radiology's own material world:
- * calibrated PACS grayscale, step-wedge density ramp, DICOM annotation mono.
- * Cool neutrals only. One considered palette, no dark-mode variant.
+ * Brand palette shared with CRASH Lab (crashlab.in) — the research group this
+ * site's owner founded and leads. Navy is taken from the lab's logo mark;
+ * the remaining values mirror the lab's own design tokens so the two sites
+ * read as siblings.
+ *
+ * Values here MUST stay in sync with public/site.css, which carries the same
+ * tokens for the statically-served pages.
  */
 :root {
-  --paper: #fcfcfd;
-  --paper-sunk: #f1f3f5;
-  --ink: #14171c;
-  --ink-quiet: #4a5058;
-  --ink-faint: #8a9099;
-  --rule: #dfe2e6;
-  --accent: #1f4e5f;
-  --accent-wash: #e8eff1;
+  --navy: #081d3a;
+  --slate-blue: #234c6a;
+  --canvas: #fafaf8;
+  --surface: #ffffff;
+  --elevated: #f3f4f6;
+  --text: #0f172a;
+  --text-2: #2d3640;
+  --text-3: #4a5568;
+  --text-faint: #5f6b7d;
+  --rule: #e5e7eb;
+  --rule-subtle: #eef2f7;
+  --orange: #ea580c;
+  --focus-ring: rgba(35, 76, 106, 0.18);
 
-  --background: var(--paper);
-  --foreground: var(--ink);
+  --background: var(--canvas);
+  --foreground: var(--text);
   --border: var(--rule);
 
-  --card: var(--paper);
-  --card-foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--text);
   --card-border: var(--rule);
 
-  --popover: var(--paper);
-  --popover-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--text);
   --popover-border: var(--rule);
 
-  --primary: var(--accent);
-  --primary-foreground: var(--paper);
+  --primary: var(--navy);
+  --primary-foreground: var(--surface);
 
-  --secondary: var(--paper-sunk);
-  --secondary-foreground: var(--ink);
+  --secondary: var(--elevated);
+  --secondary-foreground: var(--text);
 
-  --muted: var(--paper-sunk);
-  --muted-foreground: var(--ink-quiet);
+  --muted: var(--elevated);
+  --muted-foreground: var(--text-3);
 
-  --accent-role: var(--accent-wash);
-  --accent-role-foreground: var(--ink);
+  --accent-role: var(--slate-blue);
+  --accent-role-foreground: var(--surface);
 
-  --destructive: #8a3324;
-  --destructive-foreground: var(--paper);
+  --destructive: #b91c1c;
+  --destructive-foreground: var(--surface);
 
   --input: var(--rule);
-  --ring: var(--accent);
+  --ring: var(--slate-blue);
 
-  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
 
-  --radius: 0.25rem;
+  /* Sharp corners are a deliberate brand signal, matching the lab site. */
+  --radius: 0;
 
   /* Backgrounds applied on top of other backgrounds when hovered/active */
-  --elevate-1: rgba(20, 23, 28, 0.04);
-  --elevate-2: rgba(20, 23, 28, 0.08);
+  --elevate-1: rgba(8, 29, 58, 0.05);
+  --elevate-2: rgba(8, 29, 58, 0.1);
 }
 
 @layer base {
@@ -67,6 +78,11 @@
     @apply scroll-smooth;
   }
 
+  /*
+   * Long-form prose is serif; headings and UI chrome are geometric sans.
+   * That split is the whole design — it keeps this site editorial where the
+   * lab site is institutional.
+   */
   body {
     @apply font-serif antialiased bg-background text-foreground;
     line-height: 1.65;
@@ -76,7 +92,9 @@
   h2,
   h3,
   h4 {
-    @apply font-serif;
+    @apply font-display text-primary;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
   }
 
   a {
@@ -84,7 +102,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--slate-blue);
     outline-offset: 2px;
   }
 
@@ -108,7 +126,7 @@
 
   /**
    * Elevation: a single subtle overlay for hover/active states, using a
-   * fixed ink-tinted rgba so it reads correctly on any background.
+   * fixed navy-tinted rgba so it reads correctly on any background.
    */
   .hover-elevate:not(.no-default-hover-elevate),
   .active-elevate:not(.no-default-active-elevate) {

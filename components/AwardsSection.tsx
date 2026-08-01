@@ -1,3 +1,5 @@
+import SectionHeading from "@/components/SectionHeading";
+
 const awards = [
   {
     id: "rsna-2023",
@@ -19,26 +21,31 @@ const awards = [
 
 export default function AwardsSection() {
   return (
-    <section id="awards" className="py-12 px-6 border-b border-rule">
-      <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-serif font-semibold">Awards</h2>
+    <section id="awards" className="py-14 px-6 border-b border-rule">
+      <div className="max-w-4xl mx-auto space-y-7">
+        <SectionHeading>Awards</SectionHeading>
 
-        <ul className="space-y-3">
+        <ul className="space-y-4">
           {awards.map((award) => (
-            <li key={award.id} data-testid={`award-${award.id}`}>
-              <span className="font-sans text-sm text-ink-quiet">{award.year}</span>
-              {" — "}
-              <span className="font-medium">{award.title}</span>
-              {award.description && (
-                <p className="text-sm text-ink-quiet max-w-prose">{award.description}</p>
-              )}
+            <li
+              key={award.id}
+              className="grid sm:grid-cols-[11rem_1fr] gap-1 sm:gap-6"
+              data-testid={`award-${award.id}`}
+            >
+              <span className="font-mono text-xs text-ink-faint sm:pt-1">{award.year}</span>
+              <div>
+                <span className="font-display font-semibold text-navy">{award.title}</span>
+                {award.description && (
+                  <p className="text-sm text-ink-quiet mt-1 max-w-prose">{award.description}</p>
+                )}
+              </div>
             </li>
           ))}
         </ul>
 
         <a
           href="/awards.html"
-          className="font-sans text-sm text-primary hover:underline"
+          className="inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4"
           data-testid="link-awards-full"
         >
           Full list →

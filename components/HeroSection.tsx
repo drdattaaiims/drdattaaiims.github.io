@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Linkedin } from "lucide-react";
 import profileImage from "@assets/suvrankar_profile.jpg";
+import RingMark from "@/components/RingMark";
 import { EMAIL_PRIMARY, EMAIL_SECONDARY, LINKEDIN_URL, CV_URL, CV_LABEL } from "@/lib/identity";
 
 export default function HeroSection() {
@@ -18,24 +19,37 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="px-6 pt-20 pb-12 border-b border-rule">
-      <div className="max-w-4xl mx-auto grid sm:grid-cols-[180px_1fr] gap-8 items-start">
-        <img
-          src={profileImage}
-          alt="Suvrankar Datta"
-          className="w-[180px] h-[180px] object-cover rounded-sm border border-rule"
-          data-testid="img-profile"
-        />
+    <section id="hero" className="relative overflow-hidden border-b border-rule px-6 pt-20 pb-14">
+      {/* Ring watermark, bleeding off the right edge */}
+      <RingMark className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 h-[420px] w-[420px] text-navy opacity-[0.05]" />
 
-        <div className="space-y-4">
+      <div className="relative max-w-4xl mx-auto grid sm:grid-cols-[180px_1fr] gap-8 items-start">
+        <div className="border-l-2 border-navy pl-4 sm:border-l-0 sm:pl-0">
+          <img
+            src={profileImage}
+            alt="Suvrankar Datta"
+            className="w-[180px] h-[180px] object-cover border border-navy"
+            data-testid="img-profile"
+          />
+        </div>
+
+        <div className="space-y-5">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-serif font-semibold leading-tight">
+            <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-navy">
               Suvrankar Datta
             </h1>
-            <p className="font-sans text-sm text-ink-quiet mt-1">
+            <p className="font-sans text-sm text-ink-quiet mt-2 leading-relaxed">
               Radiologist and health-AI researcher &middot; Simons Ashoka Early
               Career Fellow, Koita Centre for Digital Health, Ashoka University
-              &middot; Founder and Group Lead, CRASH Lab
+              &middot; Founder and Group Lead,{" "}
+              <a
+                href="https://crashlab.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-navy underline decoration-orange decoration-2 underline-offset-4"
+              >
+                CRASH Lab
+              </a>
             </p>
           </div>
 

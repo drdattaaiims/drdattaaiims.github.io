@@ -5,21 +5,21 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0" +
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-none text-sm font-medium no-underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0" +
   " hover-elevate active-elevate-2",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground border border-primary",
+        default: "bg-navy text-primary-foreground border border-navy",
         destructive: "bg-destructive text-destructive-foreground border border-destructive",
-        outline: "border border-border bg-background",
+        outline: "border border-navy/25 bg-surface text-navy",
         secondary: "border border-border bg-secondary text-secondary-foreground",
         ghost: "border border-transparent",
       },
       size: {
         default: "min-h-9 px-4 py-2",
-        sm: "min-h-8 rounded-sm px-3 text-xs",
-        lg: "min-h-10 rounded-sm px-8",
+        sm: "min-h-8 px-3 text-xs",
+        lg: "min-h-10 px-8",
         icon: "h-9 w-9",
       },
     },

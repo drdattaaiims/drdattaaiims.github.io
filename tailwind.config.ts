@@ -10,17 +10,30 @@ export default {
   theme: {
     extend: {
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        none: "0",
+        sm: "0",
+        DEFAULT: "0",
+        md: "0",
+        lg: "0",
+        xl: "0",
       },
       colors: {
-        paper: "var(--paper)",
-        "paper-sunk": "var(--paper-sunk)",
-        ink: "var(--ink)",
-        "ink-quiet": "var(--ink-quiet)",
-        "ink-faint": "var(--ink-faint)",
+        /* Brand */
+        navy: "var(--navy)",
+        "slate-blue": "var(--slate-blue)",
+        canvas: "var(--canvas)",
+        surface: "var(--surface)",
+        elevated: "var(--elevated)",
+        orange: "var(--orange)",
+
+        /* Semantic text/rule names used across components */
+        paper: "var(--canvas)",
+        "paper-sunk": "var(--elevated)",
+        ink: "var(--text)",
+        "ink-quiet": "var(--text-3)",
+        "ink-faint": "var(--text-faint)",
         rule: "var(--rule)",
+        "rule-subtle": "var(--rule-subtle)",
 
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -59,6 +72,7 @@ export default {
         ring: "var(--ring)",
       },
       fontFamily: {
+        display: ["var(--font-display)"],
         sans: ["var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],

@@ -1,3 +1,5 @@
+import SectionHeading from "@/components/SectionHeading";
+
 const talks = [
   {
     id: "glc4hsr-2026",
@@ -21,24 +23,29 @@ const talks = [
 
 export default function TalksSection() {
   return (
-    <section id="talks" className="py-12 px-6 border-b border-rule bg-paper-sunk">
-      <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-serif font-semibold">Talks</h2>
+    <section id="talks" className="py-14 px-6 border-b border-rule bg-elevated">
+      <div className="max-w-4xl mx-auto space-y-7">
+        <SectionHeading>Talks</SectionHeading>
 
-        <ul className="space-y-3">
+        <ul className="space-y-4">
           {talks.map((talk) => (
-            <li key={talk.id} data-testid={`talk-${talk.id}`}>
-              <span className="font-sans text-sm text-ink-quiet">{talk.date}</span>
-              {" — "}
-              <span className="font-medium">{talk.title}</span>
-              <span className="font-sans text-sm text-ink-quiet"> ({talk.type})</span>
+            <li
+              key={talk.id}
+              className="grid sm:grid-cols-[11rem_1fr] gap-1 sm:gap-6"
+              data-testid={`talk-${talk.id}`}
+            >
+              <span className="font-mono text-xs text-ink-faint sm:pt-1">{talk.date}</span>
+              <div>
+                <span className="font-display font-semibold text-navy">{talk.title}</span>
+                <span className="font-sans text-sm text-ink-quiet"> · {talk.type}</span>
+              </div>
             </li>
           ))}
         </ul>
 
         <a
           href="/talks.html"
-          className="font-sans text-sm text-primary hover:underline"
+          className="inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4"
           data-testid="link-talks-full"
         >
           All talks →

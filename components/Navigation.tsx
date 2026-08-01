@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import RingMark from "@/components/RingMark";
 
 const navigation = [
   { name: "Home", href: "/index.html" },
@@ -15,14 +16,15 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur border-b border-rule">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-canvas/95 backdrop-blur border-b border-rule">
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex items-center justify-between h-14">
           <a
             href="/index.html"
-            className="font-serif font-semibold text-lg"
+            className="flex items-center gap-2.5 font-display font-bold text-[1.02rem] tracking-tight text-navy no-underline"
             data-testid="nav-logo"
           >
+            <RingMark className="w-5 h-5 shrink-0" />
             Suvrankar Datta
           </a>
 
@@ -31,7 +33,7 @@ export default function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-ink-quiet hover:text-primary transition-colors"
+                className="text-ink-quiet no-underline hover:text-navy transition-colors"
                 data-testid={`nav-${item.name.toLowerCase()}`}
               >
                 {item.name}
@@ -40,7 +42,7 @@ export default function Navigation() {
           </nav>
 
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-navy"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-menu"
@@ -58,7 +60,7 @@ export default function Navigation() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="block py-2 text-ink-quiet hover:text-primary transition-colors"
+                    className="block py-2 text-ink-quiet no-underline hover:text-navy transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                     data-testid={`nav-mobile-${item.name.toLowerCase()}`}
                   >

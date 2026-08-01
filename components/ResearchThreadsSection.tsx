@@ -1,3 +1,5 @@
+import SectionHeading from "@/components/SectionHeading";
+
 const threads = [
   {
     title: "Fine-grained diagnosis under label scarcity.",
@@ -18,17 +20,21 @@ const threads = [
 
 export default function ResearchThreadsSection() {
   return (
-    <section id="research" className="py-12 px-6 border-b border-rule">
-      <div className="max-w-4xl mx-auto space-y-8">
-        <h2 className="text-2xl font-serif font-semibold">Research</h2>
+    <section id="research" className="py-14 px-6 border-b border-rule">
+      <div className="max-w-4xl mx-auto space-y-7">
+        <SectionHeading>Research</SectionHeading>
 
-        <div className="space-y-6">
-          {threads.map((thread) => (
+        <div className="space-y-7">
+          {threads.map((thread, i) => (
             <div key={thread.title} className="max-w-prose">
-              <p className="leading-relaxed">
-                <strong>{thread.title}</strong> {thread.body}
+              <span className="font-mono text-xs text-ink-faint">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <p className="leading-relaxed mt-1">
+                <strong className="font-display font-semibold text-navy">{thread.title}</strong>{" "}
+                {thread.body}
               </p>
-              <p className="font-sans text-sm text-ink-quiet mt-1">
+              <p className="font-sans text-sm text-ink-quiet mt-1.5">
                 → {thread.evidence}
               </p>
             </div>
@@ -37,7 +43,7 @@ export default function ResearchThreadsSection() {
 
         <a
           href="/research.html"
-          className="font-sans text-sm text-primary hover:underline"
+          className="inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4"
           data-testid="link-research-full"
         >
           Full research page →

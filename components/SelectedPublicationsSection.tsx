@@ -1,3 +1,5 @@
+import SectionHeading from "@/components/SectionHeading";
+
 const publications = [
   {
     citation:
@@ -27,30 +29,30 @@ const publications = [
 
 export default function SelectedPublicationsSection() {
   return (
-    <section className="py-12 px-6 border-b border-rule bg-paper-sunk">
-      <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-serif font-semibold">Selected Publications</h2>
+    <section className="py-14 px-6 border-b border-rule bg-elevated">
+      <div className="max-w-4xl mx-auto space-y-7">
+        <SectionHeading>Selected Publications</SectionHeading>
 
-        <ul className="space-y-4">
+        <ul className="space-y-5">
           {publications.map((pub) => (
-            <li key={pub.href} className="max-w-prose">
+            <li key={pub.href} className="max-w-prose border-l-2 border-rule pl-4 hover:border-navy transition-colors">
               <a
                 href={pub.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="text-ink no-underline hover:underline underline-offset-4"
                 data-testid={`link-pub-${pub.href}`}
               >
                 {pub.citation}
               </a>
-              <p className="font-sans text-sm text-ink-quiet">{pub.venue}</p>
+              <p className="font-sans text-sm text-ink-quiet mt-1">{pub.venue}</p>
             </li>
           ))}
         </ul>
 
         <a
           href="/publications.html"
-          className="font-sans text-sm text-primary hover:underline"
+          className="inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4"
           data-testid="link-publications-full"
         >
           Full publication list →

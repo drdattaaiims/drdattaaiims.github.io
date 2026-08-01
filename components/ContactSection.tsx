@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Download } from "lucide-react";
+import SectionHeading from "@/components/SectionHeading";
 import {
   EMAIL_PRIMARY,
   EMAIL_SECONDARY,
@@ -25,9 +26,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-12 px-6 bg-paper-sunk">
+    <section id="contact" className="py-14 px-6 bg-elevated">
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-serif font-semibold">Contact</h2>
+        <SectionHeading>Contact</SectionHeading>
         <p className="max-w-prose text-ink-quiet">
           Open to research collaborations and speaking engagements in AI and
           healthcare. Based in New Delhi, India.

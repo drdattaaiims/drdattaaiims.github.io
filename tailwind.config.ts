@@ -6,7 +6,7 @@ export default {
     "./index.html",
     "./App.tsx",
     "./main.tsx",
-    "./{components,hooks,lib,pages,shared}/**/*.{js,jsx,ts,tsx}"
+    "./{components,hooks,lib,pages}/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {

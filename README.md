@@ -1,55 +1,46 @@
-# Dr. Suvrankar Datta — Radiologist × AI Researcher
+# drdattaaiims.github.io
 
-**Welcome to my academic and professional portfolio.**  
-This site showcases my work at the intersection of radiology, artificial intelligence, and healthcare innovation.  
+Personal academic site of Dr. Suvrankar Datta — Radiologist and health-AI
+researcher, Faculty Fellow at the Koita Centre for Digital Health, Ashoka
+University, and Lab Lead of the Centre for Responsible Autonomous Systems
+in Healthcare (CRASH Lab).
 
-🌐 **Live website:** [drdattaaiims.github.io](https://drdattaaiims.github.io)
+Live at [drdattaaiims.github.io](https://drdattaaiims.github.io).
 
----
+## Contents
 
-## 🔎 About Me
-I am a **Radiologist and AI researcher**, Faculty Fellow at **Ashoka University’s Koita Centre for Digital Health (KCDH-A)**, and Group Lead at **Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab)**.  
-My work focuses on **responsible AI in healthcare, agentic workflows for radiology, multimodal models, and data infrastructure for LMICs.**
+- `index.html`, `main.tsx`, `App.tsx`, `components/`, `pages/` — the React/Vite homepage.
+- `public/*.html` — statically served subpages (publications, presentations, invited talks, grants, awards, media). These are plain HTML, not part of the React build, and are copied to `dist/` verbatim by Vite.
+- `public/cv/` — versioned CV PDF.
+- `attached_assets/` — source images and documents referenced by the build.
 
----
+## Development
 
-## 📚 Research & Outputs
-Explore my research contributions:
+```bash
+npm install
+npm run dev
+```
 
-- [**Publications**](https://drdattaaiims.github.io/publications.html)  
-  Peer-reviewed journal articles, book chapters, proceedings, and preprints.  
+## Build
 
-- [**Scientific Presentations**](https://drdattaaiims.github.io/presentations.html)  
-  Talks, posters, and conference contributions at RSNA, MICCAI, and more.  
+```bash
+npm run build
+```
 
-- [**Invited Talks & Panels**](https://drdattaaiims.github.io/invited.html)  
-  Keynotes, panels, and expert contributions in global forums.  
+Outputs to `dist/`. `npm run check` runs the TypeScript compiler with no emit.
 
-- [**Grants**](https://drdattaaiims.github.io/grants.html)  
-  Research funding and collaborative projects.  
+## Deploy
 
----
+Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds with
+Vite and publishes `dist/` to GitHub Pages.
 
-## 🏆 Recognitions
-- [**Awards & Distinctions**](https://drdattaaiims.github.io/awards.html)  
-  International prizes, honors, and distinctions.  
+## Contact
 
-- [**Media & Press**](https://drdattaaiims.github.io/media.html)  
-  Coverage across NDTV, Mirror Now, The Hindu, NYT, BBC, and more.  
+- Email: [suvrankar.datta@ashoka.edu.in](mailto:suvrankar.datta@ashoka.edu.in)
+- [LinkedIn](https://www.linkedin.com/in/suvrankardatta/)
+- [Twitter/X](https://twitter.com/DrDatta_AIIMS)
 
----
+## License
 
-## 📫 Contact & Social
-- Email: [suvrankar@gmail.com](mailto:suvrankar.datta@gmail.com)  
-- [LinkedIn](https://www.linkedin.com/in/suvrankar-datta/)  
-- [Google Scholar](https://scholar.google.com/)  
-- [Twitter/X](https://twitter.com/DrDatta_AIIMS)  
-
----
-
-## 🔍 Keywords (for search engines & LLM indexing)
-Radiology, Artificial Intelligence, Responsible AI, Healthcare Innovation, Multimodal AI, Agentic Workflows, Medical Imaging, RSNA, MICCAI, Harvard, Ashoka University, AI in LMICs, Data Commons, Radiologist AI Researcher.
-
----
-
-⚡ This site is powered by [GitHub Pages](https://pages.github.com/) and built with [Vite](https://vitejs.dev/).
+Written content, images, and design are licensed under
+[CC BY 4.0](LICENSE). Source code is provided for reference.

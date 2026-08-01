@@ -1,126 +1,73 @@
-import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
 
 const navigation = [
-  { name: "About", href: "#hero" },
-  { name: "Experience", href: "#experience" },
-  { name: "Research", href: "#research" },
-  { name: "Talks", href: "#talks" },
-  { name: "Awards", href: "#awards" },
-  { name: "Contact", href: "#contact" }
+  { name: "Home", href: "/index.html" },
+  { name: "Research", href: "/research.html" },
+  { name: "Publications", href: "/publications.html" },
+  { name: "Lab", href: "/lab.html" },
+  { name: "Talks", href: "/talks.html" },
+  { name: "CV", href: "/cv/" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = navigation.map(item => item.href.substring(1));
-      const currentSection = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
-        }
-        return false;
-      });
-      
-      if (currentSection) {
-        setActiveSection(currentSection);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const handleNavClick = (href: string) => {
-    const targetId = href.substring(1);
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setMobileMenuOpen(false);
-    console.log(`Navigation to ${targetId} clicked`);
-  };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-background/80 border-b">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo/Name */}
-          <div 
-            className="font-bold text-xl cursor-pointer hover:text-primary transition-colors"
-            onClick={() => handleNavClick("#hero")}
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur border-b border-rule">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="flex items-center justify-between h-14">
+          <a
+            href="/index.html"
+            className="font-serif font-semibold text-lg"
             data-testid="nav-logo"
           >
-            Dr. Suvrankar Datta
-          </div>
+            Suvrankar Datta
+          </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="hidden md:flex items-center gap-5 font-sans text-sm" aria-label="Primary">
             {navigation.map((item) => (
-              <Button
+              <a
                 key={item.name}
-                variant="ghost"
-                className={`hover-elevate ${
-                  activeSection === item.href.substring(1) 
-                    ? 'bg-primary/10 text-primary' 
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-                onClick={() => handleNavClick(item.href)}
+                href={item.href}
+                className="text-ink-quiet hover:text-primary transition-colors"
                 data-testid={`nav-${item.name.toLowerCase()}`}
               >
                 {item.name}
-              </Button>
+              </a>
             ))}
           </nav>
 
-          {/* Theme Toggle & Mobile Menu */}
-          <div className="flex items-center gap-2">
-            <ThemeToggle />
-            
-            {/* Mobile menu button */}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="md:hidden hover-elevate"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              data-testid="nav-mobile-toggle"
-            >
-              {mobileMenuOpen ? (
-                <X className="h-5 w-5" />
-              ) : (
-                <Menu className="h-5 w-5" />
-              )}
-            </Button>
-          </div>
+          <button
+            className="md:hidden p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
+            data-testid="nav-mobile-toggle"
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            <span className="sr-only">Menu</span>
+          </button>
         </div>
 
-        {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <nav className="flex flex-col space-y-2">
+          <nav id="mobile-menu" className="md:hidden py-3 border-t border-rule font-sans text-sm" aria-label="Primary mobile">
+            <ul className="flex flex-col gap-1">
               {navigation.map((item) => (
-                <Button
-                  key={item.name}
-                  variant="ghost"
-                  className={`justify-start hover-elevate ${
-                    activeSection === item.href.substring(1)
-                      ? 'bg-primary/10 text-primary'
-                      : 'text-muted-foreground hover:text-foreground'
-                  }`}
-                  onClick={() => handleNavClick(item.href)}
-                  data-testid={`nav-mobile-${item.name.toLowerCase()}`}
-                >
-                  {item.name}
-                </Button>
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="block py-2 text-ink-quiet hover:text-primary transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                    data-testid={`nav-mobile-${item.name.toLowerCase()}`}
+                  >
+                    {item.name}
+                  </a>
+                </li>
               ))}
-            </nav>
-          </div>
+            </ul>
+          </nav>
         )}
       </div>
     </header>

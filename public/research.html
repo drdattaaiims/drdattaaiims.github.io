@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Research – Suvrankar Datta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="site-bar">
+      <a class="brand" href="/index.html">Suvrankar Datta</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteMenu">Menu</button>
+      <nav id="siteMenu" aria-label="Primary">
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/research.html" class="active">Research</a></li>
+          <li><a href="/publications.html">Publications</a></li>
+          <li><a href="/lab.html">Lab</a></li>
+          <li><a href="/talks.html">Talks</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Research</h1>
+    <p class="lede">
+      I build and evaluate AI systems for radiology, and study where they fail
+      once they leave a benchmark and meet real clinical data. Most of the work
+      below sits at the boundary between a working model and a system a
+      clinician can actually trust: labelled data is scarce, deployment
+      conditions shift, and language-model outputs need governance before they
+      reach a report. I do this as Lab Lead of CRASH Lab at Ashoka University,
+      and as a Visiting Researcher with the Rajpurkar Lab at Harvard Medical
+      School.
+    </p>
+
+    <h2>Fine-grained diagnosis under label scarcity</h2>
+    <p>
+      Rib fractures are undercounted on routine CT because fine-grained,
+      per-fracture annotation is expensive and few centres produce it at
+      scale. AIRib, developed with IIT Jodhpur and AIIMS Delhi under a
+      ₹3.9M TIH iHub Drishti grant, is an end-to-end pipeline for detecting,
+      characterising, and prognosticating traumatic rib fractures from CT with
+      substantially less labelled data than standard training requires,
+      using hyperbolic embeddings to encode the fracture hierarchy directly
+      into the model.
+    </p>
+    <p class="meta">
+      → MICCAI 2025 (accepted, top 9% of submissions); RSNA Trainee Research
+      Prize 2023 &mdash; the only award to an Indian resident that year.
+      <a href="/publications.html">Publications →</a>
+    </p>
+
+    <h2>Agentic workflows and their failure modes in radiology reporting</h2>
+    <p>
+      Large language models are increasingly used inside radiology reporting
+      pipelines — for speech-to-text cleanup, structured-report generation,
+      and decision support. I work on where these agentic pipelines break
+      under distribution shift, and what governance their failure modes
+      imply before they're allowed near a clinical report.
+    </p>
+    <p class="meta">
+      → RSNA 2023, two Cutting-Edge Oral presentations on LLM-augmented speech
+      recognition for radiology reporting; "From Chatbots to Agentic
+      Workflows: Ensuring Responsible Deployment of Large Language Models in
+      Radiology," <em>Indian Journal of Radiology &amp; Imaging</em>, 2025.
+      <a href="/publications.html">Publications →</a>
+    </p>
+
+    <h2>Multimodal foundation models for medical image interpretation</h2>
+    <p>
+      With the Rajpurkar Lab at Harvard Medical School, I work on generalist
+      foundation models that interpret medical images across modalities
+      rather than one narrow task at a time — including MedVersa, developed
+      with Hong-Yu Zhou, Julian Acosta, Subathra Adithan, Eric Topol, and
+      Pranav Rajpurkar.
+    </p>
+    <p class="meta">
+      → MedVersa: A Generalist Foundation Model for Medical Image
+      Interpretation (under review, NEJM AI).
+      <a href="/publications.html">Publications →</a>
+    </p>
+
+    <h2>LLM reliability in radiology practice and education</h2>
+    <p>
+      Before a language model is trusted with a clinical decision, its
+      reliability needs to be measured against the specific task, not a
+      general benchmark. I've evaluated LLM accuracy on FRCR examination
+      questions and on imaging-referral decisions for pulmonary embolism,
+      both with Sarangi PK and colleagues.
+    </p>
+    <p class="meta">
+      → "Evaluating ChatGPT-4's Performance in Identifying Radiological
+      Anatomy in FRCR Part 1 Examination Questions" and "Radiologic
+      Decision-Making for Imaging in Pulmonary Embolism," <em>Indian Journal
+      of Radiology &amp; Imaging</em>, 2024–2025.
+      <a href="/publications.html">Publications →</a>
+    </p>
+
+    <footer class="page-footer">
+      <span>Last updated: 1 Aug 2026</span>
+      <span><a href="/lab.html">CRASH Lab →</a></span>
+    </footer>
+  </main>
+
+  <script>
+    const header = document.getElementById('site-header');
+    const navToggle = document.getElementById('navToggle');
+    navToggle?.addEventListener('click', () => {
+      const open = header.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
+</body>
+</html>

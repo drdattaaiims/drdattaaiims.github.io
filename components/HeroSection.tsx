@@ -1,146 +1,81 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Download, MessageSquare, Users, Linkedin } from "lucide-react";
+import { Download, Mail, Linkedin } from "lucide-react";
 import profileImage from "@assets/suvrankar_profile.jpg";
-import cvFile from "@assets/suvrankar_cv.pdf";
+import { EMAIL_PRIMARY, EMAIL_SECONDARY, LINKEDIN_URL, CV_URL, CV_LABEL } from "@/lib/identity";
 
 export default function HeroSection() {
   const handleDownloadCV = () => {
-    window.open('https://drive.google.com/file/d/1LsxZqaq04ltaD9tzo0kI331pR-zQ9cBX/view?usp=drive_link', '_blank', 'noopener,noreferrer');
+    window.open(CV_URL, "_blank", "noopener,noreferrer");
   };
 
-  const handleInviteToSpeakEmail = () => {
-    const subject = encodeURIComponent('Speaking Engagement Inquiry');
-    const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\n\nI would like to invite you to speak at our event.\n\nBest regards,');
-    window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${subject}&body=${body}`;
+  const handleEmail = () => {
+    const subject = encodeURIComponent("Collaboration / speaking inquiry");
+    window.location.href = `mailto:${EMAIL_PRIMARY}?cc=${EMAIL_SECONDARY}&subject=${subject}`;
   };
 
-  const handleInviteToSpeakLinkedIn = () => {
-    window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
-  };
-
-  const handleCollaborateEmail = () => {
-    const subject = encodeURIComponent('Research Collaboration Inquiry');
-    const body = encodeURIComponent('Dear Dr. Suvrankar Datta,\n\nI am interested in discussing a potential collaboration opportunity.\n\nBest regards,');
-    window.location.href = `mailto:suvrankar@gmail.com?cc=suvrankar.datta@ashoka.edu.in&subject=${subject}&body=${body}`;
-  };
-
-  const handleCollaborateLinkedIn = () => {
-    window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
-  };
-
-  const handleRSNA2025 = () => {
-    window.open('https://www.linkedin.com/in/suvrankardatta/', '_blank', 'noopener,noreferrer');
+  const handleLinkedIn = () => {
+    window.open(LINKEDIN_URL, "_blank", "noopener,noreferrer");
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-24">
-      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Column - Text Content */}
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <Badge variant="secondary" className="w-fit">
-              Faculty Fellow • Ashoka University
-            </Badge>
-            
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-              Radiologist{" "}
-              <span className="text-primary">×</span>{" "}
-              AI Researcher
+    <section id="hero" className="px-6 pt-20 pb-12 border-b border-rule">
+      <div className="max-w-4xl mx-auto grid sm:grid-cols-[180px_1fr] gap-8 items-start">
+        <img
+          src={profileImage}
+          alt="Suvrankar Datta"
+          className="w-[180px] h-[180px] object-cover rounded-sm border border-rule"
+          data-testid="img-profile"
+        />
+
+        <div className="space-y-4">
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-serif font-semibold leading-tight">
+              Suvrankar Datta
             </h1>
-            
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Faculty Fellow at Ashoka University (KCDH-A); Lead, Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab).
-            </p>
-            
-            <p className="text-lg text-foreground font-medium">
-              Building responsible AI for radiology and healthcare in India and the world.
+            <p className="font-sans text-sm text-ink-quiet mt-1">
+              Radiologist and health-AI researcher &middot; Faculty Fellow, Koita Centre
+              for Digital Health, Ashoka University &middot; Lab Lead, CRASH Lab
+              &middot; Visiting Researcher, Rajpurkar Lab, Harvard Medical School
             </p>
           </div>
 
-          {/* Metrics */}
-          <div className="flex flex-wrap gap-6 font-mono text-sm">
-            <div className="text-primary">RSNA Trainee Research Prize 2023</div>
-            <div className="text-primary">•</div>
-            <div className="text-primary">MICCAI 2025 Early Accept</div>
-            <div className="text-primary">•</div>
-            <div className="text-primary">10 RSNA 2025 Acceptances</div>
-          </div>
+          <p className="max-w-prose leading-relaxed">
+            I work on agentic and multimodal AI systems for radiology — where they
+            fail under distribution shift, and how to build evaluation and
+            governance around them before deployment. My MICCAI 2025 paper on
+            rib-fracture diagnosis won the RSNA Trainee Research Prize 2023, the
+            only such award to an Indian resident that year, and I am a co-author
+            on MedVersa, a generalist foundation model for medical image
+            interpretation, with the Rajpurkar Lab at Harvard Medical School.
+          </p>
 
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4">
-            <Button 
+          <div className="flex flex-wrap gap-3 pt-1">
+            <Button
               onClick={handleDownloadCV}
-              className="hover-elevate"
+              className="hover-elevate font-sans"
               data-testid="button-download-cv"
             >
               <Download className="w-4 h-4 mr-2" />
-              Download CV
+              {CV_LABEL}
             </Button>
-            
-            <Button 
+            <Button
               variant="outline"
-              onClick={handleInviteToSpeakEmail}
-              className="hover-elevate"
-              data-testid="button-invite-speak-email"
+              onClick={handleEmail}
+              className="hover-elevate font-sans"
+              data-testid="button-email"
             >
-              <MessageSquare className="w-4 h-4 mr-2" />
-              Invite to Speak (Email)
+              <Mail className="w-4 h-4 mr-2" />
+              Email
             </Button>
-            
-            <Button 
+            <Button
               variant="outline"
-              onClick={handleInviteToSpeakLinkedIn}
-              className="hover-elevate"
-              data-testid="button-invite-speak-linkedin"
+              onClick={handleLinkedIn}
+              className="hover-elevate font-sans"
+              data-testid="button-linkedin"
             >
               <Linkedin className="w-4 h-4 mr-2" />
-              Invite to Speak (LinkedIn)
+              LinkedIn
             </Button>
-            
-            <Button 
-              variant="outline"
-              onClick={handleCollaborateEmail}
-              className="hover-elevate"
-              data-testid="button-collaborate-email"
-            >
-              <Users className="w-4 h-4 mr-2" />
-              Collaborate (Email)
-            </Button>
-            
-            <Button 
-              variant="outline"
-              onClick={handleCollaborateLinkedIn}
-              className="hover-elevate"
-              data-testid="button-collaborate-linkedin"
-            >
-              <Linkedin className="w-4 h-4 mr-2" />
-              Collaborate (LinkedIn)
-            </Button>
-            
-            <Button 
-              onClick={handleRSNA2025}
-              className="hover-elevate bg-primary text-primary-foreground"
-              data-testid="button-rsna-2025"
-            >
-              Let's meet at RSNA 2025
-            </Button>
-          </div>
-        </div>
-
-        {/* Right Column - Profile Image */}
-        <div className="flex justify-center lg:justify-end">
-          <div className="relative">
-            <div className="w-80 h-96 lg:w-96 lg:h-[30rem] rounded-2xl overflow-hidden bg-black border">
-              <img
-                src={profileImage}
-                alt="Dr. Suvrankar Datta"
-                className="w-full h-full object-cover"
-                data-testid="img-profile"
-              />
-            </div>
-            {/* Glassmorphism accent */}
-            <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl -z-10 blur-xl opacity-40" />
           </div>
         </div>
       </div>

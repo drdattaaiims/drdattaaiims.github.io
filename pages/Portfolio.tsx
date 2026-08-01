@@ -23,8 +23,10 @@ export default function Portfolio() {
       </main>
 
       <footer className="py-6 px-6 border-t border-rule">
-        <div className="max-w-4xl mx-auto text-center font-sans text-sm text-ink-faint">
-          <p>© 2026 Suvrankar Datta.</p>
+        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-x-4 gap-y-1 font-sans text-sm text-ink-faint">
+          <span>© 2026 Suvrankar Datta.</span>
+          <span>Last updated: 1 Aug 2026</span>
+          <a href="/disclosures.html" className="hover:underline">Disclosures</a>
         </div>
       </footer>
     </div>

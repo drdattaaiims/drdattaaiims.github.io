@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Disclosures – Suvrankar Datta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="site-bar">
+      <a class="brand" href="/index.html">Suvrankar Datta</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteMenu">Menu</button>
+      <nav id="siteMenu" aria-label="Primary">
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/publications.html">Publications</a></li>
+          <li><a href="/lab.html">Lab</a></li>
+          <li><a href="/talks.html">Talks</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Disclosures</h1>
+    <p class="lede">Funding, advisory roles, and consultancy relevant to my AI and healthcare research.</p>
+
+    <h2>Funding</h2>
+    <ul>
+      <li>TIH iHub Drishti (IIT Jodhpur &times; AIIMS Delhi) — Rib Fracture AI Project, ₹3.9M.</li>
+      <li>Department of Biotechnology (DBT) — Lung Cancer Response Prediction (project protocol).</li>
+      <li>ICMR Short-Term Studentship (2018) — arterial stiffness indices, JIPMER.</li>
+    </ul>
+    <p class="meta">Full detail: <a href="/grants.html">Grants & Funding</a>.</p>
+
+    <h2>Advisory &amp; consultancy</h2>
+    <p>
+      Independent consultant and advisor (frequently pro bono) to radiology
+      and AI companies, including Qure AI, Manentia AI, and Radiogram. Visiting
+      radiologist at Medanta and Fortis Hospitals.
+    </p>
+
+    <h2>Equity</h2>
+    <p>None.</p>
+
+    <h2>Honoraria</h2>
+    <p>None beyond standard conference/institutional speaker arrangements listed on the <a href="/talks.html">Talks</a> page.</p>
+
+    <footer class="page-footer">
+      <span>Last updated: 1 Aug 2026</span>
+    </footer>
+  </main>
+
+  <script>
+    const header = document.getElementById('site-header');
+    const navToggle = document.getElementById('navToggle');
+    navToggle?.addEventListener('click', () => {
+      const open = header.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
+</body>
+</html>

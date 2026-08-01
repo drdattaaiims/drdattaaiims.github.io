@@ -4,6 +4,8 @@ import {
   EMAIL_PRIMARY,
   EMAIL_SECONDARY,
   LINKEDIN_URL,
+  ORCID_URL,
+  RESEARCHGATE_URL,
   CV_URL,
   CV_LABEL,
 } from "@/lib/identity";
@@ -45,6 +47,12 @@ export default function ContactSection() {
             {CV_LABEL}
           </Button>
         </div>
+
+        <p className="font-sans text-sm text-ink-quiet">
+          <a href={ORCID_URL} target="_blank" rel="noopener noreferrer" className="hover:underline" data-testid="link-orcid">ORCID</a>
+          {" · "}
+          <a href={RESEARCHGATE_URL} target="_blank" rel="noopener noreferrer" className="hover:underline" data-testid="link-researchgate">ResearchGate</a>
+        </p>
       </div>
     </section>
   );

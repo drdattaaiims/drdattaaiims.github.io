@@ -33,20 +33,23 @@ export default function HeroSection() {
               Suvrankar Datta
             </h1>
             <p className="font-sans text-sm text-ink-quiet mt-1">
-              Radiologist and health-AI researcher &middot; Faculty Fellow, Koita Centre
-              for Digital Health, Ashoka University &middot; Lab Lead, CRASH Lab
-              &middot; Visiting Researcher, Rajpurkar Lab, Harvard Medical School
+              Radiologist and health-AI researcher &middot; Simons Ashoka Early
+              Career Fellow, Koita Centre for Digital Health, Ashoka University
+              &middot; Founder and Group Lead, CRASH Lab
             </p>
           </div>
 
           <p className="max-w-prose leading-relaxed">
-            I work on agentic and multimodal AI systems for radiology — where they
-            fail under distribution shift, and how to build evaluation and
-            governance around them before deployment. My MICCAI 2025 paper on
-            rib-fracture diagnosis won the RSNA Trainee Research Prize 2023, the
-            only such award to an Indian resident that year, and I am a co-author
-            on MedVersa, a generalist foundation model for medical image
-            interpretation, with the Rajpurkar Lab at Harvard Medical School.
+            I lead CRASH Lab, a clinician-led research group at Ashoka University
+            building benchmarks and evaluation frameworks for clinical AI. Our
+            Radiology's Last Exam (RadLE) project tests frontier multimodal models
+            against board-certified radiologists on reliability, safety, and
+            readiness for autonomous use. My MICCAI 2025 paper on rib-fracture
+            diagnosis won the RSNA Trainee Research Prize 2023, the only such
+            award to an Indian resident that year, and I'm a co-author on
+            MedVersa, a generalist foundation model for medical image
+            interpretation, published in NEJM AI with the Rajpurkar Lab at
+            Harvard.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-1">

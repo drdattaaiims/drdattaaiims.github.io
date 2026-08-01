@@ -1,5 +1,11 @@
 const awards = [
   {
+    id: "aim100-2026",
+    title: "AIM100 — India's Most Influential People Shaping AI",
+    year: "2026",
+    description: "Analytics India Magazine.",
+  },
+  {
     id: "rsna-2023",
     title: "RSNA Trainee Research Prize (MSK)",
     year: "2023",

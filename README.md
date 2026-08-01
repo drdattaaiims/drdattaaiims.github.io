@@ -1,16 +1,16 @@
 # drdattaaiims.github.io
 
 Personal academic site of Dr. Suvrankar Datta — Radiologist and health-AI
-researcher, Faculty Fellow at the Koita Centre for Digital Health, Ashoka
-University, and Lab Lead of the Centre for Responsible Autonomous Systems
-in Healthcare (CRASH Lab).
+researcher, Simons Ashoka Early Career Fellow at the Koita Centre for
+Digital Health, Ashoka University, and Founder and Group Lead of the
+Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab).
 
 Live at [drdattaaiims.github.io](https://drdattaaiims.github.io).
 
 ## Contents
 
 - `index.html`, `main.tsx`, `App.tsx`, `components/`, `pages/` — the React/Vite homepage.
-- `public/*.html` — statically served subpages (publications, presentations, invited talks, grants, awards, media). These are plain HTML, not part of the React build, and are copied to `dist/` verbatim by Vite.
+- `public/*.html` — statically served subpages (research, publications, lab, talks, grants, awards, media, disclosures). These are plain HTML, not part of the React build, and are copied to `dist/` verbatim by Vite.
 - `public/cv/` — versioned CV PDF.
 - `attached_assets/` — source images and documents referenced by the build.
 

@@ -2,17 +2,17 @@ const threads = [
   {
     title: "Fine-grained diagnosis under label scarcity.",
     body: "AIRib, an end-to-end pipeline for detecting and prognosticating traumatic rib fractures from CT with substantially less labelled data than standard training requires, using hyperbolic embeddings to encode the fracture hierarchy.",
-    evidence: "MICCAI 2025 (top 9%); RSNA Trainee Research Prize 2023",
+    evidence: "MICCAI 2025; RSNA Trainee Research Prize 2023",
   },
   {
-    title: "Agentic workflows and their failure modes in radiology reporting.",
-    body: "Where LLM-augmented reporting pipelines break under distribution shift, and what governance those failures imply before they reach a clinical report.",
-    evidence: "RSNA 2023 (2 Cutting-Edge Orals); IJRI 2025",
+    title: "Evaluating frontier AI against clinicians, and where it fails.",
+    body: "Radiology's Last Exam (RadLE) benchmarks frontier multimodal models against board-certified radiologists on diagnostic accuracy, calibrated confidence, and readiness for autonomous use — plus where LLM-augmented reporting pipelines break under distribution shift.",
+    evidence: "RadLE 1.0, arXiv 2025; RSNA 2023 (2 Cutting-Edge Orals); IJRI 2026",
   },
   {
     title: "Multimodal foundation models for medical image interpretation.",
-    body: "Generalist foundation models that interpret medical images across modalities, developed with the Rajpurkar Lab at Harvard Medical School.",
-    evidence: "MedVersa (under review, NEJM AI)",
+    body: "Generalist foundation models that interpret medical images across modalities, developed with the Rajpurkar Lab at Harvard.",
+    evidence: "MedVersa, NEJM AI 2026",
   },
 ];
 

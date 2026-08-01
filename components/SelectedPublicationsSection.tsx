@@ -1,20 +1,26 @@
 const publications = [
   {
     citation:
-      "Zhou HY, Acosta JN, Adithan S, Datta S, Topol EJ, Rajpurkar P. MedVersa: a generalist foundation model for medical image interpretation.",
-    venue: "Under review, NEJM AI",
-    href: "https://arxiv.org/abs/2405.07988",
+      "Zhou HY, Acosta JN, Adithan S, Datta S, Topol EJ, Rajpurkar P. MedVersa: a generalist foundation model for diverse medical imaging tasks.",
+    venue: "NEJM AI, 2026;3(4)",
+    href: "https://doi.org/10.1056/AIoa2500595",
+  },
+  {
+    citation:
+      "Datta S*, Buchireddygari D*, et al. Radiology's Last Exam (RadLE): benchmarking frontier multimodal AI against human experts and a taxonomy of visual reasoning errors in radiology.",
+    venue: "arXiv preprint, 2025 (* co-first authors)",
+    href: "https://arxiv.org/abs/2509.25559",
   },
   {
     citation:
       "Pate S, Farooq A, Datta S, et al. Fine-grained rib fracture diagnosis with hyperbolic embeddings.",
-    venue: "MICCAI 2025 (accepted, top 9%)",
-    href: "https://arxiv.org/abs/2504.10889",
+    venue: "MICCAI 2025",
+    href: "https://doi.org/10.1007/978-3-032-05182-0_22",
   },
   {
     citation:
-      "Sarangi PK, Datta S. From chatbots to agentic workflows: ensuring responsible deployment of large language models in radiology.",
-    venue: "Indian Journal of Radiology & Imaging, 2025",
+      "Datta S, Sarangi PK. From chatbots to agentic workflows: ensuring responsible deployment of large language models in radiology.",
+    venue: "Indian Journal of Radiology & Imaging, 2026;36(2):286–288",
     href: "https://doi.org/10.1055/s-0045-1811264",
   },
 ];

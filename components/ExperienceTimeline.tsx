@@ -1,26 +1,52 @@
 const experiences = [
   {
-    id: "ashoka",
-    title: "Faculty Fellow, Koita Centre for Digital Health",
+    id: "simons-ashoka",
+    title: "Simons Ashoka Early Career Fellow, Koita Centre for Digital Health",
     organization: "Ashoka University",
-    period: "2025 – present",
+    period: "Nov 2025 – present",
     description:
-      "Founder and Lab Lead, Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab).",
+      "Full-time fellowship supported by a Simons Foundation grant to Ashoka University.",
   },
   {
-    id: "harvard",
-    title: "Visiting Researcher, Medical AI Bootcamp",
-    organization: "Rajpurkar Lab, Harvard Medical School",
-    period: "2024 – present",
-    description: "Clinical validation of foundational AI algorithms in radiology.",
+    id: "crash-lab",
+    title: "Founder and Group Lead, CRASH Lab",
+    organization: "Koita Centre for Digital Health, Ashoka University",
+    period: "May 2025 – present",
+    description:
+      "Centre for Responsible Autonomous Systems in Healthcare — clinician-led research group building benchmarks, datasets, and validation frameworks for medical AI.",
+  },
+  {
+    id: "faculty-fellow",
+    title: "Faculty Fellow, Koita Centre for Digital Health",
+    organization: "Ashoka University",
+    period: "Feb 2025 – Oct 2025",
+  },
+  {
+    id: "faima-president",
+    title: "National President, Federation of All India Medical Associations (FAIMA)",
+    organization: "Elected, voluntary",
+    period: "2024 – 2025",
+  },
+  {
+    id: "locum",
+    title: "Locum Radiologist",
+    organization: "Medanta and Fortis Hospitals, Delhi NCR",
+    period: "Dec 2024 – Jan 2025",
   },
   {
     id: "aiims-resident",
     title: "Senior Resident, Dept. of Radiodiagnosis & IR",
     organization: "AIIMS Delhi",
-    period: "2023 – 2024",
+    period: "Sep 2023 – Nov 2024",
     description:
-      "Core clinical work, audited AI-augmented workflows, taught junior residents; part-time AI research (10,000+ images annotated).",
+      "Independently interpreted 200+ studies during regular emergency shifts, predominantly CT and ultrasonography; taught junior residents; part-time AI research.",
+  },
+  {
+    id: "harvard",
+    title: "Medical AI Bootcamp 2024 — Participant",
+    organization: "Rajpurkar Lab, Harvard University",
+    period: "2024",
+    description: "Training and research collaboration that led to a contribution to MedVersa.",
   },
   {
     id: "md",

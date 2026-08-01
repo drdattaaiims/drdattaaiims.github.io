@@ -1,21 +1,21 @@
 const talks = [
   {
+    id: "glc4hsr-2026",
+    title: "GLC4HSR Annual Conclave, Indian National Science Academy",
+    type: "Panel",
+    date: "Mar 2026",
+  },
+  {
+    id: "rsna-2025-radle",
+    title: "RSNA 2025 — Radiology's Last Exam (RadLE) 1.0",
+    type: "Cutting-Edge presentation",
+    date: "2025",
+  },
+  {
     id: "aocr-2025",
     title: "Asia Oceania Congress of Radiology (AOCR)",
     type: "Keynote",
     date: "Jan 2025",
-  },
-  {
-    id: "nasscom-2024",
-    title: "NASSCOM Future Forge Healthtech Roundtable",
-    type: "Keynote",
-    date: "Oct 2024",
-  },
-  {
-    id: "ficci-2024",
-    title: "FICCI Heal",
-    type: "Panel",
-    date: "Nov 2024",
   },
 ];
 

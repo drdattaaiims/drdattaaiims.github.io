@@ -55,15 +55,15 @@ export default function HeroSection() {
 
           <p className="max-w-prose leading-relaxed">
             I lead CRASH Lab, a clinician-led research group at Ashoka University
-            building benchmarks and evaluation frameworks for clinical AI. Our
-            Radiology's Last Exam (RadLE) project tests frontier multimodal models
-            against board-certified radiologists on reliability, safety, and
-            readiness for autonomous use. My MICCAI 2025 paper on rib-fracture
-            diagnosis won the RSNA Trainee Research Prize 2023, the only such
-            award to an Indian resident that year, and I'm a co-author on
-            MedVersa, a generalist foundation model for medical image
-            interpretation, published in NEJM AI with the Rajpurkar Lab at
-            Harvard.
+            that builds benchmarks and evaluation frameworks for clinical AI. Our
+            Radiology's Last Exam (RadLE) project, which I co-led, tests frontier
+            multimodal models against board-certified radiologists on
+            reliability, safety, and readiness for autonomous use. My work on
+            automated rib-fracture detection and characterisation on CT (AIRib)
+            received the RSNA Trainee Research Prize in 2023, and related work on
+            fine-grained rib-fracture diagnosis was accepted at MICCAI 2025. I am
+            also a co-author on MedVersa, a generalist foundation model for
+            medical image interpretation, published in NEJM AI.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-1">

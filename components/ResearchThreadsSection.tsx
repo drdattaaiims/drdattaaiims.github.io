@@ -3,8 +3,8 @@ import SectionHeading from "@/components/SectionHeading";
 const threads = [
   {
     title: "Fine-grained diagnosis under label scarcity.",
-    body: "AIRib, an end-to-end pipeline for detecting and prognosticating traumatic rib fractures from CT with substantially less labelled data than standard training requires, using hyperbolic embeddings to encode the fracture hierarchy.",
-    evidence: "MICCAI 2025; RSNA Trainee Research Prize 2023",
+    body: "Automated detection, characterisation and prognostication of traumatic rib fractures on CT. The AIRib pipeline — my MD-thesis work — received the RSNA Trainee Research Prize 2023; related work on fine-grained diagnosis with hyperbolic embeddings, on which I am a co-author, followed at MICCAI 2025.",
+    evidence: "RSNA Trainee Research Prize 2023 (AIRib); MICCAI 2025 (co-author)",
   },
   {
     title: "Evaluating frontier AI against clinicians, and where it fails.",

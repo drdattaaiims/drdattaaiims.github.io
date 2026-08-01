@@ -8,7 +8,7 @@ export default function NotFound() {
         <h1 className="font-display text-2xl font-bold text-navy">Page not found</h1>
         <p className="text-ink-quiet">
           Try the{" "}
-          <a href="/index.html" className="text-navy underline underline-offset-4">
+          <a href="/" className="text-navy underline underline-offset-4">
             homepage
           </a>
           .

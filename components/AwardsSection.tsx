@@ -5,7 +5,7 @@ const awards = [
     id: "rsna-2023",
     title: "RSNA Trainee Research Prize (MSK)",
     year: "2023",
-    description: "The only award to an Indian resident that year, for the AIRib rib-fracture detection pipeline.",
+    description: "For the AIRib pipeline — automated rib-fracture detection and characterisation on CT (MD-thesis work, AIIMS Delhi × IIT Jodhpur).",
   },
   {
     id: "young-achiever-2024",

@@ -41,7 +41,7 @@ const programmes = [
 export default function SelectedWorkSection() {
   return (
     <section id="selected-work" className="py-14 px-6 border-b border-rule bg-elevated">
-      <div className="max-w-4xl mx-auto space-y-7">
+      <div className="max-w-6xl mx-auto space-y-7">
         <SectionHeading>Selected Work</SectionHeading>
 
         <div className="space-y-7">

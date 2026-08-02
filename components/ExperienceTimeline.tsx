@@ -67,7 +67,7 @@ const experiences = [
 export default function ExperienceTimeline() {
   return (
     <section id="experience" className="py-14 px-6 border-b border-rule">
-      <div className="max-w-4xl mx-auto space-y-7">
+      <div className="max-w-6xl mx-auto space-y-7">
         <SectionHeading>Positions</SectionHeading>
 
         <ul className="space-y-6">

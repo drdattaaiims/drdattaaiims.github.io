@@ -26,7 +26,7 @@ const criteria = [
 export default function EvidenceSection() {
   return (
     <section className="py-14 px-6 border-b border-rule bg-elevated">
-      <div className="max-w-4xl mx-auto space-y-7">
+      <div className="max-w-6xl mx-auto space-y-7">
         <SectionHeading>What counts as evidence</SectionHeading>
 
         <dl className="space-y-4 max-w-prose">

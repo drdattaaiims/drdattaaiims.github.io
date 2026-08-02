@@ -3,7 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 export default function ClinicalGroundingSection() {
   return (
     <section className="py-14 px-6 border-b border-rule">
-      <div className="max-w-4xl mx-auto space-y-5">
+      <div className="max-w-6xl mx-auto space-y-5">
         <SectionHeading>The work starts with how care is actually delivered.</SectionHeading>
 
         <div className="max-w-prose space-y-4 leading-relaxed">

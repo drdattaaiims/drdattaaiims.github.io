@@ -28,7 +28,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-14 px-6 bg-elevated">
-      <div className="max-w-4xl mx-auto space-y-6">
+      <div className="max-w-6xl mx-auto space-y-6">
         <SectionHeading>Contact</SectionHeading>
         <p className="max-w-prose text-ink-quiet">
           Open to research collaborations and speaking engagements in AI and

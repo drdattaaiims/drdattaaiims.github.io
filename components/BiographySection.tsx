@@ -3,7 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 export default function BiographySection() {
   return (
     <section className="py-14 px-6 border-b border-rule">
-      <div className="max-w-4xl mx-auto space-y-5">
+      <div className="max-w-6xl mx-auto space-y-5">
         <SectionHeading>Biography</SectionHeading>
         <p className="max-w-prose leading-relaxed text-ink-quiet">
           Suvrankar Datta, MD, is a radiologist and physician-scientist at

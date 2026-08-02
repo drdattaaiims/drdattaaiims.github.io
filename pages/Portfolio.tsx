@@ -26,7 +26,7 @@ export default function Portfolio() {
       </main>
 
       <footer className="bg-navy py-8 px-6">
-        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-sans text-sm text-white/60">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-sans text-sm text-white/60">
           <RingMark className="w-5 h-5 text-white/50" />
           <span>© 2026 Suvrankar Datta.</span>
           <span>Last updated: 1 Aug 2026</span>

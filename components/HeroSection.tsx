@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* Ring watermark, bleeding off the right edge */}
       <RingMark className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 h-[420px] w-[420px] text-navy opacity-[0.05]" />
 
-      <div className="relative max-w-4xl mx-auto grid sm:grid-cols-[200px_1fr] gap-8 items-start">
+      <div className="relative max-w-6xl mx-auto grid sm:grid-cols-[200px_1fr] gap-8 items-start">
         <div className="border-l-2 border-navy pl-4 sm:border-l-0 sm:pl-0">
           <img
             src={profileImage}

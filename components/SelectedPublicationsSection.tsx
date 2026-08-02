@@ -1,4 +1,4 @@
-import SectionHeading from "@/components/SectionHeading";
+import Section from "@/components/Section";
 
 const publications = [
   {
@@ -29,35 +29,31 @@ const publications = [
 
 export default function SelectedPublicationsSection() {
   return (
-    <section className="py-14 px-6 border-b border-rule bg-elevated">
-      <div className="max-w-6xl mx-auto space-y-7">
-        <SectionHeading>Selected Publications</SectionHeading>
+    <Section heading="Selected Publications" tone="sunk">
+      <ul className="grid gap-x-10 gap-y-6 sm:grid-cols-2">
+        {publications.map((pub) => (
+          <li key={pub.href} className="border-l-2 border-rule pl-4 hover:border-navy transition-colors">
+            <a
+              href={pub.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink no-underline hover:underline underline-offset-4"
+              data-testid={`link-pub-${pub.href}`}
+            >
+              {pub.citation}
+            </a>
+            <p className="font-sans text-sm text-ink-quiet mt-1">{pub.venue}</p>
+          </li>
+        ))}
+      </ul>
 
-        <ul className="space-y-5">
-          {publications.map((pub) => (
-            <li key={pub.href} className="max-w-prose border-l-2 border-rule pl-4 hover:border-navy transition-colors">
-              <a
-                href={pub.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink no-underline hover:underline underline-offset-4"
-                data-testid={`link-pub-${pub.href}`}
-              >
-                {pub.citation}
-              </a>
-              <p className="font-sans text-sm text-ink-quiet mt-1">{pub.venue}</p>
-            </li>
-          ))}
-        </ul>
-
-        <a
-          href="/publications.html"
-          className="inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4"
-          data-testid="link-publications-full"
-        >
-          Full publication list →
-        </a>
-      </div>
-    </section>
+      <a
+        href="/publications.html"
+        className="inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4 mt-7"
+        data-testid="link-publications-full"
+      >
+        Full publication list &rarr;
+      </a>
+    </Section>
   );
 }

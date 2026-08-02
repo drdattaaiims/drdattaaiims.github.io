@@ -1,4 +1,4 @@
-import SectionHeading from "@/components/SectionHeading";
+import Section from "@/components/Section";
 
 const criteria = [
   {
@@ -25,30 +25,26 @@ const criteria = [
 
 export default function EvidenceSection() {
   return (
-    <section className="py-14 px-6 border-b border-rule bg-elevated">
-      <div className="max-w-6xl mx-auto space-y-7">
-        <SectionHeading>What counts as evidence</SectionHeading>
+    <Section heading="What counts as evidence" tone="sunk">
+      <dl className="grid gap-x-10 gap-y-5 sm:grid-cols-2">
+        {criteria.map((c) => (
+          <div key={c.title}>
+            <dt className="font-display font-semibold text-navy">{c.title}</dt>
+            <dd className="leading-relaxed text-ink-quiet">{c.body}</dd>
+          </div>
+        ))}
+      </dl>
 
-        <dl className="space-y-4 max-w-prose">
-          {criteria.map((c) => (
-            <div key={c.title}>
-              <dt className="font-display font-semibold text-navy">{c.title}</dt>
-              <dd className="leading-relaxed text-ink-quiet">{c.body}</dd>
-            </div>
-          ))}
-        </dl>
+      <p className="max-w-prose leading-relaxed mt-8">
+        Benchmarks are necessary. They are not sufficient. The evidence
+        pathway should extend from retrospective evaluation to workflow
+        testing, prospective validation and post-deployment monitoring.
+      </p>
 
-        <p className="max-w-prose leading-relaxed">
-          Benchmarks are necessary. They are not sufficient. The evidence
-          pathway should extend from retrospective evaluation to workflow
-          testing, prospective validation and post-deployment monitoring.
-        </p>
-
-        <p className="font-sans text-sm text-ink-quiet border-l-2 border-orange pl-4">
-          Model capability &rarr; Clinician action &rarr; Workflow performance
-          &rarr; Care quality &rarr; Patient outcomes
-        </p>
-      </div>
-    </section>
+      <p className="font-sans text-sm text-ink-quiet border-l-2 border-orange pl-4 mt-5">
+        Model capability &rarr; Clinician action &rarr; Workflow performance
+        &rarr; Care quality &rarr; Patient outcomes
+      </p>
+    </Section>
   );
 }

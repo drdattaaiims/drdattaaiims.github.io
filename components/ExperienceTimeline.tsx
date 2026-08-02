@@ -1,4 +1,4 @@
-import SectionHeading from "@/components/SectionHeading";
+import Section from "@/components/Section";
 
 const experiences = [
   {
@@ -66,29 +66,25 @@ const experiences = [
 
 export default function ExperienceTimeline() {
   return (
-    <section id="experience" className="py-14 px-6 border-b border-rule">
-      <div className="max-w-6xl mx-auto space-y-7">
-        <SectionHeading>Positions</SectionHeading>
-
-        <ul className="space-y-6">
-          {experiences.map((exp) => (
-            <li
-              key={exp.id}
-              className="grid sm:grid-cols-[11rem_1fr] gap-1 sm:gap-6"
-              data-testid={`experience-${exp.id}`}
-            >
-              <p className="font-mono text-xs text-ink-faint sm:pt-1">{exp.period}</p>
-              <div>
-                <p className="font-display font-semibold text-navy">{exp.title}</p>
-                <p className="font-sans text-sm text-ink-quiet">{exp.organization}</p>
-                {exp.description && (
-                  <p className="text-sm text-ink-quiet mt-1.5 max-w-prose">{exp.description}</p>
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+    <Section id="experience" heading="Positions">
+      <ul className="space-y-6">
+        {experiences.map((exp) => (
+          <li
+            key={exp.id}
+            className="grid gap-1 sm:grid-cols-[9rem_minmax(0,1fr)] sm:gap-6"
+            data-testid={`experience-${exp.id}`}
+          >
+            <p className="font-mono text-xs text-ink-faint sm:pt-1 whitespace-nowrap">{exp.period}</p>
+            <div>
+              <p className="font-display font-semibold text-navy">{exp.title}</p>
+              <p className="font-sans text-sm text-ink-quiet">{exp.organization}</p>
+              {exp.description && (
+                <p className="text-sm text-ink-quiet mt-1.5">{exp.description}</p>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </Section>
   );
 }

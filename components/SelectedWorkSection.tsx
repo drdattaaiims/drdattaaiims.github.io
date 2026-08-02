@@ -1,4 +1,4 @@
-import SectionHeading from "@/components/SectionHeading";
+import Section from "@/components/Section";
 
 const programmes = [
   {
@@ -40,38 +40,34 @@ const programmes = [
 
 export default function SelectedWorkSection() {
   return (
-    <section id="selected-work" className="py-14 px-6 border-b border-rule bg-elevated">
-      <div className="max-w-6xl mx-auto space-y-7">
-        <SectionHeading>Selected Work</SectionHeading>
-
-        <div className="space-y-7">
-          {programmes.map((p) => (
-            <div key={p.title} className="max-w-prose">
-              <p className="font-display font-semibold text-navy">{p.title}</p>
-              <p className="font-sans text-sm text-ink-quiet">{p.role}</p>
-              <p className="leading-relaxed mt-1.5">{p.body}</p>
-              <a
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-sm text-navy no-underline hover:underline underline-offset-4 mt-1.5 inline-block"
-                data-testid={`link-work-${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
-              >
-                {p.linkLabel} &rarr;
-              </a>
-            </div>
-          ))}
-        </div>
-
-        <p className="font-sans text-sm text-ink-quiet">
-          Additional selected work &mdash; AIRib, MICCAI 2025, MedVersa, and
-          LLM-augmented reporting studies &mdash; is on the{" "}
-          <a href="/research.html" className="text-navy hover:underline underline-offset-4">
-            Research page
-          </a>
-          .
-        </p>
+    <Section id="selected-work" heading="Selected Work" tone="sunk">
+      <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+        {programmes.map((p) => (
+          <div key={p.title}>
+            <p className="font-display font-semibold text-navy">{p.title}</p>
+            <p className="font-sans text-sm text-ink-quiet">{p.role}</p>
+            <p className="leading-relaxed mt-1.5">{p.body}</p>
+            <a
+              href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-sm text-navy no-underline hover:underline underline-offset-4 mt-1.5 inline-block"
+              data-testid={`link-work-${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+            >
+              {p.linkLabel} &rarr;
+            </a>
+          </div>
+        ))}
       </div>
-    </section>
+
+      <p className="font-sans text-sm text-ink-quiet mt-8">
+        Additional selected work &mdash; AIRib, MICCAI 2025, MedVersa, and
+        LLM-augmented reporting studies &mdash; is on the{" "}
+        <a href="/research.html" className="text-navy hover:underline underline-offset-4">
+          Research page
+        </a>
+        .
+      </p>
+    </Section>
   );
 }

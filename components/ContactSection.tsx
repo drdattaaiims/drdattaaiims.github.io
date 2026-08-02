@@ -7,6 +7,7 @@ import {
   LINKEDIN_URL,
   ORCID_URL,
   RESEARCHGATE_URL,
+  SCHOLAR_URL,
   CV_URL,
   CV_LABEL,
 } from "@/lib/identity";
@@ -51,6 +52,8 @@ export default function ContactSection() {
 
         <p className="font-sans text-sm text-ink-quiet">
           <a href={ORCID_URL} target="_blank" rel="noopener noreferrer" className="hover:underline" data-testid="link-orcid">ORCID</a>
+          {" · "}
+          <a href={SCHOLAR_URL} target="_blank" rel="noopener noreferrer" className="hover:underline" data-testid="link-scholar">Google Scholar</a>
           {" · "}
           <a href={RESEARCHGATE_URL} target="_blank" rel="noopener noreferrer" className="hover:underline" data-testid="link-researchgate">ResearchGate</a>
         </p>

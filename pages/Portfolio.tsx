@@ -1,10 +1,11 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import SelectedPublicationsSection from "@/components/SelectedPublicationsSection";
-import ResearchThreadsSection from "@/components/ResearchThreadsSection";
+import SelectedWorkSection from "@/components/SelectedWorkSection";
+import ClinicalGroundingSection from "@/components/ClinicalGroundingSection";
+import EvidenceSection from "@/components/EvidenceSection";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
-import TalksSection from "@/components/TalksSection";
-import AwardsSection from "@/components/AwardsSection";
+import SelectedPublicationsSection from "@/components/SelectedPublicationsSection";
+import BiographySection from "@/components/BiographySection";
 import ContactSection from "@/components/ContactSection";
 import RingMark from "@/components/RingMark";
 
@@ -15,11 +16,12 @@ export default function Portfolio() {
 
       <main>
         <HeroSection />
-        <SelectedPublicationsSection />
-        <ResearchThreadsSection />
+        <SelectedWorkSection />
+        <ClinicalGroundingSection />
+        <EvidenceSection />
         <ExperienceTimeline />
-        <TalksSection />
-        <AwardsSection />
+        <SelectedPublicationsSection />
+        <BiographySection />
         <ContactSection />
       </main>
 
@@ -28,6 +30,12 @@ export default function Portfolio() {
           <RingMark className="w-5 h-5 text-white/50" />
           <span>© 2026 Suvrankar Datta.</span>
           <span>Last updated: 1 Aug 2026</span>
+          <a href="/talks.html" className="text-white/60 no-underline hover:text-white hover:underline underline-offset-4">
+            Talks
+          </a>
+          <a href="/awards.html" className="text-white/60 no-underline hover:text-white hover:underline underline-offset-4">
+            Awards
+          </a>
           <a href="/disclosures.html" className="text-white/60 no-underline hover:text-white hover:underline underline-offset-4">
             Disclosures
           </a>

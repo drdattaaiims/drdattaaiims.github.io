@@ -1,21 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Download, Mail, Linkedin } from "lucide-react";
+import { Download, ArrowRight } from "lucide-react";
 import profileImage from "@assets/suvrankar_profile.jpg";
 import RingMark from "@/components/RingMark";
-import { EMAIL_PRIMARY, EMAIL_SECONDARY, LINKEDIN_URL, CV_URL, CV_LABEL } from "@/lib/identity";
+import { CV_URL, CV_LABEL } from "@/lib/identity";
 
 export default function HeroSection() {
   const handleDownloadCV = () => {
     window.open(CV_URL, "_blank", "noopener,noreferrer");
   };
 
-  const handleEmail = () => {
-    const subject = encodeURIComponent("Collaboration / speaking inquiry");
-    window.location.href = `mailto:${EMAIL_PRIMARY}?cc=${EMAIL_SECONDARY}&subject=${subject}`;
-  };
-
-  const handleLinkedIn = () => {
-    window.open(LINKEDIN_URL, "_blank", "noopener,noreferrer");
+  const handleViewWork = () => {
+    document.getElementById("selected-work")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -35,39 +30,46 @@ export default function HeroSection() {
 
         <div className="space-y-5">
           <div>
-            <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-navy">
-              Suvrankar Datta
-            </h1>
-            <p className="font-sans text-sm text-ink-quiet mt-2 leading-relaxed">
-              Radiologist and health-AI researcher &middot; Simons Ashoka Early
-              Career Fellow, Koita Centre for Digital Health, Ashoka University
-              &middot; Founder and Group Lead,{" "}
-              <a
-                href="https://crashlab.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-navy underline decoration-orange decoration-2 underline-offset-4"
-              >
-                CRASH Lab
-              </a>
+            <p className="font-sans text-xs uppercase tracking-[0.12em] text-ink-faint">
+              Physician-scientist &middot; Clinical AI evaluation &middot; Global health
             </p>
+            <p className="font-display text-lg font-semibold text-ink-quiet mt-1">
+              Suvrankar Datta
+            </p>
+            <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-navy leading-tight mt-1">
+              Clinical AI should know when to answer&mdash;and when to hand over.
+            </h1>
           </div>
 
           <p className="max-w-prose leading-relaxed">
-            I lead CRASH Lab, a clinician-led research group at Ashoka University
-            that builds benchmarks and evaluation frameworks for clinical AI. Our
-            Radiology's Last Exam (RadLE) project, which I co-led, tests frontier
-            multimodal models against board-certified radiologists on
-            reliability, safety, and readiness for autonomous use. My work on
-            automated rib-fracture detection and characterisation on CT (AIRib)
-            received the RSNA Trainee Research Prize in 2023, and related work on
-            fine-grained rib-fracture diagnosis was accepted at MICCAI 2025. I am
-            also a co-author on MedVersa, a generalist foundation model for
-            medical image interpretation, published in NEJM AI.
+            I am a radiologist and physician-scientist at Ashoka University. I
+            lead CRASH Lab, a clinician-led research group that designs
+            clinical evaluations, safeguards and research partnerships for
+            healthcare AI, with a focus on India and other resource-constrained
+            health systems.
+          </p>
+          <p className="max-w-prose leading-relaxed">
+            My work tests accuracy, uncertainty, multilingual performance and
+            real-world workflow fit&mdash;and translates model failures into
+            deferral rules, human handover and product safeguards.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-1">
+          <p className="font-sans text-sm text-ink-quiet">
+            Simons Ashoka Early Career Fellow, Koita Centre for Digital Health
+            &middot; Founder and Group Lead, CRASH Lab
+          </p>
+
+          <div className="flex flex-wrap items-center gap-3 pt-1">
             <Button
+              onClick={handleViewWork}
+              className="hover-elevate font-sans"
+              data-testid="button-view-work"
+            >
+              View selected work
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+            <Button
+              variant="outline"
               onClick={handleDownloadCV}
               className="hover-elevate font-sans"
               data-testid="button-download-cv"
@@ -75,24 +77,15 @@ export default function HeroSection() {
               <Download className="w-4 h-4 mr-2" />
               {CV_LABEL}
             </Button>
-            <Button
-              variant="outline"
-              onClick={handleEmail}
-              className="hover-elevate font-sans"
-              data-testid="button-email"
+            <a
+              href="https://crashlab.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-sm text-navy underline decoration-orange decoration-2 underline-offset-4"
+              data-testid="link-crash-lab"
             >
-              <Mail className="w-4 h-4 mr-2" />
-              Email
-            </Button>
-            <Button
-              variant="outline"
-              onClick={handleLinkedIn}
-              className="hover-elevate font-sans"
-              data-testid="button-linkedin"
-            >
-              <Linkedin className="w-4 h-4 mr-2" />
-              LinkedIn
-            </Button>
+              Visit CRASH Lab &rarr;
+            </a>
           </div>
         </div>
       </div>

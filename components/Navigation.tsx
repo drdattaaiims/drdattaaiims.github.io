@@ -3,11 +3,12 @@ import { Menu, X } from "lucide-react";
 import RingMark from "@/components/RingMark";
 
 const navigation = [
-  { name: "Home", href: "/index.html" },
+  { name: "Home", href: "/" },
   { name: "Research", href: "/research.html" },
   { name: "Publications", href: "/publications.html" },
   { name: "Lab", href: "/lab.html" },
   { name: "Talks", href: "/talks.html" },
+  { name: "Journey", href: "/journey.html" },
   { name: "CV", href: "/cv/" },
   { name: "Contact", href: "#contact" },
 ];

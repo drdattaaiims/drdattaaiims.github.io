@@ -30,16 +30,26 @@ export default function Navigation() {
           </a>
 
           <nav className="hidden md:flex items-center gap-5 font-sans text-sm" aria-label="Primary">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-ink-quiet no-underline hover:text-navy transition-colors"
-                data-testid={`nav-${item.name.toLowerCase()}`}
-              >
-                {item.name}
-              </a>
-            ))}
+            {navigation.map((item) => {
+              const isCurrent = item.href === "/";
+
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  aria-current={isCurrent ? "page" : undefined}
+                  className={
+                    "border-b-2 py-1 no-underline transition-colors " +
+                    (isCurrent
+                      ? "border-orange font-medium text-navy"
+                      : "border-transparent text-ink-quiet hover:text-navy")
+                  }
+                  data-testid={`nav-${item.name.toLowerCase()}`}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
           </nav>
 
           <button
@@ -57,18 +67,26 @@ export default function Navigation() {
         {mobileMenuOpen && (
           <nav id="mobile-menu" className="md:hidden py-3 border-t border-rule font-sans text-sm" aria-label="Primary mobile">
             <ul className="flex flex-col gap-1">
-              {navigation.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="block py-2 text-ink-quiet no-underline hover:text-navy transition-colors"
-                    onClick={() => setMobileMenuOpen(false)}
-                    data-testid={`nav-mobile-${item.name.toLowerCase()}`}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
+              {navigation.map((item) => {
+                const isCurrent = item.href === "/";
+
+                return (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      aria-current={isCurrent ? "page" : undefined}
+                      className={
+                        "block py-2 no-underline transition-colors hover:text-navy " +
+                        (isCurrent ? "font-medium text-navy" : "text-ink-quiet")
+                      }
+                      onClick={() => setMobileMenuOpen(false)}
+                      data-testid={`nav-mobile-${item.name.toLowerCase()}`}
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         )}

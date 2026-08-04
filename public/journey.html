@@ -26,20 +26,20 @@
   <style>
     /* Wider two-column shell: heading rail on the left, timeline on the right,
        matching the homepage editorial layout so the page fills the width. */
-    main.journey { max-width: 72rem; }
+    main.journey { max-width: 72rem; padding-top: var(--page-top-space); }
     main.journey footer.page-footer { max-width: none; }
     .journey-grid {
       display: grid;
-      grid-template-columns: 14rem minmax(0, 1fr);
-      gap: 0 3rem;
+      grid-template-columns: 15rem minmax(0, 1fr);
+      gap: 0 3.5rem;
       align-items: start;
     }
-    .journey-head { padding-top: 0.5rem; }
+    .journey-head { padding-top: 0; }
     .journey-head h1 { margin-top: 0; }
 
     /* Reverse-chronological timeline. Year in the left column; a continuous
        hairline with a square node per entry; narrative on the right. */
-    .timeline { margin-top: 0.25rem; }
+    .timeline { margin-top: 0; }
     .entry {
       display: grid;
       grid-template-columns: 5.5rem minmax(0, 1fr);

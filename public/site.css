@@ -15,6 +15,11 @@
   --rule-subtle: #eef2f7;
   --orange: #ea580c;
 
+  /* Shared shell dimensions — keep these aligned with the React homepage. */
+  --header-height: 3.5rem;
+  --page-top-space: 5rem;
+  --sticky-rail-gap: 2rem;
+
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -31,6 +36,7 @@ body {
   background: var(--canvas);
   color: var(--text);
   margin: 0;
+  padding-top: var(--header-height);
   line-height: 1.65;
 }
 
@@ -51,7 +57,10 @@ main { padding-bottom: 64px; }
  * header — so the page uses the full measure instead of a narrow,
  * centred strip with large empty margins on both sides.
  * ------------------------------------------------------------------ */
-main.page { max-width: 1152px; }
+main.page {
+  max-width: 1152px;
+  padding-top: var(--page-top-space);
+}
 main.page > footer.page-footer { max-width: none; }
 
 .page-grid {
@@ -60,15 +69,19 @@ main.page > footer.page-footer { max-width: none; }
   gap: 0 3.5rem;
   align-items: start;
 }
-.page-head { padding-top: 0.5rem; }
-.page-head h1 { margin-top: 0.5rem; }
+.page-head { padding-top: 0; }
+.page-head h1 { margin-top: 0; }
 .page-head .lede { margin-bottom: 0; }
 .page-body { min-width: 0; }
 .page-body > :first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.page-body > ul:first-child > li:first-child { margin-top: 0; }
 .page-body p:not(.lede) { max-width: 74ch; }
 
 @media (min-width: 861px) {
-  .page-head { position: sticky; top: 72px; }
+  .page-head {
+    position: sticky;
+    top: calc(var(--header-height) + var(--sticky-rail-gap));
+  }
 }
 @media (max-width: 860px) {
   .page-grid { grid-template-columns: 1fr; gap: 0; }
@@ -148,8 +161,10 @@ footer.page-footer a { color: var(--text-3); }
 
 /* Nav (shared) */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   background: rgba(250, 250, 248, 0.96);
   backdrop-filter: blur(6px);
@@ -163,7 +178,8 @@ footer.page-footer a { color: var(--text-3); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 16px;
+  min-height: var(--header-height);
+  padding: 0 24px;
 }
 .brand {
   display: inline-flex;
@@ -199,9 +215,14 @@ footer.page-footer a { color: var(--text-3); }
   margin: 0;
   padding: 0;
 }
+.menu li { margin: 0; }
 .menu a {
+  position: relative;
+  display: inline-block;
   font-weight: 400;
   font-size: 0.9rem;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
   color: var(--text-3);
 }
@@ -209,14 +230,13 @@ footer.page-footer a { color: var(--text-3); }
 .menu a.active {
   color: var(--navy);
   font-weight: 500;
-  box-shadow: inset 0 -2px 0 var(--orange);
+  border-bottom-color: var(--orange);
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .site-bar { flex-wrap: wrap; }
   .nav-toggle { display: inline-block; }
   .site-bar > nav { display: none; flex-basis: 100%; order: 10; }
   .site-header.is-open .site-bar > nav { display: block; }
   .menu { flex-direction: column; gap: 0; border-top: 1px solid var(--rule); padding-top: 8px; margin-top: 8px; }
-  .menu a { display: block; padding: 8px 0; }
-  .menu a.active { box-shadow: none; }
+  .menu a { display: block; padding: 8px 0; border-bottom: 0; }
 }

@@ -5,7 +5,6 @@ import ClinicalGroundingSection from "@/components/ClinicalGroundingSection";
 import EvidenceSection from "@/components/EvidenceSection";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 import SelectedPublicationsSection from "@/components/SelectedPublicationsSection";
-import BiographySection from "@/components/BiographySection";
 import ContactSection from "@/components/ContactSection";
 import RingMark from "@/components/RingMark";
 
@@ -21,7 +20,6 @@ export default function Portfolio() {
         <EvidenceSection />
         <ExperienceTimeline />
         <SelectedPublicationsSection />
-        <BiographySection />
         <ContactSection />
       </main>
 

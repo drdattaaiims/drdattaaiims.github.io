@@ -26,7 +26,7 @@ const criteria = [
 export default function EvidenceSection() {
   return (
     <Section heading="What counts as evidence" tone="sunk">
-      <dl className="grid gap-x-10 gap-y-5 sm:grid-cols-2">
+      <dl className="grid gap-x-10 gap-y-5 min-[900px]:grid-cols-2">
         {criteria.map((c) => (
           <div key={c.title}>
             <dt className="font-display font-semibold text-navy">{c.title}</dt>

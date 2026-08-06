@@ -1,90 +1,66 @@
 import Section from "@/components/Section";
 
-const experiences = [
+const background = [
   {
     id: "simons-ashoka",
-    title: "Simons Ashoka Early Career Fellow, Koita Centre for Digital Health",
-    organization: "Ashoka University",
-    period: "Nov 2025 – present",
-    description:
-      "Full-time fellowship supported by a Simons Foundation grant to Ashoka University.",
+    title: "Simons Ashoka Early Career Fellow",
+    organization: "Koita Centre for Digital Health, Ashoka University",
+    period: "2025 – present",
   },
   {
     id: "crash-lab",
     title: "Founder and Group Lead, CRASH Lab",
-    organization: "Koita Centre for Digital Health, Ashoka University",
-    period: "May 2025 – present",
-    description:
-      "Centre for Responsible Autonomous Systems in Healthcare — clinician-led research group building benchmarks, datasets, and validation frameworks for medical AI.",
-  },
-  {
-    id: "faculty-fellow",
-    title: "Faculty Fellow, Koita Centre for Digital Health",
-    organization: "Ashoka University",
-    period: "Feb 2025 – Oct 2025",
-  },
-  {
-    id: "faima-president",
-    title: "National President, Federation of All India Medical Associations (FAIMA)",
-    organization: "Elected, voluntary",
-    period: "2024 – 2025",
-  },
-  {
-    id: "locum",
-    title: "Locum Radiologist",
-    organization: "Medanta and Fortis Hospitals, Delhi NCR",
-    period: "Dec 2024 – Jan 2025",
+    organization: "Clinician-led evaluation of responsible autonomous systems in healthcare",
+    period: "2025 – present",
   },
   {
     id: "aiims-resident",
-    title: "Senior Resident, Dept. of Radiodiagnosis & IR",
-    organization: "AIIMS Delhi",
-    period: "Sep 2023 – Nov 2024",
-    description:
-      "Independently interpreted 200+ studies during regular emergency shifts, predominantly CT and ultrasonography; taught junior residents; part-time AI research.",
+    title: "Former Senior Resident, Radiodiagnosis & IR",
+    organization: "AIIMS New Delhi",
+    period: "2023 – 2024",
   },
   {
-    id: "harvard",
-    title: "Medical AI Bootcamp 2024 — Participant",
-    organization: "Rajpurkar Lab, Harvard University",
-    period: "2024",
-    description: "Training and research collaboration that led to a contribution to MedVersa.",
-  },
-  {
-    id: "md",
-    title: "M.D., Radiodiagnosis & Interventional Radiology",
-    organization: "All India Institute of Medical Sciences (AIIMS), New Delhi",
-    period: "2020 – 2023",
-  },
-  {
-    id: "mbbs",
-    title: "M.B.B.S. (Gold Medallist)",
-    organization: "Jawaharlal Institute of Postgraduate Medical Education & Research (JIPMER), Puducherry",
-    period: "2014 – 2018",
+    id: "training",
+    title: "MD, AIIMS New Delhi · MBBS, JIPMER",
+    organization: "Radiology training grounded in high-volume public-sector and rural care",
+    period: "2014 – 2023",
   },
 ];
 
 export default function ExperienceTimeline() {
   return (
-    <Section id="experience" heading="Positions">
-      <ul className="space-y-6">
-        {experiences.map((exp) => (
+    <Section id="experience" heading="Background">
+      <p className="mb-6 max-w-prose leading-relaxed text-ink-quiet">
+        I moved from clinical radiology into full-time medical-AI evaluation
+        after training and practice across public-sector, emergency and rural
+        settings in India.
+      </p>
+
+      <ul className="space-y-5">
+        {background.map((item) => (
           <li
-            key={exp.id}
-            className="grid gap-1 sm:grid-cols-[9rem_minmax(0,1fr)] sm:gap-6"
-            data-testid={`experience-${exp.id}`}
+            key={item.id}
+            className="grid gap-1 min-[900px]:grid-cols-[9rem_minmax(0,1fr)] min-[900px]:gap-6"
+            data-testid={"experience-" + item.id}
           >
-            <p className="font-mono text-xs text-ink-faint sm:pt-1 whitespace-nowrap">{exp.period}</p>
+            <p className="whitespace-nowrap font-mono text-xs text-ink-faint min-[900px]:pt-1">
+              {item.period}
+            </p>
             <div>
-              <p className="font-display font-semibold text-navy">{exp.title}</p>
-              <p className="font-sans text-sm text-ink-quiet">{exp.organization}</p>
-              {exp.description && (
-                <p className="text-sm text-ink-quiet mt-1.5">{exp.description}</p>
-              )}
+              <p className="font-display font-semibold text-navy">{item.title}</p>
+              <p className="font-sans text-sm text-ink-quiet">{item.organization}</p>
             </div>
           </li>
         ))}
       </ul>
+
+      <a
+        href="/journey.html"
+        className="mt-7 inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4"
+        data-testid="link-experience-full"
+      >
+        Full experience and education &rarr;
+      </a>
     </Section>
   );
 }

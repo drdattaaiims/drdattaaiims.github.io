@@ -41,7 +41,7 @@ const programmes = [
 export default function SelectedWorkSection() {
   return (
     <Section id="selected-work" heading="Selected Work" tone="sunk">
-      <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+      <div className="grid gap-x-10 gap-y-8 min-[900px]:grid-cols-2">
         {programmes.map((p) => (
           <div key={p.title}>
             <p className="font-display font-semibold text-navy">{p.title}</p>

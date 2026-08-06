@@ -2,54 +2,52 @@ import Section from "@/components/Section";
 
 const publications = [
   {
-    citation:
-      "Zhou HY, Acosta JN, Adithan S, Datta S, Topol EJ, Rajpurkar P. MedVersa: a generalist foundation model for diverse medical imaging tasks.",
-    venue: "NEJM AI, 2026;3(4)",
+    title: "MedVersa",
+    summary: "Generalist foundation model for diverse medical imaging tasks",
+    venue: "NEJM AI · 2026",
     href: "https://doi.org/10.1056/AIoa2500595",
   },
   {
-    citation:
-      "Datta S*, Buchireddygari D*, et al. Radiology's Last Exam (RadLE): benchmarking frontier multimodal AI against human experts and a taxonomy of visual reasoning errors in radiology.",
-    venue: "arXiv preprint, 2025 (* co-first authors)",
+    title: "Radiology’s Last Exam",
+    summary: "Frontier multimodal AI versus human experts",
+    venue: "Co-first author · 2025",
     href: "https://arxiv.org/abs/2509.25559",
   },
   {
-    citation:
-      "Pate S, Farooq A, Datta S, et al. Fine-grained rib fracture diagnosis with hyperbolic embeddings.",
-    venue: "MICCAI 2025",
+    title: "Fine-Grained Rib Fracture Diagnosis",
+    summary: "Hyperbolic embeddings for structured diagnostic labels",
+    venue: "MICCAI · 2025",
     href: "https://doi.org/10.1007/978-3-032-05182-0_22",
-  },
-  {
-    citation:
-      "Datta S, Sarangi PK. From chatbots to agentic workflows: ensuring responsible deployment of large language models in radiology.",
-    venue: "Indian Journal of Radiology & Imaging, 2026;36(2):286–288",
-    href: "https://doi.org/10.1055/s-0045-1811264",
   },
 ];
 
 export default function SelectedPublicationsSection() {
   return (
     <Section heading="Selected Publications" tone="sunk">
-      <ul className="grid gap-x-10 gap-y-6 sm:grid-cols-2">
-        {publications.map((pub) => (
-          <li key={pub.href} className="border-l-2 border-rule pl-4 hover:border-navy transition-colors">
+      <ul className="grid gap-x-10 gap-y-6 min-[900px]:grid-cols-3">
+        {publications.map((publication) => (
+          <li
+            key={publication.href}
+            className="border-l-2 border-rule pl-4 transition-colors hover:border-navy"
+          >
             <a
-              href={pub.href}
+              href={publication.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-ink no-underline hover:underline underline-offset-4"
-              data-testid={`link-pub-${pub.href}`}
+              className="font-display font-semibold text-navy no-underline hover:underline underline-offset-4"
+              data-testid={"link-pub-" + publication.href}
             >
-              {pub.citation}
+              {publication.title}
             </a>
-            <p className="font-sans text-sm text-ink-quiet mt-1">{pub.venue}</p>
+            <p className="mt-1 leading-relaxed text-ink-quiet">{publication.summary}</p>
+            <p className="mt-2 font-sans text-sm text-ink-quiet">{publication.venue}</p>
           </li>
         ))}
       </ul>
 
       <a
         href="/publications.html"
-        className="inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4 mt-7"
+        className="mt-7 inline-block font-sans text-sm font-medium text-navy no-underline hover:underline underline-offset-4"
         data-testid="link-publications-full"
       >
         Full publication list &rarr;

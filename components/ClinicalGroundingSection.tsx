@@ -3,7 +3,7 @@ import Section from "@/components/Section";
 export default function ClinicalGroundingSection() {
   return (
     <Section heading="The work starts with how care is actually delivered.">
-      <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2">
+      <div className="grid gap-x-10 gap-y-6 min-[900px]:grid-cols-2">
         <div>
           <p className="font-display font-semibold text-navy">Rural primary care &mdash; JIPMER</p>
           <p className="leading-relaxed mt-1.5">

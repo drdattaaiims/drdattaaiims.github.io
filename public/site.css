@@ -44,8 +44,8 @@ main, footer.page-footer {
   display: block;
   max-width: 68ch;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 main { padding-bottom: 64px; }
@@ -53,12 +53,12 @@ main { padding-bottom: 64px; }
 /* ------------------------------------------------------------------ *
  * Wide editorial shell for structured content pages (opt-in via
  * <main class="page">). The page title + intro sit in a left rail and
- * the content fills a wide right column that lines up with the 1152px
+ * the content fills a wide right column that lines up with the 1120px
  * header — so the page uses the full measure instead of a narrow,
  * centred strip with large empty margins on both sides.
  * ------------------------------------------------------------------ */
 main.page {
-  max-width: 1152px;
+  max-width: 1120px;
   padding-top: var(--page-top-space);
 }
 main.page > footer.page-footer { max-width: none; }
@@ -75,15 +75,15 @@ main.page > footer.page-footer { max-width: none; }
 .page-body { min-width: 0; }
 .page-body > :first-child { margin-top: 0; padding-top: 0; border-top: 0; }
 .page-body > ul:first-child > li:first-child { margin-top: 0; }
-.page-body p:not(.lede) { max-width: 74ch; }
+.page-body p:not(.lede) { max-width: 68ch; }
 
-@media (min-width: 861px) {
+@media (min-width: 900px) {
   .page-head {
     position: sticky;
     top: calc(var(--header-height) + var(--sticky-rail-gap));
   }
 }
-@media (max-width: 860px) {
+@media (max-width: 899px) {
   .page-grid { grid-template-columns: 1fr; gap: 0; }
   .page-head { padding-top: 0; }
   .page-head .lede { margin-bottom: 1.25rem; }
@@ -173,7 +173,7 @@ footer.page-footer a { color: var(--text-3); }
   font-family: var(--font-sans);
 }
 .site-bar {
-  max-width: 1152px;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -199,6 +199,8 @@ footer.page-footer a { color: var(--text-3); }
 
 .nav-toggle {
   display: none;
+  min-width: 44px;
+  min-height: 44px;
   border: 1px solid var(--rule);
   border-radius: 0;
   background: var(--surface);
@@ -211,7 +213,7 @@ footer.page-footer a { color: var(--text-3); }
 .menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 16px;
   margin: 0;
   padding: 0;
 }
@@ -220,7 +222,7 @@ footer.page-footer a { color: var(--text-3); }
   position: relative;
   display: inline-block;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 4px 0;
   border-bottom: 2px solid transparent;
   text-decoration: none;
@@ -232,11 +234,22 @@ footer.page-footer a { color: var(--text-3); }
   font-weight: 500;
   border-bottom-color: var(--orange);
 }
-@media (max-width: 767px) {
+@media (min-width: 1100px) {
+  .menu { gap: 20px; }
+  .menu a { font-size: 0.9rem; }
+}
+@media (max-width: 899px) {
   .site-bar { flex-wrap: wrap; }
   .nav-toggle { display: inline-block; }
   .site-bar > nav { display: none; flex-basis: 100%; order: 10; }
   .site-header.is-open .site-bar > nav { display: block; }
   .menu { flex-direction: column; gap: 0; border-top: 1px solid var(--rule); padding-top: 8px; margin-top: 8px; }
-  .menu a { display: block; padding: 8px 0; border-bottom: 0; }
+  .menu a {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    padding: 0;
+    border-bottom: 0;
+    font-size: 0.9rem;
+  }
 }

@@ -2,27 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Research – Suvrankar Datta</title>
+  <title>Research & Work – Suvrankar Datta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#081D3A">
   <link rel="canonical" href="https://drdattaaiims.github.io/research.html">
-  <meta name="description" content="Clinical AI evaluation research by Suvrankar Datta: Radiology's Last Exam (RadLE), fine-grained diagnosis under label scarcity, and multimodal foundation models for medical image interpretation.">
-  <meta property="og:title" content="Research – Suvrankar Datta">
-  <meta property="og:description" content="Clinical AI evaluation research by Suvrankar Datta: Radiology's Last Exam (RadLE), fine-grained diagnosis under label scarcity, and multimodal foundation models for medical image interpretation.">
+  <meta name="description" content="Research by Suvrankar Datta on clinical AI evaluation and safety, multilingual clinical AI, LMIC validation, decision support, and medical imaging systems.">
+  <meta property="og:title" content="Research & Work – Suvrankar Datta">
+  <meta property="og:description" content="Clinical AI evaluation, multilingual and ambient AI, LMIC validation, decision support, and medical imaging systems.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://drdattaaiims.github.io/research.html">
   <meta property="og:image" content="https://drdattaaiims.github.io/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Research – Suvrankar Datta">
-  <meta name="twitter:description" content="Clinical AI evaluation research by Suvrankar Datta: Radiology's Last Exam (RadLE), fine-grained diagnosis under label scarcity, and multimodal foundation models for medical image interpretation.">
-  <meta name="twitter:image" content="https://drdattaaiims.github.io/og.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lexend:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/site.css?v=20260806-1">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lexend:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site.css?v=20260807-1">
 </head>
 <body>
   <header class="site-header" id="site-header">
@@ -31,11 +26,9 @@
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteMenu">Menu</button>
       <nav id="siteMenu" aria-label="Primary">
         <ul class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/research.html" class="active">Research</a></li>
+          <li><a href="/research.html" class="active">Work</a></li>
+          <li><a href="/clinical-global-health.html">Clinical &amp; Global Health</a></li>
           <li><a href="/publications.html">Publications</a></li>
-          <li><a href="/lab.html">Lab</a></li>
-          <li><a href="/talks.html">Talks</a></li>
           <li><a href="/journey.html">Journey</a></li>
           <li><a href="/cv/">CV</a></li>
           <li><a href="/#contact">Contact</a></li>
@@ -47,95 +40,59 @@
   <main class="page">
     <div class="page-grid">
       <div class="page-head">
-    <h1>Research</h1>
-    <p class="lede">
-      I build and evaluate AI systems for radiology, and study where they fail
-      once they leave a benchmark and meet real clinical data. Most of the work
-      below sits at the boundary between a working model and a system a
-      clinician can actually trust: labelled data is scarce, deployment
-      conditions shift, and language-model outputs need governance before they
-      reach a report. I do this as Founder and Group Lead of
-      <a href="/lab.html">CRASH Lab</a> at Ashoka University.
-    </p>
-
+        <h1>Research &amp; Work</h1>
+        <p class="lede">I study what evidence clinical AI needs before it can influence care: not only whether a model is accurate, but whether it is reliable, safe, locally valid and able to hand over when uncertain.</p>
       </div>
       <div class="page-body">
-    <h2>Fine-grained diagnosis under label scarcity</h2>
-    <p>
-      Rib fractures are undercounted on routine CT because fine-grained,
-      per-fracture annotation is expensive and few centres produce it at
-      scale. AIRib &mdash; my MD-thesis work, developed with IIT Jodhpur and
-      AIIMS Delhi under a ₹3.9M TIH iHub Drishti grant &mdash; is an
-      end-to-end pipeline for detecting, characterising, and prognosticating
-      traumatic rib fractures from CT. Related work on fine-grained
-      rib-fracture diagnosis, which encodes the fracture hierarchy directly
-      into the model using hyperbolic embeddings and on which I am a
-      co-author, followed at MICCAI 2025.
-    </p>
-    <p class="meta">
-      → RSNA Trainee Research Prize 2023 (AIRib); MICCAI 2025, Pate et al.
-      (co-author).
-      <a href="/publications.html">Publications →</a>
-    </p>
+        <h2>Clinical AI evaluation and safety</h2>
+        <p>
+          Radiology's Last Exam (RadLE) tests frontier multimodal systems against radiologists on difficult clinical cases. I am co-first author of RadLE 1.0 and co-lead of RadLE 2.0. The second evaluation expands beyond accuracy to confidence, reliability, high-confidence errors and explicit deferral.
+        </p>
+        <p class="link-row">
+          <a href="https://arxiv.org/abs/2509.25559" target="_blank" rel="noopener">RadLE 1.0 paper &rarr;</a>
+          <a href="https://crashlab.in/radle-technicalreport" target="_blank" rel="noopener">RadLE 2.0 technical report &rarr;</a>
+          <a href="https://crashlab.in/radle/2/leaderboard" target="_blank" rel="noopener">Leaderboard &rarr;</a>
+        </p>
 
-    <h2>Evaluating frontier AI against clinicians, and where it fails</h2>
-    <p>
-      Radiology's Last Exam (RadLE) is a CRASH Lab benchmarking programme that
-      tests frontier multimodal AI on difficult, clinically grounded radiology
-      cases, measuring not just accuracy but calibrated confidence, safe
-      deferral, and readiness for autonomous use. RadLE 1.0 pitted five
-      frontier models against four board-certified radiologists and four
-      trainees on 50 expert-level cases; board-certified radiologists scored
-      83% against the best model's 30%. RadLE 2.0 extends this to 200 cases
-      and 16 models. Separately, I work on where LLM-augmented reporting
-      pipelines break under distribution shift, and what governance those
-      failures imply before they reach a clinical report.
-    </p>
-    <p class="meta">
-      → Radiology's Last Exam (RadLE), arXiv preprint, 2025; RSNA 2023, two
-      Cutting-Edge Oral presentations on LLM-augmented speech recognition for
-      radiology reporting; "From Chatbots to Agentic Workflows: Ensuring
-      Responsible Deployment of Large Language Models in Radiology,"
-      <em>Indian Journal of Radiology &amp; Imaging</em>, 2026.
-      <a href="/publications.html">Publications →</a>
-    </p>
+        <h2>Multilingual and ambient clinical AI</h2>
+        <p>
+          PrAImaan and V2DD evaluate clinical AI systems in Indian workflows. My roles are Clinical Research and Technical Teams Supervisor for PrAImaan and Clinical Evaluation Team Supervisor for V2DD, under Principal Investigator Prof. Anurag Agrawal. The work includes blinded evaluation of healthcare AI and multilingual voice-to-structured-data systems, including omissions, hallucinations, correction burden, privacy, usability and interoperability.
+        </p>
+        <p class="link-row">
+          <a href="https://kcdha.ashoka.edu.in/2025-researchdetails/evaluating-healthcare-ai-scribe-models-in-india-praimaan" target="_blank" rel="noopener">PrAImaan &rarr;</a>
+          <a href="https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290" target="_blank" rel="noopener">V2DD grant record &rarr;</a>
+        </p>
 
-    <h2>Multimodal foundation models for medical image interpretation</h2>
-    <p>
-      MedVersa is a generalist foundation model that interprets medical
-      images across modalities rather than one narrow task at a time,
-      developed by Hong-Yu Zhou, Julian Acosta, Subathra Adithan, Eric Topol,
-      and Pranav Rajpurkar at the Rajpurkar Lab, Harvard Medical School. As a
-      co-author, I led the radiologist evaluation workstream and contributed
-      clinical interpretation of its report-generation results.
-    </p>
-    <p class="meta">
-      → MedVersa: A Generalist Foundation Model for Diverse Medical Imaging
-      Tasks, <em>NEJM AI</em>, 2026.
-      <a href="/publications.html">Publications →</a>
-    </p>
+        <h2>LMIC validation and health equity</h2>
+        <p>
+          I lead an India–Singapore programme supported through the DST–A*STAR Joint Science and Technology Research Programme. It focuses on indigenous radiology datasets, subgroup evaluation and vision-language models intended for South Asian populations. The larger question is whether performance demonstrated on one population, institution or language survives contact with another.
+        </p>
+        <p class="link-row"><a href="https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the" target="_blank" rel="noopener">Programme announcement &rarr;</a></p>
 
-    <h2>LLM reliability in radiology practice and education</h2>
-    <p>
-      Before a language model is trusted with a clinical decision, its
-      reliability needs to be measured against the specific task, not a
-      general benchmark. I've evaluated LLM accuracy on FRCR examination
-      questions and on imaging-referral decisions for pulmonary embolism,
-      both with Sarangi PK and colleagues.
-    </p>
-    <p class="meta">
-      → "Evaluating ChatGPT-4's Performance in Identifying Radiological
-      Anatomy in FRCR Part 1 Examination Questions" and "Radiologic
-      Decision-Making for Imaging in Pulmonary Embolism," <em>Indian Journal
-      of Radiology &amp; Imaging</em>, 2024–2025.
-      <a href="/publications.html">Publications →</a>
-    </p>
+        <h2>Clinical decision support</h2>
+        <p>
+          PREDICT-AI is an IndiaAI CATCH-supported consortium with Tata Memorial Hospital and Manentia AI. As Principal Investigator, I work on clinical evaluation for decision support around post-chemotherapy retroperitoneal lymph-node dissection planning in testicular cancer.
+        </p>
+        <p class="link-row"><a href="https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious" target="_blank" rel="noopener">Programme announcement &rarr;</a></p>
 
+        <h2>Medical imaging and reporting systems</h2>
+        <p>
+          My imaging work spans AIRib, an AIIMS New Delhi–IIT Jodhpur pipeline for rib-fracture detection and characterisation; a MICCAI 2025 collaboration on fine-grained rib-fracture diagnosis with hyperbolic embeddings; and MedVersa, a generalist foundation model published in <em>NEJM AI</em>, for which I contributed to the radiologist evaluation workstream. Earlier reporting studies examined LLM-augmented speech-recognition pipelines and reliability in radiology tasks.
+        </p>
+        <p class="link-row">
+          <a href="https://doi.org/10.1056/AIoa2500595" target="_blank" rel="noopener">MedVersa &rarr;</a>
+          <a href="https://doi.org/10.1007/978-3-032-05182-0_22" target="_blank" rel="noopener">MICCAI 2025 paper &rarr;</a>
+          <a href="/publications.html">Full publication list &rarr;</a>
+        </p>
+
+        <div class="notice">
+          <strong>Clinical context matters.</strong> The companion <a href="/clinical-global-health.html">Clinical &amp; Global Health page</a> explains how public-sector and rural practice shape these evaluation priorities.
+        </div>
       </div>
     </div>
     <footer class="page-footer">
-      <span>Last updated: 1 Aug 2026</span>
-      <span><a href="/lab.html">CRASH Lab →</a></span>
+      <span>Last updated: 7 Aug 2026</span>
+      <span><a href="https://crashlab.in/" target="_blank" rel="noopener">CRASH Lab &rarr;</a></span>
     </footer>
   </main>
 

@@ -3,11 +3,9 @@ import { Menu, X } from "lucide-react";
 import RingMark from "@/components/RingMark";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Research", href: "/research.html" },
+  { name: "Work", href: "/research.html" },
+  { name: "Clinical & Global Health", href: "/clinical-global-health.html" },
   { name: "Publications", href: "/publications.html" },
-  { name: "Lab", href: "/lab.html" },
-  { name: "Talks", href: "/talks.html" },
   { name: "Journey", href: "/journey.html" },
   { name: "CV", href: "/cv/" },
   { name: "Contact", href: "#contact" },
@@ -34,19 +32,11 @@ export default function Navigation() {
             aria-label="Primary"
           >
             {navigation.map((item) => {
-              const isCurrent = item.href === "/";
-
-              return (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  aria-current={isCurrent ? "page" : undefined}
-                  className={
-                    "border-b-2 py-1 no-underline transition-colors " +
-                    (isCurrent
-                      ? "border-orange font-medium text-navy"
-                      : "border-transparent text-ink-quiet hover:text-navy")
-                  }
+                return (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="border-b-2 border-transparent py-1 text-ink-quiet no-underline transition-colors hover:text-navy"
                   data-testid={`nav-${item.name.toLowerCase()}`}
                 >
                   {item.name}
@@ -75,17 +65,11 @@ export default function Navigation() {
           >
             <ul className="flex flex-col gap-1">
               {navigation.map((item) => {
-                const isCurrent = item.href === "/";
-
                 return (
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      aria-current={isCurrent ? "page" : undefined}
-                      className={
-                        "flex min-h-11 items-center no-underline transition-colors hover:text-navy " +
-                        (isCurrent ? "font-medium text-navy" : "text-ink-quiet")
-                      }
+                      className="flex min-h-11 items-center text-ink-quiet no-underline transition-colors hover:text-navy"
                       onClick={() => setMobileMenuOpen(false)}
                       data-testid={`nav-mobile-${item.name.toLowerCase()}`}
                     >

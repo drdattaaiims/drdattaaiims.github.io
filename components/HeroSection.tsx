@@ -28,22 +28,6 @@ export default function HeroSection() {
       <RingMark className="pointer-events-none absolute -right-24 top-1/2 hidden h-[420px] w-[420px] -translate-y-1/2 text-navy min-[900px]:block min-[900px]:opacity-[0.018] min-[1100px]:opacity-[0.05]" />
 
       <div className="relative mx-auto grid max-w-[1120px] items-start gap-6 min-[900px]:grid-cols-[260px_minmax(0,1fr)] min-[900px]:gap-8 min-[1100px]:grid-cols-[300px_minmax(0,1fr)] min-[1100px]:gap-10">
-        <div className="order-2 flex flex-col items-center min-[900px]:order-1 min-[900px]:items-start">
-          <img
-            src={profileImage}
-            alt="Suvrankar Datta presenting at RSNA 2025"
-            className="aspect-[16/10] w-full max-w-[320px] border border-navy object-cover object-[center_28%] min-[900px]:aspect-[3/4] min-[900px]:max-w-[260px] min-[900px]:object-center min-[1100px]:max-w-[300px]"
-            data-testid="img-profile"
-          />
-          <p className="mt-3 hidden max-w-[300px] font-sans text-xs leading-relaxed text-ink-quiet min-[900px]:block">
-            <span>
-              MD Radiodiagnosis &amp; IR, AIIMS New Delhi &middot; MBBS Gold
-              Medallist, JIPMER &middot; RSNA Trainee Research Prize 2023 &middot;
-              MICCAI 2025 &middot; Published in NEJM AI
-            </span>
-          </p>
-        </div>
-
         <div className="order-1 space-y-3 min-[900px]:order-2 min-[900px]:space-y-5">
           <div>
             <p className="hidden font-sans text-xs uppercase tracking-[0.12em] text-ink-faint min-[900px]:block">
@@ -53,16 +37,7 @@ export default function HeroSection() {
               Suvrankar Datta
             </h1>
             <p className="mt-2 font-sans text-sm leading-relaxed text-ink-quiet">
-              Founder and Group Lead,{" "}
-              <a
-                href={CRASH_LAB_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-navy underline decoration-orange decoration-2 underline-offset-4"
-              >
-                CRASH Lab
-              </a>{" "}
-              &middot; Simons Ashoka Early Career Fellow
+              Founder and Group Lead, CRASH Lab &middot; Simons Ashoka Early Career Fellow
             </p>
           </div>
 
@@ -71,25 +46,25 @@ export default function HeroSection() {
           </p>
 
           <p className="max-w-prose leading-relaxed">
-            I am a radiologist and physician-scientist evaluating when medical
-            AI can be trusted, when it should defer, and whether it holds up in
-            Indian clinical workflows. My work spans RadLE, MedVersa, equitable
-            radiology models and AI scribes.{" "}
-            <a href="/research.html" className={textLink}>Explore the research</a>.
+            I am a radiologist and physician-scientist studying when clinical
+            AI can be trusted, when it should defer and whether it works across
+            Indian health systems. My work spans radiology benchmarks,
+            multilingual tools, decision support and LMIC validation.{" "}
+            <a href="/research.html" className={textLink}>Explore the work</a>.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-1">
+          <div className="flex flex-wrap gap-2 pt-1 min-[900px]:gap-3">
             <Button
               onClick={handleViewWork}
-              className="min-h-11 font-sans"
+              className="min-h-11 px-3 font-sans min-[900px]:px-4"
               data-testid="button-view-work"
             >
-              Selected work
+              View selected work
             </Button>
             <Button
               variant="outline"
               onClick={handleDownloadCV}
-              className="min-h-11 font-sans"
+              className="min-h-11 px-3 font-sans min-[900px]:px-4"
               data-testid="button-download-cv"
             >
               <Download className="h-4 w-4" />
@@ -97,12 +72,14 @@ export default function HeroSection() {
             </Button>
           </div>
 
-          <p className="font-sans text-sm text-ink-quiet">
+          <p className="font-sans text-xs text-ink-quiet min-[900px]:text-sm">
             <a href={"mailto:" + EMAIL_PRIMARY} className="hover:text-navy hover:underline">Email</a>
             {" · "}
             <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="hover:text-navy hover:underline">LinkedIn</a>
             {" · "}
             <a href={SCHOLAR_URL} target="_blank" rel="noopener noreferrer" className="hover:text-navy hover:underline">Google Scholar</a>
+            {" · "}
+            <a href={CRASH_LAB_URL} target="_blank" rel="noopener noreferrer" className="hover:text-navy hover:underline">CRASH Lab</a>
           </p>
 
           <p className="hidden max-w-prose font-serif italic text-ink-quiet min-[900px]:block">
@@ -116,7 +93,21 @@ export default function HeroSection() {
             >
               RadLE 2.0 leaderboard
             </a>{" "}
-            ranks frontier AI on readiness for autonomous radiology.
+            tests frontier AI on uncertainty, reliability and safe handover.
+          </p>
+        </div>
+
+        <div className="order-2 flex flex-col items-center min-[900px]:order-1 min-[900px]:items-start">
+          <img
+            src={profileImage}
+            alt="Suvrankar Datta presenting at RSNA 2025"
+            className="aspect-[16/10] w-full max-w-[320px] border border-navy object-cover object-[center_28%] min-[900px]:aspect-[3/4] min-[900px]:max-w-[260px] min-[900px]:object-center min-[1100px]:max-w-[300px]"
+            data-testid="img-profile"
+          />
+          <p className="mt-3 hidden max-w-[300px] font-sans text-xs leading-relaxed text-ink-quiet min-[900px]:block">
+            MD Radiodiagnosis &amp; IR, AIIMS New Delhi &middot; MBBS Gold
+            Medallist, JIPMER &middot; RSNA Trainee Research Prize 2023 &middot;
+            MICCAI 2025 &middot; Published in NEJM AI
           </p>
         </div>
       </div>

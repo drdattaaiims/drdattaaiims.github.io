@@ -23,7 +23,7 @@
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 }
 
 * {
@@ -143,6 +143,41 @@ code, .mono {
   padding: 2px 8px;
   border-radius: 0;
 }
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+}
+
+.button-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  background: var(--navy);
+  border: 1px solid var(--navy);
+  color: var(--surface);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.button-link:hover { color: var(--surface); }
+.button-link.secondary { background: transparent; color: var(--navy); }
+.button-link.secondary:hover { color: var(--navy); }
+
+.notice {
+  border-left: 3px solid var(--orange);
+  background: var(--surface);
+  padding: 1rem 1.25rem;
+  max-width: 68ch;
+}
+
+.compact-list li { margin: 0.85rem 0; }
 
 footer.page-footer {
   margin-top: 3rem;

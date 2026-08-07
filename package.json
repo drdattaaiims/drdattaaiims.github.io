@@ -6,7 +6,9 @@
   "license": "CC-BY-4.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender.mjs",
+    "prerender": "node scripts/prerender.mjs",
+    "validate:site": "node scripts/validate-static.mjs dist",
     "preview": "vite preview",
     "check": "tsc"
   },

@@ -18,16 +18,16 @@ export default function Portfolio() {
         <SelectedWorkSection />
         <ClinicalGroundingSection />
         <EvidenceSection />
-        <ExperienceTimeline />
         <SelectedPublicationsSection />
+        <ExperienceTimeline />
         <ContactSection />
       </main>
 
       <footer className="bg-navy py-8 px-6">
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-sans text-sm text-white/60">
+        <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-center gap-x-5 gap-y-2 font-sans text-sm text-white/60">
           <RingMark className="w-5 h-5 text-white/50" />
           <span>© 2026 Suvrankar Datta.</span>
-          <span>Last updated: 1 Aug 2026</span>
+          <span>Last updated: 7 Aug 2026</span>
           <a href="/talks.html" className="text-white/60 no-underline hover:text-white hover:underline underline-offset-4">
             Talks
           </a>

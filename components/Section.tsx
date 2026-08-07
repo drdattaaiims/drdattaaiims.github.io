@@ -22,11 +22,12 @@ export default function Section({
     <section
       id={id}
       className={
-        "border-b border-rule px-6 py-14 " + (tone === "sunk" ? "bg-elevated" : "")
+        "border-b border-rule px-6 py-10 min-[900px]:py-14 " +
+        (tone === "sunk" ? "bg-elevated" : "")
       }
     >
-      <div className="mx-auto grid max-w-6xl gap-x-12 gap-y-6 md:grid-cols-[14rem_minmax(0,1fr)]">
-        <div className="md:pt-1">
+      <div className="mx-auto grid max-w-[1120px] gap-x-12 gap-y-6 min-[900px]:grid-cols-[14rem_minmax(0,1fr)]">
+        <div className="min-[900px]:pt-1">
           <span aria-hidden="true" className="mb-3 block h-[3px] w-8 bg-orange" />
           <h2 className="font-display text-2xl font-semibold tracking-tight text-navy">
             {heading}

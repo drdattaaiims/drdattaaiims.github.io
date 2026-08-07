@@ -3,11 +3,9 @@ import { Menu, X } from "lucide-react";
 import RingMark from "@/components/RingMark";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Research", href: "/research.html" },
+  { name: "Work", href: "/research.html" },
+  { name: "Clinical & Global Health", href: "/clinical-global-health.html" },
   { name: "Publications", href: "/publications.html" },
-  { name: "Lab", href: "/lab.html" },
-  { name: "Talks", href: "/talks.html" },
   { name: "Journey", href: "/journey.html" },
   { name: "CV", href: "/cv/" },
   { name: "Contact", href: "#contact" },
@@ -18,7 +16,7 @@ export default function Navigation() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-canvas/95 backdrop-blur border-b border-rule">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="mx-auto max-w-[1120px] px-6">
         <div className="flex items-center justify-between h-14">
           <a
             href="/"
@@ -29,21 +27,16 @@ export default function Navigation() {
             Suvrankar Datta
           </a>
 
-          <nav className="hidden md:flex items-center gap-5 font-sans text-sm" aria-label="Primary">
+          <nav
+            className="hidden items-center gap-4 font-sans text-xs min-[900px]:flex min-[1100px]:gap-5 min-[1100px]:text-sm"
+            aria-label="Primary"
+          >
             {navigation.map((item) => {
-              const isCurrent = item.href === "/";
-
-              return (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  aria-current={isCurrent ? "page" : undefined}
-                  className={
-                    "border-b-2 py-1 no-underline transition-colors " +
-                    (isCurrent
-                      ? "border-orange font-medium text-navy"
-                      : "border-transparent text-ink-quiet hover:text-navy")
-                  }
+                return (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="border-b-2 border-transparent py-1 text-ink-quiet no-underline transition-colors hover:text-navy"
                   data-testid={`nav-${item.name.toLowerCase()}`}
                 >
                   {item.name}
@@ -53,7 +46,7 @@ export default function Navigation() {
           </nav>
 
           <button
-            className="md:hidden p-2 text-navy"
+            className="min-h-11 min-w-11 p-2 text-navy min-[900px]:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-menu"
@@ -65,20 +58,18 @@ export default function Navigation() {
         </div>
 
         {mobileMenuOpen && (
-          <nav id="mobile-menu" className="md:hidden py-3 border-t border-rule font-sans text-sm" aria-label="Primary mobile">
+          <nav
+            id="mobile-menu"
+            className="border-t border-rule py-3 font-sans text-sm min-[900px]:hidden"
+            aria-label="Primary mobile"
+          >
             <ul className="flex flex-col gap-1">
               {navigation.map((item) => {
-                const isCurrent = item.href === "/";
-
                 return (
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      aria-current={isCurrent ? "page" : undefined}
-                      className={
-                        "block py-2 no-underline transition-colors hover:text-navy " +
-                        (isCurrent ? "font-medium text-navy" : "text-ink-quiet")
-                      }
+                      className="flex min-h-11 items-center text-ink-quiet no-underline transition-colors hover:text-navy"
                       onClick={() => setMobileMenuOpen(false)}
                       data-testid={`nav-mobile-${item.name.toLowerCase()}`}
                     >

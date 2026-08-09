@@ -33,7 +33,7 @@ export default function HeroSection() {
             <p className="hidden font-sans text-xs uppercase tracking-[0.12em] text-ink-faint min-[900px]:block">
               Physician-scientist &middot; Clinical AI evaluation &middot; Global health
             </p>
-            <h1 className="mt-1 font-display text-4xl font-bold leading-tight tracking-tight text-navy min-[900px]:text-5xl">
+            <h1 data-ui="page-title" className="mt-1 font-display text-4xl font-bold leading-tight tracking-tight text-navy min-[900px]:text-5xl">
               Suvrankar Datta
             </h1>
             <p className="mt-2 font-sans text-sm leading-relaxed text-ink-quiet">

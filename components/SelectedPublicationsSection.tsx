@@ -23,7 +23,7 @@ const publications = [
 
 export default function SelectedPublicationsSection() {
   return (
-    <Section heading="Selected Publications" tone="sunk">
+    <Section heading="Selected Publications">
       <ul className="grid gap-x-10 gap-y-6 min-[900px]:grid-cols-3">
         {publications.map((publication) => (
           <li

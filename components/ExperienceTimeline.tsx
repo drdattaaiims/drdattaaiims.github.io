@@ -29,7 +29,7 @@ const background = [
 
 export default function ExperienceTimeline() {
   return (
-    <Section id="experience" heading="Background">
+    <Section id="experience" heading="Background" tone="sunk">
       <p className="mb-6 max-w-prose leading-relaxed text-ink-quiet">
         I moved from clinical radiology into full-time medical-AI evaluation
         after training and practice across public-sector, emergency and rural

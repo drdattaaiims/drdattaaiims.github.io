@@ -18,6 +18,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    manifest: true,
     rollupOptions: { input: "index.html" },            // force the root index.html
   },
 });

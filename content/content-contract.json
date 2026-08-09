@@ -161,11 +161,11 @@
       },
       {
         "level": "h2",
-        "text": "Selected publications"
+        "text": "Selected"
       },
       {
         "level": "h2",
-        "text": "Full bibliography"
+        "text": "Full list"
       },
       {
         "level": "h3",
@@ -274,7 +274,7 @@
         "label": "Leaderboard"
       }
     ],
-    "contentHash": "fc373e032bec901820a2717dbfa61ee32aefe150b2934d5d8bc55ee0e2c6cc3e"
+    "contentHash": "7e28d1cf4b6a349c4a384a82eebcfc02fe48f751b22cd77f50be7352f97fb26b"
   },
   {
     "id": "talks",

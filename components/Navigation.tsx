@@ -6,6 +6,8 @@ const navigation = [
   { name: "Work", href: "/research.html" },
   { name: "Clinical & Global Health", href: "/clinical-global-health.html" },
   { name: "Publications", href: "/publications.html" },
+  { name: "Talks", href: "/talks.html" },
+  { name: "Awards", href: "/awards.html" },
   { name: "Journey", href: "/journey.html" },
   { name: "CV", href: "/cv/" },
   { name: "Contact", href: "#contact" },
@@ -32,11 +34,11 @@ export default function Navigation() {
             aria-label="Primary"
           >
             {navigation.map((item) => {
-                return (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="border-b-2 border-transparent py-1 text-ink-quiet no-underline transition-colors hover:text-navy"
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="border-b-2 border-transparent py-1 text-ink-quiet no-underline transition-colors hover:text-navy"
                   data-testid={`nav-${item.name.toLowerCase()}`}
                 >
                   {item.name}

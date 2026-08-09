@@ -3,18 +3,16 @@ import Section from "@/components/Section";
 const programmes = [
   {
     title: "Radiology's Last Exam (RadLE)",
-    role: "Co-first author, RadLE 1.0 · Co-lead, RadLE 2.0",
-    body: "A clinician-grounded programme for testing frontier multimodal AI against radiologists. RadLE 1.0 established the accuracy gap; RadLE 2.0 expands the evaluation to uncertainty, reliability, safety and readiness to hand over.",
+    role: "Co-first author and benchmark co-lead",
+    body: "An uncertainty-aware evaluation of frontier multimodal AI against radiologists. RadLE 2.0 evaluates 16 systems across 200 expert-level cases using complementary measures of accuracy, reliability, safety, confidence and handover readiness.",
     links: [
-      { label: "RadLE 1.0 paper", href: "https://arxiv.org/abs/2509.25559" },
-      { label: "RadLE 2.0 technical report", href: "https://crashlab.in/radle-technicalreport" },
-      { label: "Leaderboard", href: "https://crashlab.in/radle/2/leaderboard" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2509.25559" },
     ],
   },
   {
     title: "PrAImaan",
     role: "Clinical Research and Technical Teams Supervisor, under PI Prof. Anurag Agrawal",
-    body: "A Gates Foundation-supported programme for blinded, reproducible and locally relevant evaluation of healthcare AI systems in India.",
+    body: "A Gates Foundation-supported programme for blinded, reproducible and locally relevant evaluation of health AI systems in India.",
     links: [
       {
         label: "Project page",
@@ -84,10 +82,10 @@ export default function SelectedWorkSection() {
       </div>
 
       <p className="mt-8 font-sans text-sm text-ink-quiet">
-        Additional work on AIRib, MICCAI 2025, MedVersa and
-        LLM-augmented reporting is on the{" "}
+        Additional selected work &mdash; AIRib, MICCAI 2025, MedVersa, and
+        LLM-augmented reporting studies &mdash; is on the{" "}
         <a href="/research.html" className="text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy">
-          Work page
+          Research page
         </a>
         .
       </p>

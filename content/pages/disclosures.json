@@ -6,22 +6,22 @@
   "parentNavKey": "work",
   "kind": "standard",
   "title": "Disclosures – Suvrankar Datta",
-  "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+  "description": "Funding, advisory roles and consultancy disclosures for Suvrankar Datta.",
   "canonical": "https://drdattaaiims.github.io/disclosures.html",
   "indexingPolicy": "index",
   "openGraph": {
     "title": "Disclosures – Suvrankar Datta",
-    "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+    "description": "Funding, advisory roles and consultancy disclosures for Suvrankar Datta.",
     "type": "website",
     "image": "https://drdattaaiims.github.io/og.png"
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Disclosures – Suvrankar Datta",
-    "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+    "description": "Funding, advisory roles and consultancy disclosures for Suvrankar Datta.",
     "image": "https://drdattaaiims.github.io/og.png"
   },
-  "pageHeadHtml": "<h1>Disclosures</h1><p class=\"lede\">Research funding and professional relationships relevant to my clinical AI work. This page distinguishes programme roles from paid clinical work and is reviewed when those relationships change.</p>",
-  "pageBodyHtml": "<h2>Research funding</h2>\n        <p>I am Principal Investigator on competitively funded clinical AI programmes and supervise clinical or technical teams on two Gates Foundation-supported programmes led by Prof. Anurag Agrawal. Roles, public award records and amounts are listed on <a href=\"/grants.html\">Grants &amp; Funding</a>.</p>\n\n        <h2>Research and programme relationships</h2>\n        <ul class=\"compact-list\">\n          <li>Qure.ai — clinical validation and product-feedback work.</li>\n          <li>Manentia AI — clinical AI collaborator and PREDICT-AI consortium partner.</li>\n          <li>Radiogram — clinical workflow and structured-reporting collaboration.</li>\n          <li>Tata Memorial Hospital — PREDICT-AI research partner.</li>\n          <li>Microsoft Research India — clinical AI evaluation and ambient-AI research collaboration.</li>\n          <li>Google and OpenAI — research-support programmes for CRASH Lab.</li>\n        </ul>\n\n        <h2>Clinical work</h2>\n        <p>Locum radiologist at Medanta and Fortis Hospitals, December 2024–January 2025.</p>\n\n        <h2>Equity and honoraria</h2>\n        <p>No equity interests are declared. No honoraria are declared beyond standard conference or institutional speaker arrangements associated with appearances on the <a href=\"/talks.html\">Talks page</a>.</p>\n\n        <div class=\"notice\">For questions or corrections, contact <a href=\"mailto:suvrankar.datta@ashoka.edu.in\">suvrankar.datta@ashoka.edu.in</a>.</div>",
-  "pageMetaHtml": "<span>Last reviewed: 7 Aug 2026</span><span><a href=\"/grants.html\">Grants &amp; funding &rarr;</a></span>"
+  "pageHeadHtml": "<h1>Disclosures</h1>\n    <p class=\"lede\">Funding, advisory roles, and consultancy relevant to my AI and healthcare research.</p>",
+  "pageBodyHtml": "<h2>Funding</h2>\n    <p>Principal Investigator or Ashoka lead on several competitively funded clinical AI programmes; two Gates Foundation-supported programmes (~US$1.36 million combined) as Clinical/Technical Team Supervisor. Full detail with sources: <a href=\"/grants.html\">Grants & Funding</a>.</p>\n\n    <h2>Advisory, consultancy &amp; research partnerships</h2>\n    <ul>\n      <li>Qure.ai — clinical validation / product feedback (chest-radiograph and clinical AI validation).</li>\n      <li>Manentia AI — clinical AI collaborator / product evaluation (CXR reporting pipelines; PREDICT-AI consortium).</li>\n      <li>Radiogram — clinical workflow and structured-reporting collaboration.</li>\n      <li>Tata Memorial Hospital — research partner (PREDICT-AI, oncology clinical decision support).</li>\n      <li>Microsoft Research India — research collaboration (clinical AI evaluation / ambient AI).</li>\n      <li>Google — research-support programme (Gemini Academic Program, ~US$20,000 in cloud/model support for CRASH Lab).</li>\n      <li>OpenAI — research-support programme (research credits/access for lab members, ~US$15,000).</li>\n      <li>Locum radiologist, Medanta and Fortis Hospitals, Dec 2024–Jan 2025.</li>\n    </ul>\n\n    <h2>Equity</h2>\n    <p>None.</p>\n\n    <h2>Honoraria</h2>\n    <p>None beyond standard conference/institutional speaker arrangements listed on the <a href=\"/talks.html\">Talks</a> page.</p>",
+  "pageMetaHtml": "<span>Last updated: 1 Aug 2026</span>"
 }

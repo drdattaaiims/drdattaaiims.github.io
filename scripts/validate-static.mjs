@@ -69,6 +69,7 @@ for (const route of routes) {
   }
   if (count(html, /<h1(?:\s|>)/gi) !== 1) errors.push(`${route.id}: expected exactly one H1`);
   if (/<style(?:\s|>)/i.test(html)) errors.push(`${route.id}: page-local style block is forbidden`);
+  if (/\sstyle=["']/i.test(html)) errors.push(`${route.id}: inline style attribute is forbidden`);
   if (/site\.css\?v=/i.test(html)) errors.push(`${route.id}: manual CSS cache version remains`);
 
   const css = [...html.matchAll(/<link\s+rel=["']stylesheet["'][^>]*href=["']([^"']+\.css)["']/gi)].map((match) => match[1]);

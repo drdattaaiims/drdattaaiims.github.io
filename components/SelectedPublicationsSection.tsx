@@ -10,7 +10,7 @@ const publications = [
   {
     title: "Radiology’s Last Exam",
     summary: "Frontier multimodal AI versus human experts",
-    venue: "Co-first author · RadLE 1.0 preprint · 2025",
+    venue: "Co-first author · 2025",
     href: "https://arxiv.org/abs/2509.25559",
   },
   {

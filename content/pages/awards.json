@@ -6,22 +6,22 @@
   "navKey": "awards",
   "kind": "standard",
   "title": "Awards & Distinctions – Suvrankar Datta",
-  "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+  "description": "Awards and distinctions for Suvrankar Datta, including the RSNA Trainee Research Prize 2023 for the AIRib rib-fracture detection pipeline.",
   "canonical": "https://drdattaaiims.github.io/awards.html",
   "indexingPolicy": "index",
   "openGraph": {
     "title": "Awards & Distinctions – Suvrankar Datta",
-    "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+    "description": "Awards and distinctions for Suvrankar Datta, including the RSNA Trainee Research Prize 2023 for the AIRib rib-fracture detection pipeline.",
     "type": "website",
     "image": "https://drdattaaiims.github.io/og.png"
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Awards & Distinctions – Suvrankar Datta",
-    "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+    "description": "Awards and distinctions for Suvrankar Datta, including the RSNA Trainee Research Prize 2023 for the AIRib rib-fracture detection pipeline.",
     "image": "https://drdattaaiims.github.io/og.png"
   },
-  "pageHeadHtml": "<h1>Awards &amp; Distinctions</h1><p class=\"lede\">Selected external recognitions. Educational distinctions and degree-level prizes are summarised in the public CV.</p>",
-  "pageBodyHtml": "<h2>Research recognition</h2><ul class=\"compact-list\"><li><strong>RSNA Trainee Research Prize, Musculoskeletal Radiology — 2023.</strong> Awarded for AIRib, the AIIMS New Delhi–IIT Jodhpur rib-fracture detection and characterisation pipeline.</li></ul>\n    <h2>Professional distinctions</h2><ul class=\"compact-list\"><li>Young Achiever in Radiology, National Diagnostic Summit — 2024.</li><li>GAIMS Global Healthcare Achievers' Award — 2022.</li><li>Atal Bihari Vajpayee Memorial Award, FAIMACON — 2022.</li><li>IMA MSN Chairman's National Award — 2021.</li><li>Delhi Doctors' Forum, Young Doctor of the Year — 2021.</li></ul>",
-  "pageMetaHtml": "<span>Last updated: 7 Aug 2026</span><span><a href=\"/cv/\">Public CV &rarr;</a></span>"
+  "pageHeadHtml": "<h1>Awards & Distinctions</h1>\n    <p class=\"lede\">\n      Competitively adjudicated, external recognitions since MBBS. Undergraduate\n      distinctions and subject prizes are on the CV, not listed here. Faculty\n      Fellow (KCDH-A) is a position, not an award — see the homepage.\n    </p>",
+  "pageBodyHtml": "<ul>\n      <li>RSNA Trainee Research Prize (MSK), Chicago — 2023. For the AIRib pipeline — automated rib-fracture detection and characterisation on CT (MD-thesis work, AIIMS Delhi &times; IIT Jodhpur).</li>\n      <li>Young Achiever in Radiology — National Diagnostic Summit, Mumbai — 2024.</li>\n      <li>GAIMS Global Healthcare Achievers' Award — 2022.</li>\n      <li>Atal Bihari Vajpayee Memorial Award (FAIMACON) — 2022.</li>\n      <li>IMA MSN Chairman's National Award — 2021.</li>\n      <li>Delhi Doctors' Forum — Young Doctor of the Year — 2021.</li>\n    </ul>",
+  "pageMetaHtml": "<span>Last updated: 1 Aug 2026</span>\n      <span><a href=\"/#experience\">Positions →</a></span>"
 }

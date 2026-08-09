@@ -37,7 +37,16 @@ export default function HeroSection() {
               Suvrankar Datta
             </h1>
             <p className="mt-2 font-sans text-sm leading-relaxed text-ink-quiet">
-              Founder and Group Lead, CRASH Lab &middot; Simons Ashoka Early Career Fellow
+              Founder and Group Lead,{" "}
+              <a
+                href={CRASH_LAB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-navy underline decoration-orange decoration-2 underline-offset-4"
+              >
+                CRASH Lab
+              </a>{" "}
+              &middot; Simons Ashoka Early Career Fellow
             </p>
           </div>
 
@@ -46,11 +55,11 @@ export default function HeroSection() {
           </p>
 
           <p className="max-w-prose leading-relaxed">
-            I am a radiologist and physician-scientist studying when clinical
-            AI can be trusted, when it should defer and whether it works across
-            Indian health systems. My work spans radiology benchmarks,
-            multilingual tools, decision support and LMIC validation.{" "}
-            <a href="/research.html" className={textLink}>Explore the work</a>.
+            I am a radiologist and physician-scientist evaluating when medical
+            AI can be trusted, when it should defer, and whether it holds up in
+            Indian clinical workflows. My work spans RadLE, MedVersa, equitable
+            radiology models and AI scribes.{" "}
+            <a href="/research.html" className={textLink}>Explore the research</a>.
           </p>
 
           <div className="flex flex-wrap gap-2 pt-1 min-[900px]:gap-3">
@@ -59,7 +68,7 @@ export default function HeroSection() {
               className="min-h-11 px-3 font-sans min-[900px]:px-4"
               data-testid="button-view-work"
             >
-              View selected work
+              Selected work
             </Button>
             <Button
               variant="outline"
@@ -78,8 +87,6 @@ export default function HeroSection() {
             <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="hover:text-navy hover:underline">LinkedIn</a>
             {" · "}
             <a href={SCHOLAR_URL} target="_blank" rel="noopener noreferrer" className="hover:text-navy hover:underline">Google Scholar</a>
-            {" · "}
-            <a href={CRASH_LAB_URL} target="_blank" rel="noopener noreferrer" className="hover:text-navy hover:underline">CRASH Lab</a>
           </p>
 
           <p className="hidden max-w-prose font-serif italic text-ink-quiet min-[900px]:block">
@@ -93,7 +100,7 @@ export default function HeroSection() {
             >
               RadLE 2.0 leaderboard
             </a>{" "}
-            tests frontier AI on uncertainty, reliability and safe handover.
+            ranks frontier AI on readiness for autonomous radiology.
           </p>
         </div>
 

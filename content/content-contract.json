@@ -1,0 +1,732 @@
+[
+  {
+    "id": "research",
+    "source": "public/research.html",
+    "path": "/research.html",
+    "outputPath": "research.html",
+    "title": "Research & Work – Suvrankar Datta",
+    "description": "Research by Suvrankar Datta on clinical AI evaluation and safety, multilingual clinical AI, LMIC validation, decision support, and medical imaging systems.",
+    "canonical": "https://drdattaaiims.github.io/research.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Research & Work"
+      },
+      {
+        "level": "h2",
+        "text": "Clinical AI evaluation and safety"
+      },
+      {
+        "level": "h2",
+        "text": "Multilingual and ambient clinical AI"
+      },
+      {
+        "level": "h2",
+        "text": "LMIC validation and health equity"
+      },
+      {
+        "level": "h2",
+        "text": "Clinical decision support"
+      },
+      {
+        "level": "h2",
+        "text": "Medical imaging and reporting systems"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE 1.0 paper →"
+      },
+      {
+        "href": "https://crashlab.in/radle-technicalreport",
+        "label": "RadLE 2.0 technical report →"
+      },
+      {
+        "href": "https://crashlab.in/radle/2/leaderboard",
+        "label": "Leaderboard →"
+      },
+      {
+        "href": "https://kcdha.ashoka.edu.in/2025-researchdetails/evaluating-healthcare-ai-scribe-models-in-india-praimaan",
+        "label": "PrAImaan →"
+      },
+      {
+        "href": "https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290",
+        "label": "V2DD grant record →"
+      },
+      {
+        "href": "https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the",
+        "label": "Programme announcement →"
+      },
+      {
+        "href": "https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious",
+        "label": "Programme announcement →"
+      },
+      {
+        "href": "https://doi.org/10.1056/AIoa2500595",
+        "label": "MedVersa →"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-3-032-05182-0_22",
+        "label": "MICCAI 2025 paper →"
+      },
+      {
+        "href": "/publications.html",
+        "label": "Full publication list →"
+      },
+      {
+        "href": "/clinical-global-health.html",
+        "label": "Clinical & Global Health page"
+      }
+    ],
+    "contentHash": "c1b41c89574b5ea2e698bbb7541934a854fd2655a9000c7478515953f827d7a6"
+  },
+  {
+    "id": "clinical",
+    "source": "public/clinical-global-health.html",
+    "path": "/clinical-global-health.html",
+    "outputPath": "clinical-global-health.html",
+    "title": "Clinical & Global Health – Suvrankar Datta",
+    "description": "Clinical and global-health grounding for Suvrankar Datta",
+    "canonical": "https://drdattaaiims.github.io/clinical-global-health.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Clinical & Global Health"
+      },
+      {
+        "level": "h2",
+        "text": "Clinical grounding"
+      },
+      {
+        "level": "h3",
+        "text": "Rural primary care at JIPMER"
+      },
+      {
+        "level": "h3",
+        "text": "High-volume radiology at AIIMS New Delhi"
+      },
+      {
+        "level": "h2",
+        "text": "What this changes about AI evaluation"
+      },
+      {
+        "level": "h2",
+        "text": "Current health-system programmes"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://kcdha.ashoka.edu.in/2025-researchdetails/evaluating-healthcare-ai-scribe-models-in-india-praimaan",
+        "label": "Project page →"
+      },
+      {
+        "href": "https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290",
+        "label": "Grant record →"
+      },
+      {
+        "href": "https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the",
+        "label": "Announcement →"
+      },
+      {
+        "href": "https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious",
+        "label": "Announcement →"
+      },
+      {
+        "href": "/research.html",
+        "label": "Work page"
+      },
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "suvrankar.datta@ashoka.edu.in"
+      }
+    ],
+    "contentHash": "ca5172d4cf44247599a056317aa8762bbf731c6629fd1fe5d71ed012fc907e99"
+  },
+  {
+    "id": "publications",
+    "source": "public/publications.html",
+    "path": "/publications.html",
+    "outputPath": "publications.html",
+    "title": "Publications – Suvrankar Datta",
+    "description": "Peer-reviewed publications, preprints and technical reports by Suvrankar Datta on clinical AI evaluation, radiology and multimodal foundation models, including NEJM AI and MICCAI 2025.",
+    "canonical": "https://drdattaaiims.github.io/publications.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Publications"
+      },
+      {
+        "level": "h2",
+        "text": "Selected publications"
+      },
+      {
+        "level": "h2",
+        "text": "Full bibliography"
+      },
+      {
+        "level": "h3",
+        "text": "Journal articles"
+      },
+      {
+        "level": "h3",
+        "text": "Refereed proceedings"
+      },
+      {
+        "level": "h3",
+        "text": "Book chapters"
+      },
+      {
+        "level": "h3",
+        "text": "Preprints & technical reports"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://doi.org/10.1056/AIoa2500595",
+        "label": "DOI"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "Paper"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-3-032-05182-0_22",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1055/s-0045-1811264",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1055/s-0044-1792040",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-3-030-58080-3_283-1",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1056/AIoa2500595",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1055/s-0045-1811264",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1055/s-0045-1815750",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1055/s-0044-1792040",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1055/s-0044-1787974",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1055/s-0044-1786722",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1016/j.ijtb.2020.07.016",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-3-032-05182-0_22",
+        "label": "DOI"
+      },
+      {
+        "href": "https://arxiv.org/abs/2504.10889",
+        "label": "arXiv"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-981-97-0180-3_24",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-981-99-9531-8_26",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-981-99-9518-9_8",
+        "label": "DOI"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-3-030-58080-3_283-1",
+        "label": "DOI"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "Paper"
+      },
+      {
+        "href": "https://crashlab.in/radle-technicalreport",
+        "label": "Technical report"
+      },
+      {
+        "href": "https://crashlab.in/radle/2/leaderboard",
+        "label": "Leaderboard"
+      }
+    ],
+    "contentHash": "fc373e032bec901820a2717dbfa61ee32aefe150b2934d5d8bc55ee0e2c6cc3e"
+  },
+  {
+    "id": "talks",
+    "source": "public/talks.html",
+    "path": "/talks.html",
+    "outputPath": "talks.html",
+    "title": "Selected Talks – Suvrankar Datta",
+    "description": "Selected scientific presentations, invited talks and panels by Suvrankar Datta on clinical AI and radiology.",
+    "canonical": "https://drdattaaiims.github.io/talks.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Selected Talks"
+      },
+      {
+        "level": "h2",
+        "text": "Scientific presentations"
+      },
+      {
+        "level": "h2",
+        "text": "Invited talks and panels"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://arxiv.org/abs/2504.10889",
+        "label": "Preprint →"
+      },
+      {
+        "href": "https://glc4hsr.org/annual-conclave-2026/session-detail/11",
+        "label": "Programme →"
+      },
+      {
+        "href": "https://ncaihc2026.in/program",
+        "label": "Programme →"
+      },
+      {
+        "href": "https://aocr2025.org/",
+        "label": "Congress →"
+      },
+      {
+        "href": "https://www.ifcci.org.in/communication/news/n/news/la-french-tech-india-ai-summit-2025.html",
+        "label": "Event →"
+      },
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "suvrankar.datta@ashoka.edu.in"
+      }
+    ],
+    "contentHash": "6275f296d4823cfa29d655a6662da2e49a3bf71f302b766b6d524af33833e0f0"
+  },
+  {
+    "id": "awards",
+    "source": "public/awards.html",
+    "path": "/awards.html",
+    "outputPath": "awards.html",
+    "title": "Awards & Distinctions – Suvrankar Datta",
+    "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+    "canonical": "https://drdattaaiims.github.io/awards.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Awards & Distinctions"
+      },
+      {
+        "level": "h2",
+        "text": "Research recognition"
+      },
+      {
+        "level": "h2",
+        "text": "Professional distinctions"
+      }
+    ],
+    "links": [],
+    "contentHash": "eaa67e5471076f761b66b8d2749b0e7b1fd65d1a0e23df1e07eb3e012dd27729"
+  },
+  {
+    "id": "journey",
+    "source": "public/journey.html",
+    "path": "/journey.html",
+    "outputPath": "journey.html",
+    "title": "Journey – Suvrankar Datta",
+    "description": "The path Suvrankar Datta took from JIPMER and AIIMS to clinical AI evaluation research at Ashoka University and CRASH Lab — told year by year.",
+    "canonical": "https://drdattaaiims.github.io/journey.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Journey"
+      }
+    ],
+    "links": [
+      {
+        "href": "/#hero",
+        "label": "Simons Ashoka Early Career Fellow"
+      },
+      {
+        "href": "https://crashlab.in/",
+        "label": "CRASH Lab"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "Radiology's Last Exam (RadLE)"
+      },
+      {
+        "href": "/#selected-work",
+        "label": "See selected work →"
+      },
+      {
+        "href": "https://doi.org/10.1056/AIoa2500595",
+        "label": "MedVersa"
+      },
+      {
+        "href": "https://www.rsna.org/annual-meeting",
+        "label": "RSNA"
+      }
+    ],
+    "contentHash": "65de67371e74e9abc72ede2d3ed8317c926a6be69eec275b183a3a126582fbf0"
+  },
+  {
+    "id": "cv",
+    "source": "public/cv/index.html",
+    "path": "/cv/",
+    "outputPath": "cv/index.html",
+    "title": "Public CV – Suvrankar Datta",
+    "description": "Public curriculum vitae for Dr Suvrankar Datta, physician-scientist working on clinical AI evaluation, radiology and global health.",
+    "canonical": "https://drdattaaiims.github.io/cv/",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Suvrankar Datta"
+      },
+      {
+        "level": "h2",
+        "text": "Current roles"
+      },
+      {
+        "level": "h2",
+        "text": "Clinical training"
+      },
+      {
+        "level": "h2",
+        "text": "Selected programmes"
+      },
+      {
+        "level": "h2",
+        "text": "Selected publications"
+      },
+      {
+        "level": "h2",
+        "text": "Selected recognition"
+      },
+      {
+        "level": "h2",
+        "text": "Profiles"
+      }
+    ],
+    "links": [
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "Email"
+      },
+      {
+        "href": "https://www.linkedin.com/in/suvrankardatta/",
+        "label": "LinkedIn"
+      },
+      {
+        "href": "https://scholar.google.com/citations?user=lL8-zOoAAAAJ&hl=en",
+        "label": "Google Scholar"
+      },
+      {
+        "href": "https://crashlab.in/",
+        "label": "CRASH Lab"
+      },
+      {
+        "href": "https://doi.org/10.1056/AIoa2500595",
+        "label": "DOI →"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "Preprint →"
+      },
+      {
+        "href": "https://doi.org/10.1007/978-3-032-05182-0_22",
+        "label": "DOI →"
+      },
+      {
+        "href": "/publications.html",
+        "label": "Full publication list →"
+      },
+      {
+        "href": "https://orcid.org/0000-0002-6434-1408",
+        "label": "ORCID"
+      },
+      {
+        "href": "https://www.researchgate.net/profile/Suvrankar-Datta",
+        "label": "ResearchGate"
+      },
+      {
+        "href": "https://crashlab.in/",
+        "label": "CRASH Lab"
+      }
+    ],
+    "contentHash": "720c65472fa96955e1583fbe32a4d019a2142297b1bcee9c7caa9144aca6a376"
+  },
+  {
+    "id": "lab",
+    "source": "public/lab.html",
+    "path": "/lab.html",
+    "outputPath": "lab.html",
+    "title": "CRASH Lab – Suvrankar Datta",
+    "description": "CRASH Lab is the clinician-led research group founded and led by Suvrankar Datta for clinical AI evaluation and safety.",
+    "canonical": "https://drdattaaiims.github.io/lab.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "CRASH Lab"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://crashlab.in/",
+        "label": "Visit CRASH Lab →"
+      },
+      {
+        "href": "https://crashlab.in/research",
+        "label": "Explore lab research →"
+      },
+      {
+        "href": "https://crashlab.in/",
+        "label": "crashlab.in"
+      }
+    ],
+    "contentHash": "4c1a6d3076d5dbe84f388a9388095aad16553868374482471665fa14b06d0c9b"
+  },
+  {
+    "id": "grants",
+    "source": "public/grants.html",
+    "path": "/grants.html",
+    "outputPath": "grants.html",
+    "title": "Grants & Funding – Suvrankar Datta",
+    "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+    "canonical": "https://drdattaaiims.github.io/grants.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Grants & Funding"
+      },
+      {
+        "level": "h2",
+        "text": "Principal Investigator"
+      },
+      {
+        "level": "h2",
+        "text": "Programme team supervision"
+      },
+      {
+        "level": "h2",
+        "text": "Earlier research support"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the",
+        "label": "Institutional announcement →"
+      },
+      {
+        "href": "https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious",
+        "label": "Institutional announcement →"
+      },
+      {
+        "href": "https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-096588",
+        "label": "Grant record →"
+      },
+      {
+        "href": "https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290",
+        "label": "Grant record →"
+      },
+      {
+        "href": "https://ihub-drishti.ai/",
+        "label": "iHub Drishti →"
+      },
+      {
+        "href": "https://sts.icmr.org.in/",
+        "label": "ICMR STS →"
+      }
+    ],
+    "contentHash": "c3f0a3124b9328e1fbcb407aa706a90a5c898a22ecb7ff117546aa62dc5b9153"
+  },
+  {
+    "id": "disclosures",
+    "source": "public/disclosures.html",
+    "path": "/disclosures.html",
+    "outputPath": "disclosures.html",
+    "title": "Disclosures – Suvrankar Datta",
+    "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+    "canonical": "https://drdattaaiims.github.io/disclosures.html",
+    "indexingPolicy": "index",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Disclosures"
+      },
+      {
+        "level": "h2",
+        "text": "Research funding"
+      },
+      {
+        "level": "h2",
+        "text": "Research and programme relationships"
+      },
+      {
+        "level": "h2",
+        "text": "Clinical work"
+      },
+      {
+        "level": "h2",
+        "text": "Equity and honoraria"
+      }
+    ],
+    "links": [
+      {
+        "href": "/grants.html",
+        "label": "Grants & Funding"
+      },
+      {
+        "href": "/talks.html",
+        "label": "Talks page"
+      },
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "suvrankar.datta@ashoka.edu.in"
+      }
+    ],
+    "contentHash": "bd4497c20ae74c8f909e7303d43d68549dcfd57aebd8f57680bc0793250e5028"
+  },
+  {
+    "id": "media",
+    "source": "public/media.html",
+    "path": "/media.html",
+    "outputPath": "media.html",
+    "title": "Selected Media – Suvrankar Datta",
+    "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+    "canonical": "https://drdattaaiims.github.io/media.html",
+    "indexingPolicy": "noindex",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Selected Media"
+      },
+      {
+        "level": "h2",
+        "text": "AI and healthcare"
+      },
+      {
+        "level": "h2",
+        "text": "Medical training and professional issues"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://indiaaheadnews.com/",
+        "label": "Publisher →"
+      },
+      {
+        "href": "https://www.hindustantimes.com/",
+        "label": "Publisher →"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=mQIUTw4gC_w",
+        "label": "Clip 1"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=pX9SGu0gycE",
+        "label": "Clip 2"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=ELvbNT2zoBg",
+        "label": "Clip 3"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=3Ht_NWrsjKA",
+        "label": "Clip 1"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=G_AviR2L9xo",
+        "label": "Clip 2"
+      },
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "suvrankar.datta@ashoka.edu.in"
+      }
+    ],
+    "contentHash": "8846df9b90f997774f0b9c3546021dfe060c8c65d51047f36f88d6daea628ad8"
+  },
+  {
+    "id": "not-found",
+    "source": "public/404.html",
+    "path": "/404.html",
+    "outputPath": "404.html",
+    "title": "Page not found – Suvrankar Datta",
+    "description": "",
+    "canonical": "https://drdattaaiims.github.io/404.html",
+    "indexingPolicy": "error",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Page not found"
+      }
+    ],
+    "links": [
+      {
+        "href": "/",
+        "label": "homepage"
+      },
+      {
+        "href": "/publications.html",
+        "label": "publications list"
+      }
+    ],
+    "contentHash": "2f47a365bb386086bbd12c6bd6401758da063dfffb5796d254a67586ac818fdb"
+  },
+  {
+    "id": "archive",
+    "source": "public/AI-Radiology-Residency-2025.html",
+    "path": "/AI-Radiology-Residency-2025.html",
+    "outputPath": "AI-Radiology-Residency-2025.html",
+    "title": "Archived Radiology Career Guide – Suvrankar Datta",
+    "description": "",
+    "canonical": "https://drdattaaiims.github.io/AI-Radiology-Residency-2025.html",
+    "indexingPolicy": "noindex",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Article archived"
+      }
+    ],
+    "links": [
+      {
+        "href": "/research.html",
+        "label": "Read current research →"
+      },
+      {
+        "href": "/clinical-global-health.html",
+        "label": "Clinical & Global Health →"
+      }
+    ],
+    "contentHash": "4319085e27dfdc50166dbf8a1612414efd0f7061c7f8f24db132f3bc439844d6"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "id": "cv",
+  "source": "public/cv/index.html",
+  "path": "/cv/",
+  "outputPath": "cv/index.html",
+  "navKey": "cv",
+  "kind": "standard",
+  "title": "Public CV – Suvrankar Datta",
+  "description": "Public curriculum vitae for Dr Suvrankar Datta, physician-scientist working on clinical AI evaluation, radiology and global health.",
+  "canonical": "https://drdattaaiims.github.io/cv/",
+  "indexingPolicy": "index",
+  "openGraph": {
+    "title": "Public CV – Suvrankar Datta",
+    "description": "Public curriculum vitae for Dr Suvrankar Datta, physician-scientist working on clinical AI evaluation, radiology and global health.",
+    "type": "profile",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Public CV – Suvrankar Datta",
+    "description": "Public curriculum vitae for Dr Suvrankar Datta, physician-scientist working on clinical AI evaluation, radiology and global health.",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "pageHeadHtml": "<h1>Suvrankar Datta</h1><p class=\"lede\">Physician-scientist &middot; Clinical AI evaluation and safety &middot; Radiology &middot; Global health</p><p class=\"link-row\"><a href=\"mailto:suvrankar.datta@ashoka.edu.in\">Email</a><a href=\"https://www.linkedin.com/in/suvrankardatta/\" target=\"_blank\" rel=\"noopener\">LinkedIn</a><a href=\"https://scholar.google.com/citations?user=lL8-zOoAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Google Scholar</a></p>",
+  "pageBodyHtml": "<div class=\"notice print-note\"><strong>Public version.</strong> This concise HTML CV excludes private information and application-only material. Use your browser’s Print command to save a PDF.</div>\n      <h2>Current roles</h2><ul class=\"compact-list\"><li><strong>Simons Ashoka Early Career Fellow</strong>, Koita Centre for Digital Health, Ashoka University.</li><li><strong>Founder and Group Lead</strong>, <a href=\"https://crashlab.in/\" target=\"_blank\" rel=\"noopener\">CRASH Lab</a> (Centre for Responsible Autonomous Systems in Healthcare).</li></ul>\n      <h2>Clinical training</h2><ul class=\"compact-list\"><li><strong>MD, Radiodiagnosis &amp; Interventional Radiology</strong>, AIIMS New Delhi.</li><li><strong>Senior Residency, Radiodiagnosis &amp; Interventional Radiology</strong>, AIIMS New Delhi.</li><li><strong>MBBS, JIPMER</strong> — Gold Medallist.</li></ul>\n      <h2>Selected programmes</h2><ul class=\"compact-list\"><li><strong>Radiology's Last Exam:</strong> co-first author, RadLE 1.0; co-lead, RadLE 2.0.</li><li><strong>Equitable radiology foundation models:</strong> Principal Investigator, DST–A*STAR India–Singapore programme.</li><li><strong>PREDICT-AI:</strong> Principal Investigator, IndiaAI CATCH consortium with Tata Memorial Hospital and Manentia AI.</li><li><strong>PrAImaan:</strong> Clinical Research and Technical Teams Supervisor under PI Prof. Anurag Agrawal.</li><li><strong>V2DD:</strong> Clinical Evaluation Team Supervisor under PI Prof. Anurag Agrawal.</li></ul>\n      <h2>Selected publications</h2><ul class=\"compact-list\"><li>Zhou HY, Acosta JN, Adithan S, <strong>Datta S</strong>, Topol EJ, Rajpurkar P. MedVersa: a generalist foundation model for diverse medical imaging tasks. <em>NEJM AI</em>. 2026. <a href=\"https://doi.org/10.1056/AIoa2500595\" target=\"_blank\" rel=\"noopener\">DOI &rarr;</a></li><li><strong>Datta S</strong>*, Buchireddygari D*, et al. Radiology's Last Exam (RadLE). 2025. <a href=\"https://arxiv.org/abs/2509.25559\" target=\"_blank\" rel=\"noopener\">Preprint &rarr;</a></li><li>Pate S, Farooq A, <strong>Datta S</strong>, et al. Fine-grained rib fracture diagnosis with hyperbolic embeddings. <em>MICCAI</em>. 2025. <a href=\"https://doi.org/10.1007/978-3-032-05182-0_22\" target=\"_blank\" rel=\"noopener\">DOI &rarr;</a></li></ul><p class=\"link-row\"><a href=\"/publications.html\">Full publication list &rarr;</a></p>\n      <h2>Selected recognition</h2><ul class=\"compact-list\"><li>RSNA Trainee Research Prize, Musculoskeletal Radiology — 2023.</li><li>Young Achiever in Radiology, National Diagnostic Summit — 2024.</li></ul>\n      <h2>Profiles</h2><p class=\"link-row\"><a href=\"https://orcid.org/0000-0002-6434-1408\" target=\"_blank\" rel=\"noopener\">ORCID</a><a href=\"https://www.researchgate.net/profile/Suvrankar-Datta\" target=\"_blank\" rel=\"noopener\">ResearchGate</a><a href=\"https://crashlab.in/\" target=\"_blank\" rel=\"noopener\">CRASH Lab</a></p>",
+  "pageMetaHtml": "<span>Public CV updated: 7 Aug 2026</span><span><a href=\"/journey.html\">Full journey &rarr;</a></span>"
+}

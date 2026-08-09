@@ -1,0 +1,39 @@
+name: Site quality
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.62.1-noble
+    steps:
+      - uses: actions/checkout@v7
+      - run: npm ci
+      - name: Validate build, content and styles
+        run: npm run qa:static
+      - name: Test responsive layout and interactions
+        run: npm run test:ui
+      - name: Test accessibility
+        run: npm run test:a11y
+      - name: Test visual references
+        run: npm run test:visual
+      - name: Upload browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-diagnostics
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 7

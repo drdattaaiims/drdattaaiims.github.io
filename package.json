@@ -6,9 +6,20 @@
   "license": "CC-BY-4.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs",
-    "prerender": "node scripts/prerender.mjs",
+    "check:collisions": "node scripts/check-route-collisions.mjs",
+    "build:client": "vite build",
+    "build:ssr": "vite build --ssr entry-server.tsx --outDir .prerender",
+    "build": "npm run check:collisions && npm run build:client && npm run build:ssr && npm run prerender",
+    "prerender": "node scripts/prerender-pages.mjs",
     "validate:site": "node scripts/validate-static.mjs dist",
+    "validate:content": "node scripts/validate-content.mjs dist",
+    "validate:styles": "node scripts/validate-styles.mjs",
+    "qa:static": "npm run check && npm run build && npm run validate:site && npm run validate:content && npm run validate:styles",
+    "test:ui": "playwright test tests/ui",
+    "test:visual": "playwright test tests/visual",
+    "test:visual:update": "playwright test tests/visual --update-snapshots",
+    "test:a11y": "playwright test tests/a11y",
+    "qa": "npm run qa:static && npm run test:ui && npm run test:a11y && npm run test:visual",
     "preview": "vite preview",
     "check": "tsc"
   },
@@ -23,6 +34,8 @@
     "wouter": "^3.3.5"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.62.1",
     "@tailwindcss/typography": "^0.5.15",
     "@types/node": "20.16.11",
     "@types/react": "^18.3.11",

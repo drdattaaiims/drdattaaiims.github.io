@@ -1,0 +1,27 @@
+{
+  "id": "grants",
+  "source": "public/grants.html",
+  "path": "/grants.html",
+  "outputPath": "grants.html",
+  "parentNavKey": "work",
+  "kind": "standard",
+  "title": "Grants & Funding – Suvrankar Datta",
+  "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+  "canonical": "https://drdattaaiims.github.io/grants.html",
+  "indexingPolicy": "index",
+  "openGraph": {
+    "title": "Grants & Funding – Suvrankar Datta",
+    "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+    "type": "website",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Grants & Funding – Suvrankar Datta",
+    "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "pageHeadHtml": "<h1>Grants &amp; Funding</h1><p class=\"lede\">Selected programmes are grouped by my role. Award amounts are included only where they are already public in the linked source or institutional announcement.</p>",
+  "pageBodyHtml": "<h2>Principal Investigator</h2>\n        <ul class=\"compact-list\">\n          <li><strong>2026 — DST–A*STAR India–Singapore Joint Science and Technology Research Programme.</strong> Three-year programme on indigenous radiology datasets and culturally congruent vision-language models. <a href=\"https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the\" target=\"_blank\" rel=\"noopener\">Institutional announcement &rarr;</a></li>\n          <li><strong>2026 — IndiaAI Cancer AI and Technology Challenge, PREDICT-AI.</strong> Consortium with the Koita Centre for Digital Health at Ashoka University, Tata Memorial Hospital and Manentia AI. <a href=\"https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious\" target=\"_blank\" rel=\"noopener\">Institutional announcement &rarr;</a></li>\n        </ul>\n        <h2>Programme team supervision</h2>\n        <ul class=\"compact-list\">\n          <li><strong>2025 — PrAImaan, Gates Foundation-supported.</strong> Clinical Research and Technical Teams Supervisor under PI Prof. Anurag Agrawal. Formal commitment: US$972,192. <a href=\"https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-096588\" target=\"_blank\" rel=\"noopener\">Grant record &rarr;</a></li>\n          <li><strong>2025 — V2DD, Gates Foundation-supported.</strong> Clinical Evaluation Team Supervisor under PI Prof. Anurag Agrawal. Formal commitment: US$383,295. <a href=\"https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290\" target=\"_blank\" rel=\"noopener\">Grant record &rarr;</a></li>\n        </ul>\n        <h2>Earlier research support</h2>\n        <ul class=\"compact-list\">\n          <li><strong>2022–2025 — TIH iHub Drishti, AIIMS New Delhi × IIT Jodhpur.</strong> Investigator for the rib-fracture AI project developed through my MD thesis. <a href=\"https://ihub-drishti.ai/\" target=\"_blank\" rel=\"noopener\">iHub Drishti &rarr;</a></li>\n          <li><strong>2018 — ICMR Short-Term Studentship.</strong> Student Investigator at JIPMER for work on normative arterial-stiffness indices. <a href=\"https://sts.icmr.org.in/\" target=\"_blank\" rel=\"noopener\">ICMR STS &rarr;</a></li>\n        </ul>",
+  "pageMetaHtml": "<span>Last updated: 7 Aug 2026</span><span><a href=\"/disclosures.html\">Disclosures &rarr;</a></span>"
+}

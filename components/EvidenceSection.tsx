@@ -120,11 +120,11 @@ const criteria = [
 export default function EvidenceSection() {
   return (
     <Section heading="What we evaluate for AI systems" tone="sunk">
-      <dl className="grid gap-x-10 gap-y-5 min-[900px]:grid-cols-2">
+      <dl className="divide-y divide-rule border-y border-rule">
         {criteria.map((c) => (
-          <div key={c.title}>
+          <div key={c.title} className="grid gap-1 py-5 min-[900px]:grid-cols-[10rem_minmax(0,1fr)] min-[900px]:gap-6">
             <dt className="font-display font-semibold text-navy">{c.title}</dt>
-            <dd className="leading-relaxed text-ink-quiet">{c.body}</dd>
+            <dd className="max-w-prose leading-relaxed text-ink-quiet">{c.body}</dd>
           </div>
         ))}
       </dl>

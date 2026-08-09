@@ -86,7 +86,7 @@ export default function SelectedWorkSection() {
       <p className="mt-8 font-sans text-sm text-ink-quiet">
         Additional work on AIRib, MICCAI 2025, MedVersa and
         LLM-augmented reporting is on the{" "}
-        <a href="/research.html" className="text-navy hover:underline underline-offset-4">
+        <a href="/research.html" className="text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy">
           Work page
         </a>
         .

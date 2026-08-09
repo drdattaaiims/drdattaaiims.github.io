@@ -1,0 +1,27 @@
+{
+  "id": "media",
+  "source": "public/media.html",
+  "path": "/media.html",
+  "outputPath": "media.html",
+  "parentNavKey": "talks",
+  "kind": "standard",
+  "indexingPolicy": "noindex",
+  "title": "Selected Media – Suvrankar Datta",
+  "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+  "canonical": "https://drdattaaiims.github.io/media.html",
+  "openGraph": {
+    "title": "Selected Media – Suvrankar Datta",
+    "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+    "type": "website",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Selected Media – Suvrankar Datta",
+    "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "pageHeadHtml": "<h1>Selected Media</h1><p class=\"lede\">A small archive of public appearances. This page is intentionally excluded from search indexing and is not a comprehensive press record.</p>",
+  "pageBodyHtml": "<h2>AI and healthcare</h2><ul class=\"compact-list\"><li>India Ahead News — panel appearances on AI and healthcare. <a href=\"https://indiaaheadnews.com/\" target=\"_blank\" rel=\"noopener\">Publisher &rarr;</a></li><li>Hindustan Times — video feature on AI in radiology. <a href=\"https://www.hindustantimes.com/\" target=\"_blank\" rel=\"noopener\">Publisher &rarr;</a></li></ul>\n    <h2>Medical training and professional issues</h2><ul class=\"compact-list\"><li>NDTV — interviews during doctors' protests and AIIMS Delhi coverage. <a href=\"https://www.youtube.com/watch?v=mQIUTw4gC_w\" target=\"_blank\" rel=\"noopener\">Clip 1</a> &middot; <a href=\"https://www.youtube.com/watch?v=pX9SGu0gycE\" target=\"_blank\" rel=\"noopener\">Clip 2</a> &middot; <a href=\"https://www.youtube.com/watch?v=ELvbNT2zoBg\" target=\"_blank\" rel=\"noopener\">Clip 3</a></li><li>Mirror Now — panels on doctors' safety and postgraduate medical admissions. <a href=\"https://www.youtube.com/watch?v=3Ht_NWrsjKA\" target=\"_blank\" rel=\"noopener\">Clip 1</a> &middot; <a href=\"https://www.youtube.com/watch?v=G_AviR2L9xo\" target=\"_blank\" rel=\"noopener\">Clip 2</a></li></ul>\n    <div class=\"notice\">Media enquiries: <a href=\"mailto:suvrankar.datta@ashoka.edu.in\">suvrankar.datta@ashoka.edu.in</a>.</div>",
+  "pageMetaHtml": "<span>Last reviewed: 7 Aug 2026</span><span><a href=\"/talks.html\">Selected talks &rarr;</a></span>"
+}

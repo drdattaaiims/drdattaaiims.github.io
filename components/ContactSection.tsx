@@ -27,22 +27,22 @@ export default function ContactSection() {
   };
 
   return (
-    <Section id="contact" heading="Contact" tone="sunk">
+    <Section id="contact" heading="Contact">
       <p className="max-w-prose text-ink-quiet">
         Open to research collaborations and speaking engagements in AI and
         healthcare. Based in New Delhi, India.
       </p>
 
       <div className="flex flex-wrap gap-3 mt-5">
-        <Button onClick={handleEmail} variant="outline" className="hover-elevate font-sans" data-testid="button-contact-email">
+        <Button onClick={handleEmail} variant="outline" className="min-h-11 hover-elevate font-sans" data-testid="button-contact-email">
           <Mail className="w-4 h-4 mr-2" />
           {EMAIL_PRIMARY}
         </Button>
-        <Button onClick={handleLinkedIn} variant="outline" className="hover-elevate font-sans" data-testid="button-contact-linkedin">
+        <Button onClick={handleLinkedIn} variant="outline" className="min-h-11 hover-elevate font-sans" data-testid="button-contact-linkedin">
           <Linkedin className="w-4 h-4 mr-2" />
           LinkedIn
         </Button>
-        <Button onClick={handleCV} variant="outline" className="hover-elevate font-sans" data-testid="button-contact-cv">
+        <Button onClick={handleCV} variant="outline" className="min-h-11 hover-elevate font-sans" data-testid="button-contact-cv">
           <Download className="w-4 h-4 mr-2" />
           {CV_LABEL}
         </Button>

@@ -1,0 +1,31 @@
+name: Generate Linux visual baselines
+
+on:
+  push:
+    branches: ["agent/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: visual-baseline-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.62.1-noble
+    steps:
+      - uses: actions/checkout@v7
+      - run: npm ci
+      - name: Validate the static build
+        run: npm run qa:static
+      - name: Generate screenshots in the CI runtime
+        run: npm run test:visual:update
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux-visual-baselines
+          path: tests/__screenshots__/
+          if-no-files-found: error
+          retention-days: 7

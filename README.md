@@ -7,12 +7,25 @@ Centre for Responsible Autonomous Systems in Healthcare (CRASH Lab).
 
 Live at [drdattaaiims.github.io](https://drdattaaiims.github.io).
 
-## Contents
+## Architecture
 
-- `index.html`, `main.tsx`, `App.tsx`, `components/`, `pages/` — the React/Vite homepage.
-- `public/*.html` — statically served subpages (research, publications, lab, talks, grants, awards, media, disclosures). These are plain HTML, not part of the React build, and are copied to `dist/` verbatim by Vite.
-- `public/cv/` — versioned CV PDF.
-- `attached_assets/` — source images and documents referenced by the build.
+Every route uses one React site shell, one navigation model, one footer and one
+stylesheet. Route content and metadata are registered centrally in `content/`;
+the build renders each route to static HTML for GitHub Pages. The prerenderer
+refuses to overwrite a file copied from `public/`, preventing silent route and
+sitemap collisions.
+
+- `content/routes.json` — route, canonical, robots, social and structured-data metadata.
+- `content/pages/` — route-specific editorial content captured independently of the shell.
+- `components/site/` — canonical header, footer and page shell.
+- `index.css` — shared brand tokens, typography, layout and responsive rules.
+- `scripts/prerender-pages.mjs` — static generation and sitemap output.
+- `scripts/validate-*.mjs` — metadata, content-parity and style invariants.
+- `tests/` — responsive, interaction, accessibility and visual regression checks.
+- `public/` — passthrough assets only, including the CV and search verification file.
+
+The implementation rules are documented in
+[`docs/STYLE-BRANDING.md`](docs/STYLE-BRANDING.md).
 
 ## Development
 
@@ -29,10 +42,25 @@ npm run build
 
 Outputs to `dist/`. `npm run check` runs the TypeScript compiler with no emit.
 
+Before committing a site change, run:
+
+```bash
+npm run qa:static
+npm run test:ui
+npm run test:a11y
+npm run test:visual
+```
+
+Visual references are generated in the pinned Linux Playwright container used
+by CI, not on a developer workstation. The `Generate Linux visual baselines`
+workflow publishes updated references as an artifact for deliberate review and
+commit.
+
 ## Deploy
 
-Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds with
-Vite and publishes `dist/` to GitHub Pages.
+Pull requests must pass the complete site-quality workflow. Pushes to `main`
+repeat that release gate, then publish `dist/` to GitHub Pages. A failed check
+cannot reach the deployment job.
 
 ## Contact
 

@@ -9,6 +9,11 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        tablet: "640px",
+        desktop: "900px",
+        wide: "1100px",
+      },
       borderRadius: {
         none: "0",
         sm: "0",

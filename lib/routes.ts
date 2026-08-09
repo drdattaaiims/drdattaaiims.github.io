@@ -5,6 +5,7 @@ import clinical from "@/content/pages/clinical.json";
 import cv from "@/content/pages/cv.json";
 import disclosures from "@/content/pages/disclosures.json";
 import grants from "@/content/pages/grants.json";
+import gemini from "@/content/pages/gemini.json";
 import journey from "@/content/pages/journey.json";
 import lab from "@/content/pages/lab.json";
 import media from "@/content/pages/media.json";
@@ -62,6 +63,7 @@ export const pageContentById: Record<string, PageContent> = {
   clinical: clinical as PageContent,
   cv: cv as PageContent,
   disclosures: disclosures as PageContent,
+  gemini: gemini as PageContent,
   grants: grants as PageContent,
   journey: journey as PageContent,
   lab: lab as PageContent,

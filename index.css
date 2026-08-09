@@ -413,6 +413,7 @@
 .page-intro a,
 .error-page a {
   color: var(--slate-blue);
+  overflow-wrap: anywhere;
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
@@ -433,6 +434,74 @@
   padding: 1rem 1.25rem;
   border-left: 3px solid var(--orange);
   background: var(--surface);
+}
+.page-body figure {
+  max-width: var(--measure-reading);
+  margin: 2rem 0;
+}
+.page-body figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+.page-body figcaption {
+  margin-top: 0.75rem;
+  color: var(--text-3);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+.page-body table {
+  display: block;
+  width: 100%;
+  max-width: var(--measure-reading);
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+.page-body th,
+.page-body td {
+  min-width: 7.5rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+.page-body th {
+  background: var(--elevated);
+  color: var(--navy);
+  font-weight: 600;
+}
+.page-body blockquote {
+  max-width: var(--measure-reading);
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--orange);
+  background: var(--surface);
+  font-style: italic;
+}
+.page-body .callout {
+  max-width: var(--measure-reading);
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--rule);
+  background: var(--elevated);
+}
+.page-body hr {
+  max-width: var(--measure-reading);
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+.page-body .article-publication-meta {
+  max-width: var(--measure-reading);
+  margin-top: 2rem;
+  color: var(--text-3);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
 }
 .button-link {
   display: inline-flex;

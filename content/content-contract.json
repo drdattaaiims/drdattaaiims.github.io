@@ -4,83 +4,55 @@
     "source": "public/research.html",
     "path": "/research.html",
     "outputPath": "research.html",
-    "title": "Research & Work – Suvrankar Datta",
-    "description": "Research by Suvrankar Datta on clinical AI evaluation and safety, multilingual clinical AI, LMIC validation, decision support, and medical imaging systems.",
+    "title": "Research – Suvrankar Datta",
+    "description": "Clinical AI evaluation research by Suvrankar Datta: Radiology's Last Exam (RadLE), fine-grained diagnosis under label scarcity, and multimodal foundation models for medical image interpretation.",
     "canonical": "https://drdattaaiims.github.io/research.html",
     "indexingPolicy": "index",
     "headings": [
       {
         "level": "h1",
-        "text": "Research & Work"
+        "text": "Research"
       },
       {
         "level": "h2",
-        "text": "Clinical AI evaluation and safety"
+        "text": "Fine-grained diagnosis under label scarcity"
       },
       {
         "level": "h2",
-        "text": "Multilingual and ambient clinical AI"
+        "text": "Evaluating frontier AI against clinicians, and where it fails"
       },
       {
         "level": "h2",
-        "text": "LMIC validation and health equity"
+        "text": "Multimodal foundation models for medical image interpretation"
       },
       {
         "level": "h2",
-        "text": "Clinical decision support"
-      },
-      {
-        "level": "h2",
-        "text": "Medical imaging and reporting systems"
+        "text": "LLM reliability in radiology practice and education"
       }
     ],
     "links": [
       {
-        "href": "https://arxiv.org/abs/2509.25559",
-        "label": "RadLE 1.0 paper →"
-      },
-      {
-        "href": "https://crashlab.in/radle-technicalreport",
-        "label": "RadLE 2.0 technical report →"
-      },
-      {
-        "href": "https://crashlab.in/radle/2/leaderboard",
-        "label": "Leaderboard →"
-      },
-      {
-        "href": "https://kcdha.ashoka.edu.in/2025-researchdetails/evaluating-healthcare-ai-scribe-models-in-india-praimaan",
-        "label": "PrAImaan →"
-      },
-      {
-        "href": "https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290",
-        "label": "V2DD grant record →"
-      },
-      {
-        "href": "https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the",
-        "label": "Programme announcement →"
-      },
-      {
-        "href": "https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious",
-        "label": "Programme announcement →"
-      },
-      {
-        "href": "https://doi.org/10.1056/AIoa2500595",
-        "label": "MedVersa →"
-      },
-      {
-        "href": "https://doi.org/10.1007/978-3-032-05182-0_22",
-        "label": "MICCAI 2025 paper →"
+        "href": "/lab.html",
+        "label": "CRASH Lab"
       },
       {
         "href": "/publications.html",
-        "label": "Full publication list →"
+        "label": "Publications →"
       },
       {
-        "href": "/clinical-global-health.html",
-        "label": "Clinical & Global Health page"
+        "href": "/publications.html",
+        "label": "Publications →"
+      },
+      {
+        "href": "/publications.html",
+        "label": "Publications →"
+      },
+      {
+        "href": "/publications.html",
+        "label": "Publications →"
       }
     ],
-    "contentHash": "c1b41c89574b5ea2e698bbb7541934a854fd2655a9000c7478515953f827d7a6"
+    "contentHash": "b75d760aa25bc3b128530efa2a53352daafb8e97351476d21e71a8e9368dee85"
   },
   {
     "id": "clinical",
@@ -191,7 +163,7 @@
       },
       {
         "href": "https://arxiv.org/abs/2509.25559",
-        "label": "Paper"
+        "label": "arXiv"
       },
       {
         "href": "https://doi.org/10.1007/978-3-032-05182-0_22",
@@ -263,69 +235,129 @@
       },
       {
         "href": "https://arxiv.org/abs/2509.25559",
-        "label": "Paper"
+        "label": "arXiv"
       },
       {
         "href": "https://crashlab.in/radle-technicalreport",
         "label": "Technical report"
-      },
-      {
-        "href": "https://crashlab.in/radle/2/leaderboard",
-        "label": "Leaderboard"
       }
     ],
-    "contentHash": "7e28d1cf4b6a349c4a384a82eebcfc02fe48f751b22cd77f50be7352f97fb26b"
+    "contentHash": "7cba17318184b48f15e6b89ef3beb15068900a977f99632598d648dd3b06d0a7"
   },
   {
     "id": "talks",
     "source": "public/talks.html",
     "path": "/talks.html",
     "outputPath": "talks.html",
-    "title": "Selected Talks – Suvrankar Datta",
-    "description": "Selected scientific presentations, invited talks and panels by Suvrankar Datta on clinical AI and radiology.",
+    "title": "Talks – Suvrankar Datta",
+    "description": "Conference presentations, invited keynotes and panels by Suvrankar Datta on clinical AI evaluation, radiology and responsible AI in healthcare.",
     "canonical": "https://drdattaaiims.github.io/talks.html",
     "indexingPolicy": "index",
     "headings": [
       {
         "level": "h1",
-        "text": "Selected Talks"
+        "text": "Talks"
       },
       {
         "level": "h2",
-        "text": "Scientific presentations"
+        "text": "Conference presentations"
+      },
+      {
+        "level": "h3",
+        "text": "2025"
+      },
+      {
+        "level": "h3",
+        "text": "2023"
+      },
+      {
+        "level": "h3",
+        "text": "Earlier"
       },
       {
         "level": "h2",
-        "text": "Invited talks and panels"
+        "text": "Invited talks, keynotes & panels"
       }
     ],
     "links": [
       {
         "href": "https://arxiv.org/abs/2504.10889",
-        "label": "Preprint →"
+        "label": "arXiv"
       },
       {
-        "href": "https://glc4hsr.org/annual-conclave-2026/session-detail/11",
-        "label": "Programme →"
-      },
-      {
-        "href": "https://ncaihc2026.in/program",
-        "label": "Programme →"
+        "href": "https://conferences.miccai.org/2025/en/",
+        "label": "MICCAI 2025"
       },
       {
         "href": "https://aocr2025.org/",
-        "label": "Congress →"
+        "label": "AOCR 2025"
+      },
+      {
+        "href": "https://iria.org.in/aocr-2025/",
+        "label": "IRIA"
+      },
+      {
+        "href": "https://www.rsna.org/annual-meeting",
+        "label": "RSNA"
+      },
+      {
+        "href": "https://internationalskeletalsociety.com/",
+        "label": "ISS"
+      },
+      {
+        "href": "https://events.docthub.com/isvir-2023-E359",
+        "label": "ISVIR 2023"
+      },
+      {
+        "href": "https://jaana.org/",
+        "label": "JAANA"
+      },
+      {
+        "href": "https://reportindia.org/",
+        "label": "RePORT India"
+      },
+      {
+        "href": "https://jipmer.edu.in/",
+        "label": "JIPMER"
+      },
+      {
+        "href": "https://glc4hsr.org/annual-conclave-2026/session-detail/11",
+        "label": "Programme"
+      },
+      {
+        "href": "https://ncaihc2026.in/program",
+        "label": "Programme"
+      },
+      {
+        "href": "https://aocr2025.org/",
+        "label": "AOCR 2025"
+      },
+      {
+        "href": "https://health.ficci.in/",
+        "label": "FICCI Health"
+      },
+      {
+        "href": "https://bharatrndsummit.ficci.in/index.html",
+        "label": "FICCI Bharat R&D"
       },
       {
         "href": "https://www.ifcci.org.in/communication/news/n/news/la-french-tech-india-ai-summit-2025.html",
-        "label": "Event →"
+        "label": "French Tech India AI Summit"
       },
       {
-        "href": "mailto:suvrankar.datta@ashoka.edu.in",
-        "label": "suvrankar.datta@ashoka.edu.in"
+        "href": "https://healthcaresummit.in/agenda/",
+        "label": "Healthcare Summit"
+      },
+      {
+        "href": "https://health.ficci.in/",
+        "label": "FICCI HEAL"
+      },
+      {
+        "href": "https://nasscom.in/futureforge2024/",
+        "label": "NASSCOM"
       }
     ],
-    "contentHash": "6275f296d4823cfa29d655a6662da2e49a3bf71f302b766b6d524af33833e0f0"
+    "contentHash": "0143dba4c96fafcddf78a15f0cb6104d98c1ce6b6fcd50dad78abd6d23fd83fe"
   },
   {
     "id": "awards",
@@ -333,25 +365,17 @@
     "path": "/awards.html",
     "outputPath": "awards.html",
     "title": "Awards & Distinctions – Suvrankar Datta",
-    "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+    "description": "Awards and distinctions for Suvrankar Datta, including the RSNA Trainee Research Prize 2023 for the AIRib rib-fracture detection pipeline.",
     "canonical": "https://drdattaaiims.github.io/awards.html",
     "indexingPolicy": "index",
     "headings": [
       {
         "level": "h1",
         "text": "Awards & Distinctions"
-      },
-      {
-        "level": "h2",
-        "text": "Research recognition"
-      },
-      {
-        "level": "h2",
-        "text": "Professional distinctions"
       }
     ],
     "links": [],
-    "contentHash": "eaa67e5471076f761b66b8d2749b0e7b1fd65d1a0e23df1e07eb3e012dd27729"
+    "contentHash": "ee8d51b084a70fbc70765beb11468dfb1133ddef5a54e13df7a97859f1134a5a"
   },
   {
     "id": "journey",
@@ -445,7 +469,7 @@
         "label": "LinkedIn"
       },
       {
-        "href": "https://scholar.google.com/citations?user=lL8-zOoAAAAJ&hl=en",
+        "href": "https://scholar.google.com/citations?user=lL8-zOoAAAAJ&amp;hl=en",
         "label": "Google Scholar"
       },
       {
@@ -489,30 +513,54 @@
     "path": "/lab.html",
     "outputPath": "lab.html",
     "title": "CRASH Lab – Suvrankar Datta",
-    "description": "CRASH Lab is the clinician-led research group founded and led by Suvrankar Datta for clinical AI evaluation and safety.",
+    "description": "CRASH Lab (Centre for Responsible Autonomous Systems in Healthcare), a clinician-led research group at Ashoka University building benchmarks and evaluation frameworks for clinical AI, led by Suvrankar Datta.",
     "canonical": "https://drdattaaiims.github.io/lab.html",
     "indexingPolicy": "index",
     "headings": [
       {
         "level": "h1",
         "text": "CRASH Lab"
+      },
+      {
+        "level": "h2",
+        "text": "Lead"
+      },
+      {
+        "level": "h2",
+        "text": "Roster"
+      },
+      {
+        "level": "h2",
+        "text": "Open positions"
+      },
+      {
+        "level": "h2",
+        "text": "Contact"
       }
     ],
     "links": [
       {
         "href": "https://crashlab.in/",
-        "label": "Visit CRASH Lab →"
-      },
-      {
-        "href": "https://crashlab.in/research",
-        "label": "Explore lab research →"
-      },
-      {
-        "href": "https://crashlab.in/",
         "label": "crashlab.in"
+      },
+      {
+        "href": "/research.html",
+        "label": "Research"
+      },
+      {
+        "href": "/#hero",
+        "label": "About →"
+      },
+      {
+        "href": "https://crashlab.in/people",
+        "label": "CRASH Lab team page"
+      },
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "suvrankar.datta@ashoka.edu.in"
       }
     ],
-    "contentHash": "4c1a6d3076d5dbe84f388a9388095aad16553868374482471665fa14b06d0c9b"
+    "contentHash": "7440a6766a97994e83d2b0a17cfbaa4a904489388088594a2212c892088e83dd"
   },
   {
     "id": "grants",
@@ -520,54 +568,46 @@
     "path": "/grants.html",
     "outputPath": "grants.html",
     "title": "Grants & Funding – Suvrankar Datta",
-    "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+    "description": "Grants and funding for Suvrankar Datta's clinical AI research, including a DST-A*STAR India-Singapore programme, two Gates Foundation-supported programmes, and IndiaAI CATCH.",
     "canonical": "https://drdattaaiims.github.io/grants.html",
     "indexingPolicy": "index",
     "headings": [
       {
         "level": "h1",
         "text": "Grants & Funding"
-      },
-      {
-        "level": "h2",
-        "text": "Principal Investigator"
-      },
-      {
-        "level": "h2",
-        "text": "Programme team supervision"
-      },
-      {
-        "level": "h2",
-        "text": "Earlier research support"
       }
     ],
     "links": [
       {
         "href": "https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the",
-        "label": "Institutional announcement →"
+        "label": "Announcement"
       },
       {
         "href": "https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious",
-        "label": "Institutional announcement →"
+        "label": "Announcement"
       },
       {
         "href": "https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-096588",
-        "label": "Grant record →"
+        "label": "Grant record"
       },
       {
         "href": "https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290",
-        "label": "Grant record →"
+        "label": "Grant record"
       },
       {
         "href": "https://ihub-drishti.ai/",
-        "label": "iHub Drishti →"
+        "label": "iHub Drishti"
+      },
+      {
+        "href": "https://dbtindia.gov.in/",
+        "label": "DBT India"
       },
       {
         "href": "https://sts.icmr.org.in/",
-        "label": "ICMR STS →"
+        "label": "ICMR STS"
       }
     ],
-    "contentHash": "c3f0a3124b9328e1fbcb407aa706a90a5c898a22ecb7ff117546aa62dc5b9153"
+    "contentHash": "1a850b09b8106c84087298e29854a4e63a8fe32201d53d1b66596b3d0f004f60"
   },
   {
     "id": "disclosures",
@@ -575,7 +615,7 @@
     "path": "/disclosures.html",
     "outputPath": "disclosures.html",
     "title": "Disclosures – Suvrankar Datta",
-    "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+    "description": "Funding, advisory roles and consultancy disclosures for Suvrankar Datta.",
     "canonical": "https://drdattaaiims.github.io/disclosures.html",
     "indexingPolicy": "index",
     "headings": [
@@ -585,19 +625,19 @@
       },
       {
         "level": "h2",
-        "text": "Research funding"
+        "text": "Funding"
       },
       {
         "level": "h2",
-        "text": "Research and programme relationships"
+        "text": "Advisory, consultancy & research partnerships"
       },
       {
         "level": "h2",
-        "text": "Clinical work"
+        "text": "Equity"
       },
       {
         "level": "h2",
-        "text": "Equity and honoraria"
+        "text": "Honoraria"
       }
     ],
     "links": [
@@ -607,46 +647,46 @@
       },
       {
         "href": "/talks.html",
-        "label": "Talks page"
-      },
-      {
-        "href": "mailto:suvrankar.datta@ashoka.edu.in",
-        "label": "suvrankar.datta@ashoka.edu.in"
+        "label": "Talks"
       }
     ],
-    "contentHash": "bd4497c20ae74c8f909e7303d43d68549dcfd57aebd8f57680bc0793250e5028"
+    "contentHash": "d458f9c92ffc3178b781311d4e63ba89b0cf56362cd0f2b2a689b083375cb2e6"
   },
   {
     "id": "media",
     "source": "public/media.html",
     "path": "/media.html",
     "outputPath": "media.html",
-    "title": "Selected Media – Suvrankar Datta",
-    "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+    "title": "Media & Press – Suvrankar Datta",
+    "description": "Media and press coverage of Suvrankar Datta's work on AI in healthcare and medical education advocacy.",
     "canonical": "https://drdattaaiims.github.io/media.html",
     "indexingPolicy": "noindex",
     "headings": [
       {
         "level": "h1",
-        "text": "Selected Media"
+        "text": "Media & Press"
       },
       {
         "level": "h2",
-        "text": "AI and healthcare"
+        "text": "AI & healthcare"
       },
       {
         "level": "h2",
-        "text": "Medical training and professional issues"
+        "text": "Advocacy & professional issues"
+      },
+      {
+        "level": "h2",
+        "text": "Print"
       }
     ],
     "links": [
       {
         "href": "https://indiaaheadnews.com/",
-        "label": "Publisher →"
+        "label": "India Ahead"
       },
       {
         "href": "https://www.hindustantimes.com/",
-        "label": "Publisher →"
+        "label": "Hindustan Times"
       },
       {
         "href": "https://www.youtube.com/watch?v=mQIUTw4gC_w",
@@ -662,18 +702,38 @@
       },
       {
         "href": "https://www.youtube.com/watch?v=3Ht_NWrsjKA",
-        "label": "Clip 1"
+        "label": "YouTube"
       },
       {
         "href": "https://www.youtube.com/watch?v=G_AviR2L9xo",
-        "label": "Clip 2"
+        "label": "YouTube"
       },
       {
-        "href": "mailto:suvrankar.datta@ashoka.edu.in",
-        "label": "suvrankar.datta@ashoka.edu.in"
+        "href": "https://twitter.com/MirrorNow/status/1475824417565405184",
+        "label": "Post 1"
+      },
+      {
+        "href": "https://twitter.com/MirrorNow/status/1410652901383368705",
+        "label": "Post 2"
+      },
+      {
+        "href": "https://twitter.com/MirrorNow/status/1465620364180873225",
+        "label": "Post 3"
+      },
+      {
+        "href": "https://www.thequint.com/",
+        "label": "The Quint"
+      },
+      {
+        "href": "https://www.telegraphindia.com/",
+        "label": "Publisher"
+      },
+      {
+        "href": "https://www.thehindu.com/",
+        "label": "Publisher"
       }
     ],
-    "contentHash": "8846df9b90f997774f0b9c3546021dfe060c8c65d51047f36f88d6daea628ad8"
+    "contentHash": "b33c0bf484898d52217ed246924cbaf77e3582e26da5330373ef25e231f4ba67"
   },
   {
     "id": "not-found",
@@ -707,26 +767,265 @@
     "source": "public/AI-Radiology-Residency-2025.html",
     "path": "/AI-Radiology-Residency-2025.html",
     "outputPath": "AI-Radiology-Residency-2025.html",
-    "title": "Archived Radiology Career Guide – Suvrankar Datta",
-    "description": "",
+    "title": "Should You Choose Radiology in 2025? A No Bull$hit Guide",
+    "description": "Honest, evidence-based guidance for medical students choosing radiology in the AI era—what will change, what won't, and how to build a future-proof career.",
     "canonical": "https://drdattaaiims.github.io/AI-Radiology-Residency-2025.html",
     "indexingPolicy": "noindex",
     "headings": [
       {
         "level": "h1",
-        "text": "Article archived"
+        "text": "Should You Choose Radiology in 2025? A No Bull$hit Guide"
+      },
+      {
+        "level": "h2",
+        "text": "Why This Blog Matters (More Than You Think)"
+      },
+      {
+        "level": "h2",
+        "text": "What AI Actually Does Today"
+      },
+      {
+        "level": "h2",
+        "text": "Why Governments Move Slower Than What AI Startups Want"
+      },
+      {
+        "level": "h2",
+        "text": "The Coming Wave of Mediocre Models (and How They'll Be Regulated)"
+      },
+      {
+        "level": "h2",
+        "text": "You'll Become Dependent on AI (and That's Okay, If You're Smart About It)"
+      },
+      {
+        "level": "h2",
+        "text": "Where Humans Still Dominate (and Where Radiology Actually Grows)"
+      },
+      {
+        "level": "h2",
+        "text": "Let's Talk About Money (Because I Know You're Thinking About It)"
+      },
+      {
+        "level": "h2",
+        "text": "Practical Suggestions for Applicants and Radiologists, including residents (2025–2030)"
+      },
+      {
+        "level": "h2",
+        "text": "My Two Cents, As Directly As I Can Say It"
+      },
+      {
+        "level": "h2",
+        "text": "Join Us to shape India's Healthcare AI Story"
+      },
+      {
+        "level": "h2",
+        "text": "References"
       }
     ],
     "links": [
       {
-        "href": "/research.html",
-        "label": "Read current research →"
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "Datta et al., 2025 (arXiv)"
       },
       {
-        "href": "/clinical-global-health.html",
-        "label": "Clinical & Global Health →"
+        "href": "https://fpf.org/resource/eu-ai-act-a-comprehensive-implementation-compliance-timeline/",
+        "label": "EU AI Act: A Comprehensive Implementation & Compliance Timeline"
+      },
+      {
+        "href": "https://fpf.org/wp-content/uploads/2025/04/FPF_EU_AI_Act_Timeline_R4_-_2025_Update.pdf",
+        "label": "here"
+      },
+      {
+        "href": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "label": "here"
+      },
+      {
+        "href": "https://www.rcr.ac.uk/news-policy/policy-reports-initiatives/state-of-the-wait/",
+        "label": "State of the Wait: Diagnostic Imaging"
+      },
+      {
+        "href": "https://www.rcr.ac.uk/news-policy/latest-updates/cancer-and-diagnostic-waiting-times-for-december-2024/",
+        "label": "here"
+      },
+      {
+        "href": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2825%2902075-6/abstract",
+        "label": "Topol & Berzin, 2025 — The Lancet"
+      },
+      {
+        "href": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00133-5/abstract",
+        "label": "Budzyń K et al., “Endoscopist deskilling risk after exposure to artificial intelligence in colonoscopy”, The Lancet Gastroenterol Hepatol, 2025"
+      },
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "suvrankar.datta@ashoka.edu.in"
+      },
+      {
+        "href": "https://chat.whatsapp.com/LkTGRafwE7X09DgVeem93P?mode=wwt",
+        "label": "https://chat.whatsapp.com/LkTGRafwE7X09DgVeem93P?mode=wwt"
+      },
+      {
+        "href": "https://digital-strategy.ec.europa.eu/en/policies/european-ai-act",
+        "label": "https://digital-strategy.ec.europa.eu/en/policies/european-ai-act"
+      },
+      {
+        "href": "https://artificialintelligenceact.eu/",
+        "label": "https://artificialintelligenceact.eu/"
+      },
+      {
+        "href": "https://insightsimaging.springeropen.com/",
+        "label": "Insights Imaging"
+      },
+      {
+        "href": "https://www.rcr.ac.uk",
+        "label": "https://www.rcr.ac.uk"
+      },
+      {
+        "href": "https://www.theguardian.com",
+        "label": "https://www.theguardian.com"
+      },
+      {
+        "href": "https://www.ajronline.org",
+        "label": "https://www.ajronline.org"
+      },
+      {
+        "href": "https://www.who.int/publications",
+        "label": "https://www.who.int/publications"
+      },
+      {
+        "href": "https://www.meity.gov.in/",
+        "label": "https://www.meity.gov.in/"
+      },
+      {
+        "href": "https://pib.gov.in",
+        "label": "https://pib.gov.in"
+      },
+      {
+        "href": "https://cdsco.gov.in",
+        "label": "https://cdsco.gov.in"
+      },
+      {
+        "href": "https://pubs.rsna.org/journal/radiology",
+        "label": "https://pubs.rsna.org/journal/radiology"
+      },
+      {
+        "href": "https://www.nature.com/srep/",
+        "label": "https://www.nature.com/srep/"
+      },
+      {
+        "href": "https://www.cell.com/patterns/",
+        "label": "https://www.cell.com/patterns/"
+      },
+      {
+        "href": "https://www.thelancet.com/eclinicalmedicine",
+        "label": "https://www.thelancet.com/eclinicalmedicine"
+      },
+      {
+        "href": "https://www.sciencedirect.com/journal/diagnostic-and-interventional-imaging",
+        "label": "https://www.sciencedirect.com/journal/diagnostic-and-interventional-imaging"
+      },
+      {
+        "href": "https://www.mdpi.com/journal/healthcare",
+        "label": "https://www.mdpi.com/journal/healthcare"
+      },
+      {
+        "href": "https://humanfactors.jmir.org/",
+        "label": "https://humanfactors.jmir.org/"
+      },
+      {
+        "href": "https://www.techradar.com",
+        "label": "https://www.techradar.com"
+      },
+      {
+        "href": "https://www.theguardian.com",
+        "label": "https://www.theguardian.com"
       }
     ],
-    "contentHash": "4319085e27dfdc50166dbf8a1612414efd0f7061c7f8f24db132f3bc439844d6"
+    "contentHash": "fe47998bf2e0a335572e0603e442c149df8c2f7341338eb651b66044a1638968"
+  },
+  {
+    "id": "gemini",
+    "source": "public/Gemini-3.0-Radiology-2025.html",
+    "path": "/Gemini-3.0-Radiology-2025.html",
+    "outputPath": "Gemini-3.0-Radiology-2025.html",
+    "title": "Gemini 3.0 Pro Surpasses Radiology Trainees on RadLE v1",
+    "description": "Gemini 3.0 Pro is the first generalist AI model to cross radiology-trainee performance on RadLE v1, but still far from expert radiologists.",
+    "canonical": "https://drdattaaiims.github.io/Gemini-3.0-Radiology-2025.html",
+    "indexingPolicy": "noindex",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Gemini 3.0 Pro Surpasses Radiology Trainees on Radiology's Last Exam (RadLE)"
+      },
+      {
+        "level": "h2",
+        "text": "Background"
+      },
+      {
+        "level": "h2",
+        "text": "Benchmarking Setup: Same as RadLE v1"
+      },
+      {
+        "level": "h2",
+        "text": "Results"
+      },
+      {
+        "level": "h2",
+        "text": "An Example where Gemini 3.0 outperformed prior SOTA GPT-5 Thinking"
+      },
+      {
+        "level": "h2",
+        "text": "Reproducibility"
+      },
+      {
+        "level": "h2",
+        "text": "Interpretation"
+      },
+      {
+        "level": "h2",
+        "text": "Conclusion"
+      },
+      {
+        "level": "h2",
+        "text": "Join Us to shape India's Healthcare AI Story"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE v1"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE v1"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE v1"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE v1"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE v1"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE v1"
+      },
+      {
+        "href": "https://arxiv.org/abs/2509.25559",
+        "label": "RadLE v1"
+      },
+      {
+        "href": "mailto:suvrankar.datta@ashoka.edu.in",
+        "label": "suvrankar.datta@ashoka.edu.in"
+      },
+      {
+        "href": "https://chat.whatsapp.com/LkTGRafwE7X09DgVeem93P?mode=wwt",
+        "label": "https://chat.whatsapp.com/LkTGRafwE7X09DgVeem93P?mode=wwt"
+      }
+    ],
+    "contentHash": "f974fd57b4add24274ecb92cfe76c11f12b2c93c2cf56298fba1549fbbc5ff19"
   }
 ]

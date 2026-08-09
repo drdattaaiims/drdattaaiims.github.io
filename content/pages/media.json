@@ -6,22 +6,22 @@
   "parentNavKey": "talks",
   "kind": "standard",
   "indexingPolicy": "noindex",
-  "title": "Selected Media – Suvrankar Datta",
-  "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+  "title": "Media & Press – Suvrankar Datta",
+  "description": "Media and press coverage of Suvrankar Datta's work on AI in healthcare and medical education advocacy.",
   "canonical": "https://drdattaaiims.github.io/media.html",
   "openGraph": {
-    "title": "Selected Media – Suvrankar Datta",
-    "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+    "title": "Media & Press – Suvrankar Datta",
+    "description": "Media and press coverage of Suvrankar Datta's work on AI in healthcare and medical education advocacy.",
     "type": "website",
     "image": "https://drdattaaiims.github.io/og.png"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Selected Media – Suvrankar Datta",
-    "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+    "title": "Media & Press – Suvrankar Datta",
+    "description": "Media and press coverage of Suvrankar Datta's work on AI in healthcare and medical education advocacy.",
     "image": "https://drdattaaiims.github.io/og.png"
   },
-  "pageHeadHtml": "<h1>Selected Media</h1><p class=\"lede\">A small archive of public appearances. This page is intentionally excluded from search indexing and is not a comprehensive press record.</p>",
-  "pageBodyHtml": "<h2>AI and healthcare</h2><ul class=\"compact-list\"><li>India Ahead News — panel appearances on AI and healthcare. <a href=\"https://indiaaheadnews.com/\" target=\"_blank\" rel=\"noopener\">Publisher &rarr;</a></li><li>Hindustan Times — video feature on AI in radiology. <a href=\"https://www.hindustantimes.com/\" target=\"_blank\" rel=\"noopener\">Publisher &rarr;</a></li></ul>\n    <h2>Medical training and professional issues</h2><ul class=\"compact-list\"><li>NDTV — interviews during doctors' protests and AIIMS Delhi coverage. <a href=\"https://www.youtube.com/watch?v=mQIUTw4gC_w\" target=\"_blank\" rel=\"noopener\">Clip 1</a> &middot; <a href=\"https://www.youtube.com/watch?v=pX9SGu0gycE\" target=\"_blank\" rel=\"noopener\">Clip 2</a> &middot; <a href=\"https://www.youtube.com/watch?v=ELvbNT2zoBg\" target=\"_blank\" rel=\"noopener\">Clip 3</a></li><li>Mirror Now — panels on doctors' safety and postgraduate medical admissions. <a href=\"https://www.youtube.com/watch?v=3Ht_NWrsjKA\" target=\"_blank\" rel=\"noopener\">Clip 1</a> &middot; <a href=\"https://www.youtube.com/watch?v=G_AviR2L9xo\" target=\"_blank\" rel=\"noopener\">Clip 2</a></li></ul>\n    <div class=\"notice\">Media enquiries: <a href=\"mailto:suvrankar.datta@ashoka.edu.in\">suvrankar.datta@ashoka.edu.in</a>.</div>",
-  "pageMetaHtml": "<span>Last reviewed: 7 Aug 2026</span><span><a href=\"/talks.html\">Selected talks &rarr;</a></span>"
+  "pageHeadHtml": "<h1>Media & Press</h1>",
+  "pageBodyHtml": "<h2>AI &amp; healthcare</h2>\n    <p class=\"lede\">Coverage of research and expert commentary on AI in medicine.</p>\n    <ul>\n      <li>India Ahead News — panel appearances on AI &amp; healthcare. — <a href=\"https://indiaaheadnews.com/\" target=\"_blank\" rel=\"noopener\">India Ahead</a></li>\n      <li>Hindustan Times — video feature on AI in radiology. — <a href=\"https://www.hindustantimes.com/\" target=\"_blank\" rel=\"noopener\">Hindustan Times</a></li>\n    </ul>\n\n    <h2>Advocacy &amp; professional issues</h2>\n    <p class=\"lede\">Interviews and panels on resident-doctor safety, protests, and medical-education policy — separate from the AI/health-tech work above.</p>\n    <ul>\n      <li>\n        NDTV — doctors' protests / AIIMS Delhi segments —\n        <a href=\"https://www.youtube.com/watch?v=mQIUTw4gC_w\" target=\"_blank\" rel=\"noopener\">Clip 1</a> ·\n        <a href=\"https://www.youtube.com/watch?v=pX9SGu0gycE\" target=\"_blank\" rel=\"noopener\">Clip 2</a> ·\n        <a href=\"https://www.youtube.com/watch?v=ELvbNT2zoBg\" target=\"_blank\" rel=\"noopener\">Clip 3</a>\n      </li>\n      <li>\n        Mirror Now (The Urban Debate — NEET PG) — panels on doctors' safety &amp; admissions —\n        <a href=\"https://www.youtube.com/watch?v=3Ht_NWrsjKA\" target=\"_blank\" rel=\"noopener\">YouTube</a> ·\n        <a href=\"https://www.youtube.com/watch?v=G_AviR2L9xo\" target=\"_blank\" rel=\"noopener\">YouTube</a> ·\n        <a href=\"https://twitter.com/MirrorNow/status/1475824417565405184\" target=\"_blank\" rel=\"noopener\">Post 1</a> ·\n        <a href=\"https://twitter.com/MirrorNow/status/1410652901383368705\" target=\"_blank\" rel=\"noopener\">Post 2</a> ·\n        <a href=\"https://twitter.com/MirrorNow/status/1465620364180873225\" target=\"_blank\" rel=\"noopener\">Post 3</a>\n      </li>\n      <li>The Quint — Doctors' Day 2021 video. — <a href=\"https://www.thequint.com/\" target=\"_blank\" rel=\"noopener\">The Quint</a></li>\n    </ul>\n\n    <h2>Print</h2>\n    <ul>\n      <li>Front-page coverage in <em>The Telegraph</em>. — <a href=\"https://www.telegraphindia.com/\" target=\"_blank\" rel=\"noopener\">Publisher</a></li>\n      <li>Front-page coverage in <em>The Hindu</em>. — <a href=\"https://www.thehindu.com/\" target=\"_blank\" rel=\"noopener\">Publisher</a></li>\n    </ul>",
+  "pageMetaHtml": "<span>Last updated: 1 Aug 2026</span>\n      <span><a href=\"mailto:suvrankar.datta@ashoka.edu.in\">suvrankar.datta@ashoka.edu.in</a> &middot; <a href=\"https://www.linkedin.com/in/suvrankardatta/\" target=\"_blank\" rel=\"noopener\">LinkedIn</a> &middot; <a href=\"https://twitter.com/DrDatta_AIIMS\" target=\"_blank\" rel=\"noopener\">Twitter/X</a></span>"
 }

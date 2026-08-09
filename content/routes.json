@@ -1,0 +1,463 @@
+[
+  {
+    "id": "home",
+    "paths": [
+      "/",
+      "/index.html"
+    ],
+    "outputPath": "index.html",
+    "kind": "home",
+    "navKey": "home",
+    "title": "Suvrankar Datta | Clinical AI Evaluation, Safety & Global Health",
+    "description": "Physician-scientist and Simons Ashoka Early Career Fellow leading clinical AI evaluation, multilingual health-AI research and LMIC partnerships through CRASH Lab.",
+    "canonical": "https://drdattaaiims.github.io/",
+    "indexingPolicy": "index",
+    "priority": 1,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Suvrankar Datta | Clinical AI Evaluation, Safety & Global Health",
+      "description": "Physician-scientist and Simons Ashoka Early Career Fellow leading clinical AI evaluation, multilingual health-AI research and LMIC partnerships through CRASH Lab.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Suvrankar Datta | Clinical AI Evaluation, Safety & Global Health",
+      "description": "Physician-scientist and Simons Ashoka Early Career Fellow leading clinical AI evaluation, multilingual health-AI research and LMIC partnerships through CRASH Lab.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Suvrankar Datta",
+        "jobTitle": "Simons Ashoka Early Career Fellow",
+        "description": "Physician-scientist leading clinical AI evaluation, safeguards and research partnerships for healthcare AI in resource-constrained health systems.",
+        "affiliation": [
+          {
+            "@type": "Organization",
+            "name": "Koita Centre for Digital Health, Ashoka University"
+          },
+          {
+            "@type": "Organization",
+            "name": "CRASH Lab",
+            "url": "https://crashlab.in/"
+          }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/suvrankardatta/",
+          "https://twitter.com/DrDatta_AIIMS",
+          "https://github.com/drdattaaiims",
+          "https://orcid.org/0000-0002-6434-1408",
+          "https://www.researchgate.net/profile/Suvrankar-Datta",
+          "https://scholar.google.com/citations?user=lL8-zOoAAAAJ&hl=en"
+        ],
+        "knowsAbout": [
+          "Clinical AI evaluation",
+          "Radiology",
+          "Medical imaging AI",
+          "Responsible AI in healthcare",
+          "Global health"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "research",
+    "paths": [
+      "/research.html"
+    ],
+    "outputPath": "research.html",
+    "kind": "standard",
+    "contentId": "research",
+    "navKey": "work",
+    "title": "Research & Work – Suvrankar Datta",
+    "description": "Research by Suvrankar Datta on clinical AI evaluation and safety, multilingual clinical AI, LMIC validation, decision support, and medical imaging systems.",
+    "canonical": "https://drdattaaiims.github.io/research.html",
+    "indexingPolicy": "index",
+    "priority": 0.9,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Research & Work – Suvrankar Datta",
+      "description": "Clinical AI evaluation, multilingual and ambient AI, LMIC validation, decision support, and medical imaging systems.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Research & Work – Suvrankar Datta",
+      "description": "Research by Suvrankar Datta on clinical AI evaluation and safety, multilingual clinical AI, LMIC validation, decision support, and medical imaging systems.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "clinical",
+    "paths": [
+      "/clinical-global-health.html"
+    ],
+    "outputPath": "clinical-global-health.html",
+    "kind": "standard",
+    "contentId": "clinical",
+    "navKey": "clinical",
+    "title": "Clinical & Global Health – Suvrankar Datta",
+    "description": "Clinical and global-health grounding for Suvrankar Datta",
+    "canonical": "https://drdattaaiims.github.io/clinical-global-health.html",
+    "indexingPolicy": "index",
+    "priority": 0.9,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Clinical & Global Health – Suvrankar Datta",
+      "description": "How public-sector, rural and multilingual clinical settings shape the evaluation of healthcare AI.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Clinical & Global Health – Suvrankar Datta",
+      "description": "Clinical and global-health grounding for Suvrankar Datta",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "publications",
+    "paths": [
+      "/publications.html"
+    ],
+    "outputPath": "publications.html",
+    "kind": "standard",
+    "contentId": "publications",
+    "navKey": "publications",
+    "title": "Publications – Suvrankar Datta",
+    "description": "Peer-reviewed publications, preprints and technical reports by Suvrankar Datta on clinical AI evaluation, radiology and multimodal foundation models, including NEJM AI and MICCAI 2025.",
+    "canonical": "https://drdattaaiims.github.io/publications.html",
+    "indexingPolicy": "index",
+    "priority": 0.9,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Publications – Suvrankar Datta",
+      "description": "Peer-reviewed publications, preprints and technical reports by Suvrankar Datta on clinical AI evaluation, radiology and multimodal foundation models, including NEJM AI and MICCAI 2025.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Publications – Suvrankar Datta",
+      "description": "Peer-reviewed publications, preprints and technical reports by Suvrankar Datta on clinical AI evaluation, radiology and multimodal foundation models, including NEJM AI and MICCAI 2025.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "talks",
+    "paths": [
+      "/talks.html"
+    ],
+    "outputPath": "talks.html",
+    "kind": "standard",
+    "contentId": "talks",
+    "navKey": "talks",
+    "title": "Selected Talks – Suvrankar Datta",
+    "description": "Selected scientific presentations, invited talks and panels by Suvrankar Datta on clinical AI and radiology.",
+    "canonical": "https://drdattaaiims.github.io/talks.html",
+    "indexingPolicy": "index",
+    "priority": 0.5,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Selected Talks – Suvrankar Datta",
+      "description": "Selected scientific presentations, invited talks and panels by Suvrankar Datta on clinical AI and radiology.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Selected Talks – Suvrankar Datta",
+      "description": "Selected scientific presentations, invited talks and panels by Suvrankar Datta on clinical AI and radiology.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "awards",
+    "paths": [
+      "/awards.html"
+    ],
+    "outputPath": "awards.html",
+    "kind": "standard",
+    "contentId": "awards",
+    "navKey": "awards",
+    "title": "Awards & Distinctions – Suvrankar Datta",
+    "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+    "canonical": "https://drdattaaiims.github.io/awards.html",
+    "indexingPolicy": "index",
+    "priority": 0.4,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Awards & Distinctions – Suvrankar Datta",
+      "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Awards & Distinctions – Suvrankar Datta",
+      "description": "Selected research awards and professional distinctions for Suvrankar Datta.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "journey",
+    "paths": [
+      "/journey.html"
+    ],
+    "outputPath": "journey.html",
+    "kind": "journey",
+    "contentId": "journey",
+    "navKey": "journey",
+    "title": "Journey – Suvrankar Datta",
+    "description": "The path Suvrankar Datta took from JIPMER and AIIMS to clinical AI evaluation research at Ashoka University and CRASH Lab — told year by year.",
+    "canonical": "https://drdattaaiims.github.io/journey.html",
+    "indexingPolicy": "index",
+    "priority": 0.7,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Journey – Suvrankar Datta",
+      "description": "The path Suvrankar Datta took from JIPMER and AIIMS to clinical AI evaluation research at Ashoka University and CRASH Lab — told year by year.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Journey – Suvrankar Datta",
+      "description": "The path Suvrankar Datta took from JIPMER and AIIMS to clinical AI evaluation research at Ashoka University and CRASH Lab — told year by year.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "cv",
+    "paths": [
+      "/cv/"
+    ],
+    "outputPath": "cv/index.html",
+    "kind": "standard",
+    "contentId": "cv",
+    "navKey": "cv",
+    "title": "Public CV – Suvrankar Datta",
+    "description": "Public curriculum vitae for Dr Suvrankar Datta, physician-scientist working on clinical AI evaluation, radiology and global health.",
+    "canonical": "https://drdattaaiims.github.io/cv/",
+    "indexingPolicy": "index",
+    "priority": 0.7,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Public CV – Suvrankar Datta",
+      "description": "Public curriculum vitae for Dr Suvrankar Datta, physician-scientist working on clinical AI evaluation, radiology and global health.",
+      "type": "profile",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Public CV – Suvrankar Datta",
+      "description": "Public curriculum vitae for Dr Suvrankar Datta, physician-scientist working on clinical AI evaluation, radiology and global health.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "lab",
+    "paths": [
+      "/lab.html"
+    ],
+    "outputPath": "lab.html",
+    "kind": "standard",
+    "contentId": "lab",
+    "parentNavKey": "work",
+    "title": "CRASH Lab – Suvrankar Datta",
+    "description": "CRASH Lab is the clinician-led research group founded and led by Suvrankar Datta for clinical AI evaluation and safety.",
+    "canonical": "https://drdattaaiims.github.io/lab.html",
+    "indexingPolicy": "index",
+    "priority": 0.6,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "CRASH Lab – Suvrankar Datta",
+      "description": "Visit the authoritative CRASH Lab website for research, people, benchmarks and opportunities.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "CRASH Lab – Suvrankar Datta",
+      "description": "CRASH Lab is the clinician-led research group founded and led by Suvrankar Datta for clinical AI evaluation and safety.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "grants",
+    "paths": [
+      "/grants.html"
+    ],
+    "outputPath": "grants.html",
+    "kind": "standard",
+    "contentId": "grants",
+    "parentNavKey": "work",
+    "title": "Grants & Funding – Suvrankar Datta",
+    "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+    "canonical": "https://drdattaaiims.github.io/grants.html",
+    "indexingPolicy": "index",
+    "priority": 0.5,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Grants & Funding – Suvrankar Datta",
+      "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Grants & Funding – Suvrankar Datta",
+      "description": "Selected competitively funded clinical AI programmes involving Suvrankar Datta, with roles and public source links.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "disclosures",
+    "paths": [
+      "/disclosures.html"
+    ],
+    "outputPath": "disclosures.html",
+    "kind": "standard",
+    "contentId": "disclosures",
+    "parentNavKey": "work",
+    "title": "Disclosures – Suvrankar Datta",
+    "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+    "canonical": "https://drdattaaiims.github.io/disclosures.html",
+    "indexingPolicy": "index",
+    "priority": 0.4,
+    "lastmod": "2026-08-07",
+    "openGraph": {
+      "title": "Disclosures – Suvrankar Datta",
+      "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Disclosures – Suvrankar Datta",
+      "description": "Research funding, collaborations, consultancy and conflict-of-interest disclosures for Suvrankar Datta.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "media",
+    "paths": [
+      "/media.html"
+    ],
+    "outputPath": "media.html",
+    "kind": "standard",
+    "contentId": "media",
+    "parentNavKey": "talks",
+    "title": "Selected Media – Suvrankar Datta",
+    "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+    "canonical": "https://drdattaaiims.github.io/media.html",
+    "indexingPolicy": "noindex",
+    "openGraph": {
+      "title": "Selected Media – Suvrankar Datta",
+      "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Selected Media – Suvrankar Datta",
+      "description": "A curated archive of selected media appearances by Suvrankar Datta.",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "not-found",
+    "paths": [
+      "/404.html"
+    ],
+    "outputPath": "404.html",
+    "kind": "notfound",
+    "contentId": "not-found",
+    "title": "Page not found – Suvrankar Datta",
+    "description": "",
+    "canonical": "https://drdattaaiims.github.io/404.html",
+    "indexingPolicy": "error",
+    "openGraph": {
+      "title": "Page not found – Suvrankar Datta",
+      "description": "",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Page not found – Suvrankar Datta",
+      "description": "",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "archive",
+    "paths": [
+      "/AI-Radiology-Residency-2025.html"
+    ],
+    "outputPath": "AI-Radiology-Residency-2025.html",
+    "kind": "standard",
+    "contentId": "archive",
+    "parentNavKey": "work",
+    "title": "Archived Radiology Career Guide – Suvrankar Datta",
+    "description": "",
+    "canonical": "https://drdattaaiims.github.io/AI-Radiology-Residency-2025.html",
+    "indexingPolicy": "noindex",
+    "openGraph": {
+      "title": "Archived Radiology Career Guide – Suvrankar Datta",
+      "description": "",
+      "type": "website",
+      "image": "https://drdattaaiims.github.io/og.png"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Archived Radiology Career Guide – Suvrankar Datta",
+      "description": "",
+      "image": "https://drdattaaiims.github.io/og.png"
+    }
+  },
+  {
+    "id": "gemini-redirect",
+    "paths": [
+      "/Gemini-3.0-Radiology-2025.html"
+    ],
+    "outputPath": "Gemini-3.0-Radiology-2025.html",
+    "kind": "redirect",
+    "title": "Gemini 3.0 on RadLE – Moved to CRASH Lab",
+    "description": "This article now lives on the authoritative CRASH Lab website.",
+    "canonical": "https://crashlab.in/blog/gemini-3-0-radle",
+    "indexingPolicy": "redirect",
+    "redirectTo": "https://crashlab.in/blog/gemini-3-0-radle"
+  },
+  {
+    "id": "invited-redirect",
+    "paths": [
+      "/invited.html"
+    ],
+    "outputPath": "invited.html",
+    "kind": "redirect",
+    "parentNavKey": "talks",
+    "title": "Talks – Suvrankar Datta",
+    "description": "This page has moved to Selected Talks.",
+    "canonical": "https://drdattaaiims.github.io/talks.html",
+    "indexingPolicy": "redirect",
+    "redirectTo": "/talks.html"
+  },
+  {
+    "id": "presentations-redirect",
+    "paths": [
+      "/presentations.html"
+    ],
+    "outputPath": "presentations.html",
+    "kind": "redirect",
+    "parentNavKey": "talks",
+    "title": "Talks – Suvrankar Datta",
+    "description": "This page has moved to Selected Talks.",
+    "canonical": "https://drdattaaiims.github.io/talks.html",
+    "indexingPolicy": "redirect",
+    "redirectTo": "/talks.html"
+  }
+]

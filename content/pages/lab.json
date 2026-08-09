@@ -1,0 +1,27 @@
+{
+  "id": "lab",
+  "source": "public/lab.html",
+  "path": "/lab.html",
+  "outputPath": "lab.html",
+  "parentNavKey": "work",
+  "kind": "standard",
+  "title": "CRASH Lab – Suvrankar Datta",
+  "description": "CRASH Lab is the clinician-led research group founded and led by Suvrankar Datta for clinical AI evaluation and safety.",
+  "canonical": "https://drdattaaiims.github.io/lab.html",
+  "indexingPolicy": "index",
+  "openGraph": {
+    "title": "CRASH Lab – Suvrankar Datta",
+    "description": "Visit the authoritative CRASH Lab website for research, people, benchmarks and opportunities.",
+    "type": "website",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "CRASH Lab – Suvrankar Datta",
+    "description": "CRASH Lab is the clinician-led research group founded and led by Suvrankar Datta for clinical AI evaluation and safety.",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "pageHeadHtml": "<h1>CRASH Lab</h1>\n        <p class=\"lede\">Centre for Responsible Autonomous Systems in Healthcare &middot; clinician-led clinical AI evaluation at the Koita Centre for Digital Health, Ashoka University.</p>",
+  "pageBodyHtml": "<p>\n          I founded and lead CRASH Lab to build benchmarks, datasets and evaluation frameworks for medical AI systems that must work safely in real clinical settings. The lab maintains its own authoritative website for current research, people, benchmark releases and opportunities.\n        </p>\n        <p class=\"link-row\">\n          <a class=\"button-link\" href=\"https://crashlab.in/\" target=\"_blank\" rel=\"noopener\">Visit CRASH Lab &rarr;</a>\n          <a class=\"button-link secondary\" href=\"https://crashlab.in/research\" target=\"_blank\" rel=\"noopener\">Explore lab research &rarr;</a>\n        </p>\n        <div class=\"notice\">\n          This page is intentionally a bridge. CRASH Lab roster, project and recruitment details are maintained at <a href=\"https://crashlab.in/\" target=\"_blank\" rel=\"noopener\">crashlab.in</a> so there is one current source of truth.\n        </div>",
+  "pageMetaHtml": "<span>Last updated: 7 Aug 2026</span><span><a href=\"/research.html\">My work &rarr;</a></span>"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "not-found",
+  "source": "public/404.html",
+  "path": "/404.html",
+  "outputPath": "404.html",
+  "kind": "notfound",
+  "indexingPolicy": "error",
+  "title": "Page not found – Suvrankar Datta",
+  "description": "",
+  "canonical": "https://drdattaaiims.github.io/404.html",
+  "openGraph": {
+    "title": "Page not found – Suvrankar Datta",
+    "description": "",
+    "type": "website",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Page not found – Suvrankar Datta",
+    "description": "",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "pageHeadHtml": "",
+  "pageBodyHtml": "<p class=\"code\">404</p>\n    <h1>Page not found</h1>\n    <p>The page you're looking for doesn't exist, or the link is out of date.</p>\n    <p>\n      Try the <a href=\"/\">homepage</a>, or the\n      <a href=\"/publications.html\">publications list</a>.\n    </p>",
+  "pageMetaHtml": ""
+}

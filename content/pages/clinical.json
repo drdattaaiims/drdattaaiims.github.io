@@ -1,0 +1,27 @@
+{
+  "id": "clinical",
+  "source": "public/clinical-global-health.html",
+  "path": "/clinical-global-health.html",
+  "outputPath": "clinical-global-health.html",
+  "navKey": "clinical",
+  "kind": "standard",
+  "title": "Clinical & Global Health – Suvrankar Datta",
+  "description": "Clinical and global-health grounding for Suvrankar Datta",
+  "canonical": "https://drdattaaiims.github.io/clinical-global-health.html",
+  "indexingPolicy": "index",
+  "openGraph": {
+    "title": "Clinical & Global Health – Suvrankar Datta",
+    "description": "How public-sector, rural and multilingual clinical settings shape the evaluation of healthcare AI.",
+    "type": "website",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Clinical & Global Health – Suvrankar Datta",
+    "description": "Clinical and global-health grounding for Suvrankar Datta",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "pageHeadHtml": "<h1>Clinical &amp; Global Health</h1>\n        <p class=\"lede\">My research questions begin with how care is actually delivered: under time pressure, with variable infrastructure, across languages, and with limited room for confident mistakes.</p>",
+  "pageBodyHtml": "<h2>Clinical grounding</h2>\n        <h3>Rural primary care at JIPMER</h3>\n        <p>\n          During a two-month residential posting at a primary health centre in Ramanathapuram, I shared alternate emergency coverage, conducted NCD clinics and camps, and referred patients to higher centres in a setting affected by medicine shortages and the absence of operative facilities. I worked with patients in Tamil and Hindi.\n        </p>\n        <h3>High-volume radiology at AIIMS New Delhi</h3>\n        <p>\n          I worked in emergency, inpatient and outpatient radiology for patients referred from across India, interpreting more than 200 examinations independently during emergency shifts, mostly CT and ultrasonography, through roughly a year of COVID-related duties and the transition from semi-digital to fully digital imaging.\n        </p>\n\n        <h2>What this changes about AI evaluation</h2>\n        <p>\n          A useful system must work with incomplete information, constrained referral capacity and uneven infrastructure. Evaluation therefore needs to examine more than headline accuracy: language, subgroup performance, critical omissions, clinician correction burden, privacy, interoperability and the ability to defer all affect whether a tool reduces or transfers clinical burden.\n        </p>\n\n        <h2>Current health-system programmes</h2>\n        <ul class=\"compact-list\">\n          <li><strong>PrAImaan:</strong> blinded and locally relevant evaluation of healthcare AI in India. Clinical Research and Technical Teams Supervisor under PI Prof. Anurag Agrawal. <a href=\"https://kcdha.ashoka.edu.in/2025-researchdetails/evaluating-healthcare-ai-scribe-models-in-india-praimaan\" target=\"_blank\" rel=\"noopener\">Project page &rarr;</a></li>\n          <li><strong>V2DD:</strong> multilingual voice-to-structured-data and AI-scribe evaluation. Clinical Evaluation Team Supervisor under PI Prof. Anurag Agrawal. <a href=\"https://www.gatesfoundation.org/about/committed-grants/2025/11/inv-085290\" target=\"_blank\" rel=\"noopener\">Grant record &rarr;</a></li>\n          <li><strong>Equitable radiology foundation models:</strong> India–Singapore work on indigenous datasets, subgroup evaluation and culturally congruent models for South Asian populations. Principal Investigator. <a href=\"https://kcdha.ashoka.edu.in/news-details/kcdh-a-is-awarded-the\" target=\"_blank\" rel=\"noopener\">Announcement &rarr;</a></li>\n          <li><strong>PREDICT-AI:</strong> decision support with Tata Memorial Hospital and Manentia AI for post-chemotherapy RP-LND planning in testicular cancer. Principal Investigator. <a href=\"https://kcdha.ashoka.edu.in/news-details/dr-suvrankar-datta-awarded-the-prestigious\" target=\"_blank\" rel=\"noopener\">Announcement &rarr;</a></li>\n        </ul>\n\n        <div class=\"notice\">\n          The research methods, publications and benchmark links are collected on the <a href=\"/research.html\">Work page</a>. For collaboration, email <a href=\"mailto:suvrankar.datta@ashoka.edu.in\">suvrankar.datta@ashoka.edu.in</a>.\n        </div>",
+  "pageMetaHtml": "<span>Last updated: 7 Aug 2026</span>\n      <span><a href=\"/research.html\">Research &amp; work &rarr;</a></span>"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "archive",
+  "source": "public/AI-Radiology-Residency-2025.html",
+  "path": "/AI-Radiology-Residency-2025.html",
+  "outputPath": "AI-Radiology-Residency-2025.html",
+  "parentNavKey": "work",
+  "kind": "standard",
+  "indexingPolicy": "noindex",
+  "title": "Archived Radiology Career Guide – Suvrankar Datta",
+  "description": "",
+  "canonical": "https://drdattaaiims.github.io/AI-Radiology-Residency-2025.html",
+  "openGraph": {
+    "title": "Archived Radiology Career Guide – Suvrankar Datta",
+    "description": "",
+    "type": "website",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Archived Radiology Career Guide – Suvrankar Datta",
+    "description": "",
+    "image": "https://drdattaaiims.github.io/og.png"
+  },
+  "pageHeadHtml": "<h1>Article archived</h1><p class=\"lede\">The 2025 radiology career guide is being substantially rewritten.</p>",
+  "pageBodyHtml": "<div class=\"notice\"><strong>This version is no longer current.</strong> It has been removed from search indexing while its claims, references, tone and recommendations are reviewed. A revised article will replace it when that work is complete.</div><p class=\"link-row\"><a class=\"button-link\" href=\"/research.html\">Read current research &rarr;</a><a class=\"button-link secondary\" href=\"/clinical-global-health.html\">Clinical &amp; Global Health &rarr;</a></p>",
+  "pageMetaHtml": "<span>Archived: 7 Aug 2026</span>"
+}
